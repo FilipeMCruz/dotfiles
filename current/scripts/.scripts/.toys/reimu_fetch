@@ -1,0 +1,76 @@
+#!/bin/sh
+
+# Made by Banbeucmas
+# Dotfiles: https://github.com/Banbeucmas/banbeucmas-dotfiles
+
+initializeANSI()
+{
+  esc=""
+  reset="${esc}[0m"
+
+  border="${esc}[38;5;232m"
+  greyd="${esc}[38;5;234m"; grey="${esc}[38;5;235m"; greyl="${esc}[38;5;240m"
+  cloth="${esc}[38;5;196m";    clothd="${esc}[38;5;124m"
+  whited="${esc}[38;5;251m"; white="${esc}[38;5;255m"
+  humand="${esc}[38;5;216m"; human="${esc}[38;5;223m"; humanb="${esc}[38;5;229m"
+  yellowd="${esc}[38;5;214m"; yellow="${esc}[38;5;226m" 
+  brown="${esc}[38;5;130m"; brownb="${esc}[38;5;214m";  
+  eyed="${esc}[38;5;251m"; eye="${esc}[38;5;255m"
+
+  system="${esc}[31m"; 
+
+  boldon="${esc}[1m";    boldoff="${esc}[22m"
+  italicson="${esc}[3m"; italicsoff="${esc}[23m"
+  ulon="${esc}[4m";      uloff="${esc}[24m"
+  invon="${esc}[7m";     invoff="${esc}[27m" 
+}
+
+initializeBars(){
+  f=3 b=4
+  for j in f b; do
+    for i in {0..7}; do
+      printf -v $j$i %b "\e[${!j}${i}m"
+    done
+  done
+  bld=$'\e[1m'
+  rst=$'\e[0m'
+  inv=$'\e[7m'
+}
+
+initializeANSI
+initializeBars
+
+cat << EOF
+                                ${border}██████████████████
+  ${border}██████████████████████    ████${clothd}██${cloth}██████████${white}██${clothd}██${white}██${border}██
+  ${border}██${white}██${cloth}██${white}██${cloth}████████${clothd}██${border}████████████████████${cloth}██${whited}██${clothd}████${whited}██${border}██
+  ${border}██${white}██${clothd}████${white}██${cloth}██${clothd}██${border}████${grey}████████${greyl}██████████${grey}██${border}████${clothd}██${whited}██${border}██
+    ${border}██${white}██${clothd}██${whited}██${clothd}██${border}██${grey}████${greyl}██████████████████████${grey}██${border}██${whited}██${border}██
+    ${border}██${whited}██${clothd}████${border}██${grey}████${greyl}██████████████████████████${grey}██${border}██
+      ${border}██${whited}██${border}██${grey}████${greyl}██████████████████████████████${grey}██${border}██
+      ${border}██${greyd}██${border}██${grey}██${greyl}██████████████████████████████████${grey}██${border}██
+      ${border}██${greyd}████${grey}██${greyl}████████████████████████████████${whited}██${greyl}██${border}██
+    ${border}██${grey}████${greyd}██${greyl}██████████████████████████${greyd}██${whited}██████${greyl}████${greyd}██${border}██
+    ${border}██${grey}████${greyd}██${greyl}██████${grey}██${whited}████████${greyl}██${whited}██████${greyl}██${grey}██${greyl}████████████${border}██
+    ${border}██${grey}████${greyd}██${greyl}████${greyd}██${greyl}██████████${greyd}██${greyl}██████${border}████${greyl}██████${grey}██${greyl}████${border}██
+    ${border}██${grey}████${greyd}██${greyl}██${greyd}██${grey}██${greyl}████████${greyd}████${greyl}████${grey}██${greyd}██${grey}██${greyl}██${grey}██${greyl}██${greyd}██${grey}██${greyl}██${border}██
+    ${border}██${grey}████████${greyd}██${greyl}████████${grey}██${greyd}██${grey}██${greyl}██${grey}██${greyd}██${humand}██${border}████${greyd}██${greyl}██${greyd}████${grey}██${border}██
+      ${border}██${grey}████████${greyl}██${grey}██${greyd}██${border}████████${grey}██${greyd}██${humand}██${humanb}██${border}██${eyed}██${greyd}██${grey}██${greyd}██${border}██${greyd}██
+      ${border}██${grey}████${greyd}██${grey}████${greyl}██${border}██${eyed}██${border}████${humand}██${greyd}██${humand}██${humanb}████${brown}██${human}██${clothd}██${grey}██${border}██  ██  
+      ${border}██${grey}████${greyd}██████${clothd}██${cloth}██${eye}████${brown}██${humanb}██${humand}██${humanb}██████${brownb}██${eye}██${clothd}██${border}██         ${system}$USER@${white}$(hostname)  
+      ${border}██${grey}████${border}██${greyd}████${clothd}██${cloth}██${eye}██${brown}██${brownb}██${humanb}██████████${brown}██${humanb}██${clothd}██${border}██         ------------------------
+      ${border}██${grey}██${greyd}██${border}██${greyd}████${clothd}██${cloth}██${humanb}██${brown}████${humanb}████████████${humand}██${eyed}██${border}██         ${system}OS: ${white}Arch Linux
+    ${border}██${greyd}██${grey}██${greyd}██${border}██${greyd}████${eye}████${humand}██${humanb}██████████████${humand}██${border}██${greyl}██${border}██         ${system}Kernel: ${white}$(uname -sr)              
+    ${border}██${greyd}██████${border}██${eye}██${border}██${grey}██${greyl}██${greyd}██${humand}██████████████${border}██${greyl}██${border}██           ${system}Packages: ${white}$(yay -Q | wc -l)
+    ${border}██${greyd}████${border}██  ${border}██${eye}██${border}██${greyl}██${humand}████${clothd}██${eye}██████${yellowd}██${humanb}██${humand}██${border}██             ${system}Shell: ${white}$(basename ${SHELL})
+      ${border}██${greyd}██${border}██  ██${white}██${border}██${whited}██${white}██${clothd}████${cloth}████${yellowd}██${yellow}██${yellowd}██${border}██${whited}██${border}██           ${system}DE: ${white}$DESKTOP_SESSION
+      ${border}████      ██${whited}██${white}██${whited}██${clothd}████${cloth}████${yellow}██████${border}██${whited}██${border}██           ${system}WM:${white}$(wmctrl -m | grep Name | cut -d: -f2)
+      ${border}██        ██${whited}██${whited}██${white}██${border}██${clothd}██████${cloth}██████${clothd}██${border}██${whited}██${border}██         
+              ${border}██${whited}██${clothd}██${white}████${border}██${clothd}████${cloth}██████████${clothd}██${border}████          $f1████$f2████$f3████$f4████$f5████$f6████$f7████
+              ${border}██${whited}██${white}██${clothd}██${white}██${border}██${clothd}████${cloth}████████████${clothd}██${border}██          $bld$f1████$f2████$f3████$f4████$f5████$f6████$f7████
+              ${border}██${clothd}██${whited}██${white}██${whited}██${clothd}████${cloth}██████████████${whited}██${border}██
+              ${border}██${whited}██${clothd}████████${cloth}████████████${whited}████${border}██
+                ${border}██${clothd}██${whited}████${white}██${cloth}████${white}████${border}██${greyd}██${grey}██${border}██
+                  ${border}████${grey}██${greyl}██${border}████████  ${border}████
+                      ${border}████
+EOF

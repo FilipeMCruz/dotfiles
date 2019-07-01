@@ -1,0 +1,77 @@
+#!/bin/sh
+
+# Made by Banbeucmas
+# Dotfiles: https://github.com/Banbeucmas/banbeucmas-dotfiles
+
+initializeANSI()
+{
+  esc=""
+ 
+  blackf="${esc}[38;5;232m";   redf="${esc}[38;5;196m";    greenf="${esc}[38;5;40m"
+  yellowf="${esc}[33m"   bluef="${esc}[34m";   purplef="${esc}[38;5;216m"
+  brownf="${esc}[38;5;130m";    whitef="${esc}[37m"; humanf="${esc}[38;5;223m"
+ 
+  greent="${esc}[38;5;40m";
+
+  blackb="${esc}[38;5;241m";   redb="${esc}[41m";    greenb="${esc}[42m"
+  yellowb="${esc}[43m"   blueb="${esc}[44m";   purpleb="${esc}[45m"
+  brownb="${esc}[38;5;214m";    whiteb="${esc}[47m"; humanb="${esc}[38;5;229m"
+ 
+  boldon="${esc}[1m";    boldoff="${esc}[22m"
+  italicson="${esc}[3m"; italicsoff="${esc}[23m"
+  ulon="${esc}[4m";      uloff="${esc}[24m"
+  invon="${esc}[7m";     invoff="${esc}[27m"
+ 
+  reset="${esc}[0m"
+}
+
+initializeBars(){
+  f=3 b=4
+  for j in f b; do
+    for i in {0..7}; do
+      printf -v $j$i %b "\e[${!j}${i}m"
+    done
+  done
+  bld=$'\e[1m'
+  rst=$'\e[0m'
+  inv=$'\e[7m'
+}
+
+initializeANSI
+initializeBars
+
+cat << EOF
+${reset}                                ${blackf}██████████████████
+${reset}  ${blackf}██████████████████████    ████${reset}${greenf}████████████${reset}${whitef}██${reset}${greenf}██${reset}${whitef}██${reset}${blackf}██
+${reset}  ${blackf}██${reset}${whitef}██${reset}${greenf}██${reset}${whitef}██${reset}${greenf}██████████${reset}${blackf}████████████████████${reset}${greenf}██${reset}${whiteb}██${reset}${greenf}████${reset}${whiteb}██${reset}${blackf}██
+${reset}  ${blackf}██${reset}${whiteb}██${reset}${greenf}████${reset}${whitef}██${reset}${greenf}████${reset}${blackf}████████████${reset}${blackb}██████████${reset}${blackf}██████${reset}${greenf}██${reset}${whiteb}██${reset}${blackf}██
+${reset}    ${blackf}██${reset}${whitef}██${reset}${greenf}██${reset}${whiteb}██${reset}${greenf}██${reset}${blackf}██████${reset}${blackb}██████████████████████${reset}${blackf}████${reset}${whiteb}██${reset}${blackf}██
+${reset}    ${blackf}██${reset}${whiteb}██${reset}${greenf}████${reset}${blackf}██████${reset}${blackb}██████████████████████████${reset}${blackf}████
+${reset}      ${blackf}██${reset}${whiteb}██${reset}${blackf}██████${reset}${blackb}██████████████████████████████${reset}${blackf}████
+${reset}      ${blackf}████████${reset}${blackb}██████████████████████████████████${reset}${blackf}████
+${reset}      ${blackf}████████${reset}${blackb}████████████████████████████████${reset}${whiteb}██${reset}${blackb}██${reset}${blackf}██
+${reset}    ${blackf}██${reset}${blackb}██${reset}${blackf}██████${reset}${blackb}████████████████████████${reset}${blackf}██${reset}${whiteb}██████${reset}${blackb}████${reset}${blackf}████
+${reset}    ${blackf}██${reset}${blackb}████${reset}${blackf}██${reset}${blackb}██████${reset}${blackf}██${reset}${whiteb}████████${reset}${blackb}██${reset}${whiteb}██████${reset}${blackb}██${reset}${blackf}██${reset}${blackb}████████████${reset}${blackf}██          ${greent}$USER@${whitef}$(hostname)
+${reset}    ${blackf}██${reset}${blackb}████${reset}${blackf}██${reset}${blackb}████${reset}${blackf}██${reset}${blackb}██████████${reset}${blackf}██${reset}${blackb}██████${reset}${blackf}████${reset}${blackb}██████${reset}${blackf}██${reset}${blackb}████${reset}${blackf}██          ----------------------         
+${reset}    ${blackf}██${reset}${blackb}████${reset}${blackf}██${reset}${blackb}██${reset}${blackf}██${reset}${blackb}██████████${reset}${blackf}████${reset}${blackb}████${reset}${blackf}██████${reset}${blackb}██${reset}${blackf}██${reset}${blackb}██${reset}${blackf}████${reset}${blackb}██${reset}${blackf}██          ${greent}OS: ${whitef}Arch Linux
+${reset}    ${blackf}██${reset}${blackb}████████${reset}${blackf}██${reset}${blackb}████████${reset}${blackf}██████${reset}${blackb}██${reset}${blackf}████${reset}${purplef}██${reset}${blackf}██████${reset}${blackb}██${reset}${blackf}████████          ${greent}Kernel: ${whitef}$(uname -sr)
+${reset}      ${blackf}██${reset}${blackb}██████████${reset}${blackf}████████████████${reset}${purplef}██${reset}${humanf}██${reset}${blackf}██${reset}${humanf}██${reset}${blackf}██████████            ${greent}Uptime: ${whitef}$(uptime -p | sed 's/up //')
+${reset}      ${blackf}██${reset}${blackb}████${reset}${blackf}██${reset}${blackb}██████${reset}${blackf}██${reset}${humanf}██${reset}${blackf}████${reset}${purplef}██${reset}${blackf}██${reset}${purplef}██${reset}${humanf}████${reset}${brownf}██${reset}${humanb}██${reset}${greenf}██${reset}${blackf}████${reset}  ${blackf}██            ${greent}Packages: ${whitef}$(yay -Q | wc -l)
+${reset}      ${blackf}██${reset}${blackb}████${reset}${blackf}██████${reset}${greenf}████${reset}${humanb}████${reset}${brownf}██${reset}${humanf}██${reset}${purplef}██${reset}${humanf}██████${reset}${brownb}██${reset}${humanb}██${reset}${whitef}██${reset}${blackf}██                  ${greent}Shell: ${whitef}$(basename ${SHELL})
+${reset}      ${blackf}██${reset}${blackb}████${reset}${blackf}██████${reset}${whitef}████${reset}${humanb}██${reset}${brownf}██${reset}${brownb}██${reset}${humanf}██████████${reset}${brownf}██${reset}${humanb}██${reset}${greenf}██${reset}${blackf}██                  ${greent}DE: ${whitef}$DESKTOP_SESSION
+${reset}      ${blackf}██${reset}${blackb}██${reset}${blackf}████████${reset}${greenf}████${reset}${boldon}${whitef}██${reset}${brownf}████${reset}${humanf}████████████${reset}${purplef}██${reset}${humanf}██${reset}${blackf}██                  ${greent}WM:${whitef}$(wmctrl -m | grep Name | cut -d: -f2)
+${reset}    ${blackf}████${reset}${blackb}██${reset}${blackf}████████${reset}${humanb}██${reset}${humanf}██${reset}${purplef}██${reset}${humanf}██████████████${reset}${purplef}██${reset}${blackf}██${reset}${blackb}██${reset}${blackf}██              
+${reset}    ${blackf}██████████${reset}${blackb}██${reset}${blackf}████${reset}${blackb}██${reset}${blackf}██${reset}${purplef}██████████████${reset}${blackf}██${reset}${blackb}██${reset}${blackf}██                    $f1████$f2████$f3████$f4████$f5████$f6████$f7████
+${reset}    ${blackf}████████${reset}  ${blackf}██${reset}${blackb}██${reset}${blackf}██${reset}${blackb}██${reset}${purplef}████${reset}${greenf}██${reset}${humanf}██████${reset}${yellowf}██${reset}${humanf}██${reset}${purplef}██${reset}${blackf}██                      $bld$f1████$f2████$f3████$f4████$f5████$f6████$f7████
+${reset}      ${blackf}██████${reset}  ${blackf}██${reset}${blackb}██${reset}${blackf}██${reset}${whiteb}██${reset}${humanf}██${reset}${greenf}████████${reset}${yellowf}██${reset}${boldon}${yellowf}██${reset}${yellowf}██${reset}${blackf}██${reset}${whiteb}██${reset}${blackf}██
+${reset}      ${blackf}████${reset}      ${blackf}██${reset}${whiteb}██${reset}${whitef}██${reset}${whiteb}██${reset}${greenf}████████${reset}${boldon}${yellowf}██████${reset}${blackf}██${reset}${whiteb}██${reset}${blackf}██
+${reset}      ${blackf}██${reset}        ${blackf}██${reset}${whiteb}██${reset}${whitef}████${reset}${blackf}██${reset}${greenf}██████████████${reset}${blackf}██${reset}${whiteb}██${reset}${blackf}██
+${reset}              ${blackf}██${reset}${whiteb}██${reset}${greenf}██${reset}${whitef}████${reset}${blackf}██${reset}${greenf}████████████████${reset}${blackf}██${reset}${blackf}██
+${reset}              ${blackf}██${reset}${whiteb}██${reset}${whitef}██${reset}${greenf}██${reset}${whitef}██${reset}${blackf}██${reset}${greenf}██████████████████${reset}${blackf}██
+${reset}              ${blackf}██${reset}${greenf}██${reset}${whiteb}██${reset}${whitef}██${reset}${whiteb}██${reset}${greenf}██████████████████${reset}${whiteb}██${reset}${blackf}██
+${reset}              ${blackf}██${reset}${whiteb}██${reset}${greenf}████████████████████${reset}${whiteb}████${reset}${blackf}██
+${reset}                ${blackf}██${reset}${greenf}██${reset}${whiteb}████${reset}${whitef}██${reset}${greenf}████${reset}${whitef}████${reset}${blackf}████${reset}${blackb}██${reset}${blackf}██
+${reset}                  ${blackf}██████${reset}${blackb}██${reset}${blackf}████████${reset}  ${blackf}████
+${reset}
+
+EOF

@@ -1,0 +1,6 @@
+#!/usr/bin/sh
+
+# still need to build the polybar config
+test ! -z "$(pgrep polybar)" && pkill polybar
+
+polybar -c "path to config" fire_leaf

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+for a in "$1"*.flac; do
+  < /dev/null ffmpeg -i "$a" -qscale:a 0 "${a[@]/%flac/mp3}"
+done

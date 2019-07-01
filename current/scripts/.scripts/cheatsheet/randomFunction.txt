@@ -1,0 +1,36 @@
+Have you ever needed to generate a random number in code? whether it's for rolling a dice, or shuffling a set, this tweet thread is here for you! There's no reason that it should be easy or obvious, very experienced programmers repeat common mistakes. I did, before I learned
+
+O.k. let's start with the most common problem, and the most common mistakes: how do we pick a random number between 0 and N inclusive, let's say N = 5, so like a dice that starts at zero because we're nerds. A common solution is to r = rand() % (N + 1). Easy, right? Wrong! This solution is biased. To see how, imagine that RAND_MAX is "15". 0 % 6 == 0, 6 % 6 == 0, and 12 % 6 == 0 , so there are three rand() values each that return 0. Same works for 1, 2, 3
+
+But there are only two rand() values that return 4: 4 % 6 and 10 % 6. Same for 5. So 0, 1, 2, 3 are all 50% more likely than 4 or 5. That's bias! Of course with a big RAND_MAX, this bias diminishes, but it's still there. So don't do it this way. O.k. so what if we use a float to avoid this? It's tempting! We can build a float between 0.0 and 1.0 by doing f = (float) rand() / (float) RAND_MAX. So we build a little macro or function for that, and now we can just do r = randFloat() * 5, right? No! This doesn't work other, because FLOATING POINT IS LIES. The distribution between 0.0 and 1.0 is not evenly spread and there's all sorts of rounding fuzziness that will make r non-uniform. No good. The solution here is pretty interesting and totally non-intuitive. What you have to do is to compute the highest multiple of n that is smaller than RAND_MAX. Then you call rand() and if you get a number that's higher, you discard it and go again. E.g. (github.com/awslabs/s2n/bl…)
+
+
+int m_rand(int max) {
+    while(1) {
+        int r = rand();
+        if (r < (RAND_MAX - (RAND_MAX % max))) {
+            return r % max;
+        }
+    }
+}
+
+O.k, so there's some probability that this program might never finish! HALTING PROBLEM, etc, etc. The probability is worst when max == (RAND_MAX / 2) + 1. But even then it's a very rapidly diminishing binomial distribution ... so we just shrug our shoulders. It's fine. This is why you should use those APIs that ask for the max, that's why they exist, and this is what's going on under the hood. But if you have to do it yourself. This is how. O.k. next, what if we need to random selection
+
+OBVIOUSLY to select elements at random, you can just throw them in an array, and choose a random index into the array. But this is BORING. This is a terrible approach for weighted sets, if you want to favor some elements, and it's also common that you want to choose multiples
+
+And when you choose multiples, you usually don't want duplicates, so what you often need is a shuffle. How do you shuffle? Well you can call sort() with some kind of customer random as-me comparator. DON'T DO THIS. Also, DON'T LET YOUR FRIENDS DO THIS. Instead do a Fisher-Yates shuffle. They are super easy jumble = [ A , B , C, D, E, F ] 
+for (i = 0; i < jumble.length; i++) {
+	int r = rand(i)
+	save = jumble[i]
+	jumble[i] = jumble[r]
+	jumble[r] = save
+}
+It's O(N) and it works every time. Super easy to remember if you code it a few times. O.k. so that's shuffling, like for your playlist or whatever. But what about weighted sets and selection? What if you want to choose elements but also put a thumb on the scale? Well you could build a set or an array that just repeats elements in them w times, where w is the weight. Eats a lot of space though! and gets super inefficient if you don't want to have duplicates. The COOLEST answer here is to use Vose's Alias. Sadly, this one is too long for a tweet until next year when twitter decides that we need more space to offend one another, so for now, bookmark this page , or print it out and frame it in case the Internet ever dies. It's one of the best bits. (keithschwarz.com/darts-dice-coi…) You can read it for yourself, but it uses a 2d approach to do weighted selection in O(1) time with O(n) space. MAD THAT THIS WORKS. And it reminds me of something else, the last and BONUS randomness item I'll get into
+
+How do we generate numbers that honor a normal distribution? A normal distribution is a super common statistical distribution, it describes the distribution of lots of phenomena and the central limit theorem says that basically any distribution is secretly just one step removed from the normal distribution. That probably didn't make any sense. Here's a Wikipedia page that also won't make much sense: . It especially doesn't make sense that those totally differently looking lines are supposed to be "the same". That's ok though. (en.wikipedia.org/wiki/Normal_di…) It's ok because STATISTICS DOESN'T MAKE SENSE. They work really well, but if you think about them for too long and too deeply, you fall into a transcendent state. That's also how we know that statistics are pure science. Anyway, back to the topic
+
+A cool, though not common any more, way to generate normally distributed numbers is called the Box-Muller transform, , and it combines the "Just throw the bad crap away" (aka rejection sampling) and two-dimensional approaches we've seen already. (en.wikipedia.org/wiki/Box–Mulle…) With Box-Muller, we choose two random values, between -2^^31 and 2^^31 say, we plot them as x and y on a two dimensional plane. If (x,y) lies within the circle of radius size 2^^31, we keep the point, otherwise we go again. r is the distance from the origin to (x, y) squared. Here's a picture from Wikipedia, but basically we're throwing darts at a square and if they land in a circle we're good. It's amazing how much low-level stuff is dumb-as-rocks.
+
+
+
+O.k. some parting thoughts before ending this thread. First, if you need to generate random numbers in constant time, or exotic distributions, get super deep into this stuff. There are seriously rough weeds to tackle. Second: if you find yourself building a whole RNG, it's really very hard, again, get deep in the weeds and learn about DRBGs, fork-safety, thread-safety, /dev/urandom, getrandom() and so on. Avoid if you can! Third: always use a secure RNG, your language or programming environment should have one. Don't ever seed an RNG yourself. One exception: for fuzz inputs and other tests, where you may want repeat deterministically for debugging. But DON'T LET IT LEAK INTO PRODUCTION. Another exception is games, where you may want to generate content and play based on a small seed value, BUT UNDERSTAND THAT THIS IS NOT SECURE. Last tip: always measure your little random functions with a histogram or whatever. I still code these wrong and have to check. Thanks for reading!

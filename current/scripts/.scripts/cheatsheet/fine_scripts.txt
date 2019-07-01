@@ -1,0 +1,142 @@
+# weather in ascii art
+# repo in github - python
+curl wttr.in/Oporto
+
+# hex reader with coulors
+# repo in github - rust
+hexyl file.*
+
+# copy new and modified files from n/ to np/ 
+# and delete anything from np/ that is not in n/
+rsync -avzh origin/ new_copy/ --delete-before
+
+# rename files with md5 hash 
+# file = filename & ext = extension
+md5sum file.ext | { read sum filename; mv $filename $sum.ext; }
+
+# get ai generated face from the web
+wget thispersondoesnotexist.com -O ./face.jpg
+
+# corrects line ending of notepad++
+sed -i 's/\r//' bash.sh
+
+# find who owns the ip
+whois IP
+
+# fork bomb to kill a pc
+:(){ :|:& };:
+
+# kinda gay colored time and date
+while true; do echo "$(date '+%D %T' | toilet -f term -F border --gay)"; sleep 1; done
+
+# upddate twitter status
+url -u YourUsername:YourPassword -d status="Your status message" http://twitter.com/statuses/update.xml
+
+# create bootable isos
+sudo fdisk -l  #find usb
+ddrescue path/to/.iso /dev/sdx --force -D #create bootable iso
+
+# zip files
+zip <new.zip> <path_to_file_1> <path_to_file_2> <...>
+
+# list packages installed
+# with pacman
+pacman -Qte > list_pack.txt
+
+# find different lines in files
+comm -13 <(sort file1) <(sort  file2)
+
+# 'delete' last line
+head -n -1 file1 > file2;mv file2 file1
+
+# find all files that the user can read write and exec
+find . -perm /u=rwx
+
+# change all files that the users cant rwx so that he can
+find . ! -perm /u=rwx -print -exec chmod u+rwx {} \;
+
+# type of hash used in password /etc/shadow && /etc/passwd
+    $1$ is MD5
+    $2a$ is eksBlowfish
+    $2y$ is Blowfish
+    $3$ is NT
+    $5$ is SHA-256
+    $6$ is SHA-512
+    
+# find and copy
+find . -iname "*.*" -exec cp {} ~/Desktop/ \;
+
+# find all *.png and change it to .jpg
+find -iname "*.png" -execdir convert {} cover.jpg \;
+fd -e png -x convert {} {.}.jpg
+
+# grep with flags
+# -n - line that matched the pattern
+# --color - color the patern found
+# -i - ignore case
+# -r - recursive search, for subdirs
+grep -rin --color "int"
+
+## Parallel command execution
+If the `-x`/`--exec` option is specified alongside a command template, a job pool will be created
+for executing commands in parallel for each discovered path as the input. The syntax for generating
+commands is similar to that of GNU Parallel:
+
+- `{}`: A placeholder token that will be replaced with the path of the search result
+  (`documents/images/party.jpg`).
+- `{.}`: Like `{}`, but without the file extension (`documents/images/party`).
+- `{/}`: A placeholder that will be replaced by the basename of the search result (`party.jpg`).
+- `{//}`: Uses the parent of the discovered path (`documents/images`).
+- `{/.}`: Uses the basename, with the extension removed (`party`).
+
+
+# copy to clipboard
+xclip -sel clip < file.*
+
+# generate rsa with 4096 bits
+ssh-keygen -o -t rsa -b 4096 -C "input"
+
+# revert back to last pull localy
+git checkout -- .
+
+# 0 = false in c
+typedef enum { false = 0, true = !false } bool;
+
+# copy files to phone with scp
+scp -P <PORT> -r to_phone/ admin@<LOCAL IP>:/data/data/com.arachnoid.sshelper/files/home/SDCard/
+
+# xsl to transform a xml
+xsltproc plantas.xsl plantas.xml > m.html
+
+# go back to old commit (lapr4 ff620ea936f6e0203715f8a44efd48e508f3447a)
+git reset --hard <sha commit>
+
+# update docker image
+docker commit <container id> <image>
+
+# prep image to push
+docker tag <image id> <username/image name>
+
+# login into docker
+docker login -u <username> -p <password>
+
+# push new image
+docker push <username/image name>
+
+# see all running container
+docker ps -a
+
+# remove containers running
+docker rm -f <container id>
+
+# delete docker image
+docker rmi -f <image id>
+
+# get number of commits
+git rev-list --count HEAD
+
+# get comits by username
+git shortlog -s -n --all --no-merges
+
+# update project after changing .gitignore
+git rm --cached -r . ; git add . ; git status

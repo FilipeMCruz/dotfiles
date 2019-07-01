@@ -16,7 +16,7 @@ alternative_header_first_line_format = "{$2%a $0-$8 $9}{$2%t$9}|{$8%f$9}$9"
 alternative_header_second_line_format = "{ $0($8$2%y$9$0)$8} {{$2%b$9}}|{%D}"
 alternative_ui_separator_color = "yellow"
 
-playlist_display_mode = "columns" (classic/columns)
+playlist_display_mode = "classic" (classic/columns)
 media_library_primary_tag = album_artist
 
 ## List ..

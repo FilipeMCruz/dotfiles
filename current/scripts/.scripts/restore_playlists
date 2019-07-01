@@ -1,0 +1,22 @@
+#!/usr/bin/sh
+
+cd "$back_up" || exit
+
+new_songs="$HOME/.mpd/playlists/new_loved_songs.m3u"
+
+old_songs="$HOME/.mpd/playlists/old_loved_songs.m3u"
+
+back_up="$HOME/.mpd/playlists/backup/"
+
+last=$(ls -1 -t)
+
+old_update=$(echo "$last" | grep old)
+
+new_update=$(echo "$last" | grep new)
+
+mv $new_update $new_songs
+
+mv $old_update $old_songs
+
+rm -rf "$HOME/Desktop/to_phone/"
+

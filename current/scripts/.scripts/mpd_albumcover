@@ -1,0 +1,5 @@
+#!/usr/bin/sh
+
+songdir=$(mpc -h 127.0.0.1 -p 6660 -f %file% | head -1)
+
+echo "$MUSIC"/${songdir%/*}/cover.jpg

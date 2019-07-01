@@ -1,0 +1,3 @@
+#!/usr/bin/sh
+
+cd "$HOME"/.dotfiles/current && stow * -t "$HOME"

@@ -1,0 +1,24 @@
+#!/usr/bin/sh
+
+#run as $ check_pwd <pass> and not $check_pwd <pass> 
+#so that your history doesnt save your password
+
+SHA=$( printf "%s" "$1" | openssl sha1 | cut -c 10- )
+TIMES=$(curl https://api.pwnedpasswords.com/range/"$( echo "$SHA" | cut -c -5 )" 2> /dev/null | grep -i "$( echo "$SHA" | cut -c 6- )" | cut -d : -f 2 )
+test -z "$TIMES" && echo Your Password is secured || echo "Times your password has been pwned: $TIMES"
+
+## old version
+#SHA=$( echo -n "$1" | openssl sha1 | cut -c 10- )
+#GET=$( echo $SHA | cut -c -5 )
+#SHA=$( echo $SHA | cut -c 6- )
+#curl https://api.pwnedpasswords.com/range/$GET > $GET
+#TIMES=$( grep -i "^$SHA" $GET | cut -d ':' -f 2 )
+#if [ -z $TIMES ]
+#then
+#    echo Your Password is secured
+#else
+#    echo "Times your password has been pwned: $TIMES"
+#fi
+#rm $GET
+#head -n -1 ~/.zsh_history > ~/.zsh_history_b
+#mv ~/.zsh_history_b ~/.zsh_history

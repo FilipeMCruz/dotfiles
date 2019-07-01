@@ -1,0 +1,73 @@
+#!/usr/bin/env python3
+from sys import argv
+import eyed3
+import logging
+import re
+import os
+
+# disable eyeD3 warning logs
+logging.getLogger("eyed3.mp3.headers").setLevel(logging.CRITICAL)
+
+dir = "~/Desktop/to_phone/"
+
+song_path = argv[1]
+print("Song path    : ", song_path)
+
+song = eyed3.load(song_path)
+
+# missing organization part with eyed3
+# COMMENT   $if($eql(%albumartist%,$left(%artist%,$len(%albumartist%))),$right(%artist%,$sub($sub($len(%artist%),$len(%albumartist%)),1)),by %artist%)
+# COMMENT   replace Feat. to (Feat.
+# COMMENT   $ifgreater($strstr(%comment%,Feat.),0,%comment%')',%comment%)
+# COMMENT   $if($eql(%albumartist%,%artist%),,%comment%)
+# ARTIST    %albumartist%
+# TITLE     %title%%comment%
+# COMMENT   clear
+# _FILENAME %albumartist% - %genre%\%year% - %album% - Cd %discnumber%\$num(%track%,2). %title%
+
+# get everything past )
+genre = song.tag.genre
+
+if str(genre).startswith('('):
+    genre = re.search(r"(?<=\)).*", str(song.tag.genre)).group(0)
+
+print(genre)
+track_info = str(song.tag.track_num)
+track_number = str(int("{:<02}".format(song.tag.track_num[0])))
+track_count = str(song.tag.track_num[1])
+title = song.tag.title
+album = song.tag.album
+artist = song.tag.artist
+album_artist = song.tag.album_artist
+date = str(song.tag.recording_date)
+disk = str(song.tag.disc_num[0])
+
+# print("Track Info   : {}".format(track_info))
+# print("Track Number : {}".format(track_number))
+# print("Total Tracks : {}".format(track_count))
+# print("Title        : {}".format(title))
+# print("Album        : {}".format(album))
+# print("Artist       : {}".format(artist))
+# print("Album Artist : {}".format(album_artist))
+# print("Genre        : {}".format(genre))
+# print("Date         : {}".format(date))
+# print("Disc Info    : {}".format(disk))
+
+if album_artist != artist:
+    if artist.startswith(album_artist):
+        feat = artist[len(album_artist) :]
+        song.tag.title += feat[:0] + " (" + feat[1:] + ")"
+    else:
+        song.tag.title += " by " + artist
+
+song.tag.artist = album_artist
+# song.tag.save()
+
+new_song_path = "{}{} - {}/{} - {} - Cd {}/{}. {}.mp3".format(
+    dir, album_artist, genre, date, album, disk, track_number, song.tag.title
+)
+
+print(new_song_path)
+
+# os.rename(song_path, new_song_path)
+

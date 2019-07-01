@@ -1,0 +1,11 @@
+#!/usr/bin/sh
+
+##  first version
+# cd $MUSIC
+# fd -e mp3 -t f --changed-within 2weeks | sed "s|^|$MUSIC/|" > "$HOME/.mpd/playlists/"new_songs.m3u
+
+fd . /mnt/sdb3/Music -e mp3 -t f --changed-within 2weeks > "$HOME/.mpd/playlists/"new_songs.m3u
+
+mpc -h 127.0.0.1 -p 6660 update > /dev/null
+
+dunstify "Songs found in the last update" "$(wc -l "$HOME/.mpd/playlists/"new_songs.m3u | cut -d ' ' -f1)" -i "$HOME/Pictures/Icons/disc.svg"

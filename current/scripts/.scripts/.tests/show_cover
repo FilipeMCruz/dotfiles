@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+# finds te cover of the music playing and feh it
+# TODO: check if cover is the same in the next song, dont change it if so
+
+time_diff() {
+	total=$(mpc -h 127.0.0.1 -p 6660 -f %time% | head -2 | tail -1 | grep -o -P "([0-9]*:[0-9]{2}\/?){2}")
+	current=$(echo "$total" | cut -d "/" -f 1)
+	sec=${current##*:}
+	min=${current%:*}
+	min=${min#*:}
+    current=$((min * 60 + sec))
+	time=$(echo "$total" | cut -d "/" -f 2)
+	sec=${time##*:}
+	min=${time%:*}
+	min=${min#*:}
+    time=$((min * 60 + sec))
+    diff=$((time - current))
+	echo $diff
+}
+
+for pid in $(pgrep -f "show_cover")
+do
+	[ "$pid" != $$ ] && kill "$pid"
+done
+
+while true
+do
+	songdir=$(mpc -h 127.0.0.1 -p 6660 -f %file% | head -1)
+	coverdir="$MUSIC"/${songdir%/*}/cover.jpg
+	
+	[ -f "$coverdir" ] && feh -x -B black -R 2 --scale-down --g 200x200+0+0 "$coverdir"&
+    [ -f "$coverdir" ] && disown -ah %1
+
+	#while cover is the same
+
+    time="$(time_diff)"
+	if [ "$time" -gt 0 ]
+	then
+		sleep "$time"
+	fi
+
+	# mpd=$(pgrep -f "mpd")
+	# if [ "$mpd" ]
+	# then
+	# 	pkill -f "show_cover"
+	# fi
+
+	# try to use pkill here
+	old_feh=$(pgrep -f "$coverdir")
+	kill "$old_feh"
+	sleep 2
+done
+

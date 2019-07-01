@@ -21,7 +21,7 @@ This will always be a WIP repo.
 
 ### `/nano`
 
-+ Most of the syntax highlighters were "stollen" from <https://github.com/scopatz/nanorc>
+Most of the syntax highlighters were "stollen" from <https://github.com/scopatz/nanorc>
 
 ### `/ncmpcpp`
 
@@ -40,20 +40,20 @@ I heavily rely on programs like:
 
 If you don't know them, check their repos. They are, in my opinion,a most for anyone that spends a lot of time on the cli.
 
-##### `/.toys`
+#### `/.toys`
 
 Nice prints taken from [r/unixporn](https://www.reddit.com/r/unixporn/)!
 *Can't remember where i found them, tell me if you know*
 
-##### `/.cheatsheet`
+#### `/.cheatsheet`
 
 Some ideas trash and reminders, my current [hosts table](https://raw.githubusercontent.com/LukeSmithxyz/etc/master/ips) table, and a cheatsheet i found somewhere.
 
-##### `/.batman`
+#### `/.batman`
 
 The since script i had when i was using windows.
 
-##### `/.test`
+#### `/.test`
 
 Scripts used for tests or just not ready to be used.
 

@@ -1,0 +1,49 @@
+#!/usr/bin/env python3
+from sys import argv
+from pathlib import Path
+import eyed3
+import logging
+import re
+import os
+
+# disable eyeD3 warning logs
+logging.getLogger("eyed3.mp3.headers").setLevel(logging.CRITICAL)
+
+dir = str(Path.home()) + "/Desktop/to_phone/"
+
+song_path = argv[1]
+song = eyed3.load(song_path)
+
+track_number = str(song.tag.track_num[0]).zfill(2)
+artist = song.tag.artist
+album_artist = song.tag.album_artist
+
+genre = song.tag.genre
+if str(genre).startswith('('):
+    genre = re.search(r"(?<=\)).*", str(song.tag.genre)).group(0)
+
+
+if album_artist != artist:
+    if artist.startswith(album_artist):
+        # if it has feat
+        feat = artist[len(album_artist) :]
+        song.tag.title += feat[:0] + " (" + feat[1:] + ")"
+    else:
+        # if the artist and album artist are completely different
+        song.tag.title += " by " + artist
+    # in case of changes
+    song.tag.artist = album_artist
+    song.tag.save()
+
+new_song_path = "{}{} - {}/{} - {} - Cd {}/{}. {}.mp3".format(
+    dir,
+    album_artist,
+    genre,
+    str(song.tag.recording_date),
+    song.tag.album,
+    str(song.tag.disc_num[0]),
+    track_number,
+    song.tag.title,
+)
+
+os.renames(song_path, new_song_path)

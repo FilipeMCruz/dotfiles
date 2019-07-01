@@ -1,0 +1,26 @@
+#!/usr/bin/sh
+
+# copy songs in $new_songs to $out
+# adds them to $old_songs playlist
+# resets the $new_songs
+new_songs="$HOME/.mpd/playlists/new_loved_songs.m3u"
+old_songs="$HOME/.mpd/playlists/old_loved_songs.m3u"
+out="$HOME/Desktop/.temp.mp3"
+
+n_songs=$(wc -l "$HOME/.mpd/playlists/new_loved_songs.m3u" | cut -d ' ' -f1)
+
+while read -r line
+do
+     if [ -f "$line" ]
+     then
+          echo copying "$line"
+          cp "$line" "$out"
+          song_to_phone "$out"
+          echo "$line" >> "$old_songs"
+     else
+          echo "$line" invalid 1>&2
+     fi
+done < "$new_songs"
+truncate -s 0 "$new_songs"
+
+dunstify "New Songs exported" $n_songs -i "$HOME/Pictures/Icons/speakers.svg"

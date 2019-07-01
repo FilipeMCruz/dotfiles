@@ -1,0 +1,3 @@
+#!/usr/bin/sh
+
+cat .mpd/playlists/old_loved_songs.m3u | fzf | xargs -r -I % vlc %

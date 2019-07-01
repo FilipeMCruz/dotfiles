@@ -1,0 +1,7 @@
+#!/usr/bin/sh
+# read input from file and shouts the invalid paths
+
+while read -r line
+do
+    test ! -f "$line" && "$line"
+done < "$1"

@@ -1,0 +1,81 @@
+##
+#               ___  ____ __ _  ____ ___  ____ ___   ___ 
+#              / _ \/ __//  ' \/ __// _ \/ __// _ \ / _ \
+#             /_//_/\__//_/_/_/\__// .__/\__// .__// .__/
+#                                 /_/       /_/   /_/    
+##
+
+mpd_host = "127.0.0.1"
+mpd_port = "6660"
+
+# Display ..
+song_window_title_format = "MPD: {%a > }{%t}{ [%b{ Disc %d}]}|{%f}"
+song_status_format = "$2%a $8• $5%t $8• $3%b $8• $4%y$8"
+
+alternative_header_first_line_format = "{$2%a $0-$8 $9}{$2%t$9}|{$8%f$9}$9"
+alternative_header_second_line_format = "{ $0($8$2%y$9$0)$8} {{$2%b$9}}|{%D}"
+alternative_ui_separator_color = "yellow"
+
+playlist_display_mode = "columns" (classic/columns)
+media_library_primary_tag = album_artist
+
+## List ..
+song_list_format = $7%a$9 $7|$9 $2%t$9 $R $3%40b$9
+
+## Columns ..
+song_columns_list_format = "(6f)[blue]{l} (25)[red]{a} (40)[green]{t|f} (30)[yellow]{b}"
+
+
+# Now Playing ..
+now_playing_prefix = "$r$(99)"
+now_playing_suffix = "$8$/r"
+
+# Playlist ..
+browser_playlist_prefix = "$2 ♥ $0 "
+
+# Delays .. 
+playlist_disable_highlight_delay = "1"
+message_delay_time= "1"
+
+# Progress Bar ..
+progressbar_look = "─╼⦁"
+progressbar_color = "yellow"
+progressbar_elapsed_color = "red"
+
+# Colors ..
+colors_enabled = "yes"
+empty_tag_color = "red"
+statusbar_color = "yellow"
+state_line_color = "yellow"
+state_flags_color = "yellow"
+main_window_color = "green" 
+header_window_color = "yellow"
+volume_color = "yellow"
+color1 = "yellow"
+color2 = "blue"
+window_border_color = "red"
+
+# Misc ..  
+display_bitrate = "no"
+autocenter_mode = "yes"
+centered_cursor = "yes"
+titles_visibility = "yes"
+statusbar_visibility = "yes"
+empty_tag_marker=" -- ‼ -- " 
+mouse_support = "no"
+header_visibility = "no"
+display_remaining_time = "yes"
+ask_before_clearing_playlists = "no"
+discard_colors_if_item_is_selected = "yes"
+
+# Visualizer ..
+visualizer_in_stereo = "yes"
+visualizer_sync_interval = "30"
+visualizer_output_name = "Pipe"
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_type = "ellipse" (spectrum/wave/wave_filled/ellipse)
+visualizer_color = "2"
+visualizer_look = "**"
+
+# Scripts ..
+execute_on_song_change = "mpddunst"

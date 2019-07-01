@@ -6,5 +6,7 @@
 ##
 
 # useless playlists
-mpd/.mpd/playlists/backup
-mpd/.mpd/playlists/new_songs.m3u
+current/mpd/.mpd/playlists/backup
+current/mpd/.mpd/playlists/new_songs.m3u
+current/mpd/.mpd/playlists/new_loved_songs.m3u
+

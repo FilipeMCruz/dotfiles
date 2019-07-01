@@ -1,0 +1,19 @@
+#                                __ _                   
+#                         ___ _ / /(_)___ _ ___ ___  ___
+#                        / _ `// // // _ `/(_-</ -_)(_-<
+#                        \_,_//_//_/ \_,_//___/\__//___/
+#                                                       
+#
+
+alias code='/usr/share/vscodium-bin/codium'
+alias mpd='mpd ~/.mpd/mpd.conf'
+alias mpc='mpc -h 127.0.0.1 -p 6660'
+alias yolo='git commit -m "$(curl -s https://whatthecommit.com/index.txt)"'
+alias :wq="echo You\'re not in vim dumbass!"
+
+# so that alias can be sudo'ed
+alias sudo='sudo '
+
+# ips
+alias ip_publ="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ip_priv="ip addr show wlp3s0 | grep 'inet ' | awk '{print $2}'"

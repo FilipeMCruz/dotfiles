@@ -1,4 +1,4 @@
-#!/usr/bin/zsh -i
+#!/usr/bin/sh
 
 fd . "$MUSIC" -e mp3 -t f --changed-within 2weeks > "$HOME/.mpd/playlists/"new_songs.m3u
 

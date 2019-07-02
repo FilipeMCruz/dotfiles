@@ -1,4 +1,4 @@
-#!/usr/bin/zsh -i
+#!/usr/bin/sh
 
 cd "$MUSIC"
 fd -t d ".*$1.*" | fzf | parallel mpc add

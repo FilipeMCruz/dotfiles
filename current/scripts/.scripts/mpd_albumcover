@@ -1,4 +1,4 @@
-#!/usr/bin/zsh -i
+#!/usr/bin/sh
 
 songdir=$(mpc -f %file% | head -1)
 

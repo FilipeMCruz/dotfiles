@@ -5,8 +5,10 @@
 #                                 /_/       /_/   /_/    
 ##
 
+#mpd_host = "127.0.0.1"
+#mpd_port = "6660"
 mpd_host = "127.0.0.1"
-mpd_port = "6660"
+mpd_port = "6000"
 
 # Display ..
 song_window_title_format = "MPD: {%a > }{%t}{ [%b{ Disc %d}]}|{%f}"

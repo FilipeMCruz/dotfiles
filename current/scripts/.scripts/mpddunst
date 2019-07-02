@@ -1,10 +1,8 @@
-#!/usr/bin/zsh -i
+#!/usr/bin/sh
 
 INFO="$(mpc status | head -1)"
 
-dunstify "$(echo "$INFO" | cut -d - -f 1)" \
-         "$(echo "$INFO" | cut -d - -f 2)" \
-         -i "$(mpd_albumcover)"
+dunstify "$(echo "$INFO" | cut -d - -f 1)" "$(echo "$INFO" | cut -d - -f 2)" -i "$(mpd_albumcover)"
 
 #same thing but with awk instead of cut
-#dunstify "$(mpc -h 127.0.0.1 -p 6660 status | head -1 | awk -F ' - ' '{print $1"\n"$2}')" -i "$(mpd_albumcover)"
+#dunstify "$(mpc status | head -1 | awk -F ' - ' '{print $1"\n"$2}')" -i "$(mpd_albumcover)"

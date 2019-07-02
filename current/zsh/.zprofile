@@ -16,6 +16,8 @@
 #
 
 export MUSIC='/mnt/sdb3/Music'
+export MPD_PORT='6000'
+export MPD_HOST='127.0.0.1'
 
 #
 # Browser

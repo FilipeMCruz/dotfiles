@@ -3,7 +3,8 @@
 fd . "$MUSIC" -e png -x mogrify -format jpg {}
 fd . "$MUSIC" -e png -x rm -rf {}
 
-## Old version
+## old and retarded
+#
 #cd "$MUSIC" || exit
 #
 #for cover in $(fd "cover.png")

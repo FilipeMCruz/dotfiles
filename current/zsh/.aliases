@@ -8,6 +8,7 @@
 alias code='/usr/share/vscodium-bin/codium'
 alias mpd='mpd ~/.mpd/mpd.conf'
 alias mpc='mpc -h 127.0.0.1 -p 6660'
+alias ncmpcpp='ncmpcpp -c ~/.ncmpcpp/ncmpcpp.conf'
 alias yolo='git commit -m "$(curl -s https://whatthecommit.com/index.txt)"'
 alias :wq="echo You\'re not in vim dumbass!"
 

@@ -8,10 +8,6 @@ mkdir -p "$back_up"
 cp "$new_songs" "$back_up"new_loved_songs$(date "+%y%m%d%H%M%S").m3u.bak
 cp "$old_songs" "$back_up"old_loved_songs$(date "+%y%m%d%H%M%S").m3u.bak
 
-# test this
-# fd -t f songs.m3u "$HOME/.mpd/playlists/" -x sort -ou {} {}
-# cd "$HOME/.mpd/playlists/" && sort -ou *songs.m3u *songs.m3u
-
 # update new_loved_songs
 comm -23 <(sort -u "$new_songs") <(sort -u "$old_songs")  > /tmp/temp
 mv /tmp/temp "$new_songs"

@@ -1,14 +1,15 @@
-#!/usr/bin/sh
+#!/usr/bin/zsh -i
 
-# get how deep the music dir is
-CUT_NUMBER=$(($(echo "$MUSIC" | tr -cd '/' | wc -c) + 1))
-# check if $MUSIC ends in / or not, tail -c 2 since echo prints a new line
-[ "$(echo "$MUSIC" | tail -c 2)" != "/" ] && CUT_NUMBER=$((CUT_NUMBER+1))
+cd "$MUSIC"
+fd -t d ".*$1.*" | fzf | parallel mpc add
 
-fd -t d -d 3 . "$MUSIC" | cut -d '/' -f "$CUT_NUMBER"- | rg -i ".*$1.*" | fzf | parallel  mpc -h 127.0.0.1 -p 6660 add
-
-mpc -h 127.0.0.1 -p 6660 play
-
-sleep 1
+mpc play > /dev/null
 
 ncmpcpp
+
+## get how deep the music dir is
+#CUT_NUMBER=$(($(echo "$MUSIC" | tr -cd '/' | wc -c) + 1))
+## check if $MUSIC ends in / or not, tail -c 2 since echo prints a new line
+#[ "$(echo "$MUSIC" | tail -c 2)" != "/" ] && CUT_NUMBER=$((CUT_NUMBER+1))
+
+#fd -t d . "$MUSIC" | cut -d '/' -f "$CUT_NUMBER"- | rg -i ".*$1.*" | fzf | parallel  mpc -h 127.0.0.1 -p 6660 add

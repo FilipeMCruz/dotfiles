@@ -7,7 +7,9 @@ SHA=$( printf "%s" "$1" | openssl sha1 | cut -c 10- )
 TIMES=$(curl https://api.pwnedpasswords.com/range/"$( echo "$SHA" | cut -c -5 )" 2> /dev/null | grep -i "$( echo "$SHA" | cut -c 6- )" | cut -d : -f 2 )
 test -z "$TIMES" && echo Your Password is secured || echo "Times your password has been pwned: $TIMES"
 
-## old version
+
+## old and retarded
+#
 #SHA=$( echo -n "$1" | openssl sha1 | cut -c 10- )
 #GET=$( echo $SHA | cut -c -5 )
 #SHA=$( echo $SHA | cut -c 6- )

@@ -47,7 +47,7 @@ Nice prints taken from [r/unixporn](https://www.reddit.com/r/unixporn/)!
 
 #### `/.cheatsheet`
 
-Some ideas trash and reminders, my current [hosts table](https://raw.githubusercontent.com/LukeSmithxyz/etc/master/ips) table, and a cheatsheet i found somewhere.
+Some ideas trash and reminders, my current [hosts table](https://raw.githubusercontent.com/LukeSmithxyz/etc/master/ips) table, and a cheatsheet i found [here](https://gist.github.com/kdev33/d501d5726a6dcc0d1a51879941ec7cd4).
 
 #### `/.batman`
 
@@ -65,6 +65,7 @@ Scripts used for tests or just not ready to be used.
 ### `/wallpaper`
 
 Currently using icons and wallpapers
+Icons taken from <https://www.flaticon.com/authors/smalllikeart>
 
 ## Contributing
 

@@ -4,6 +4,7 @@ fd . "$MUSIC" -e mp3 -t f --changed-within 2weeks > "$HOME/.mpd/playlists/"new_s
 
 mpc update > /dev/null
 
-dunstify "Songs found in the last update" \
-        "$(wc -l "$HOME/.mpd/playlists/"new_songs.m3u | cut -d ' ' -f1)" \
-         -i "$HOME/Pictures/Icons/disc.svg"
+dunstify    -a "Music player:" \
+            "Songs found in the last update" \
+            "$(wc -l "$HOME/.mpd/playlists/"new_songs.m3u | cut -d ' ' -f1)" \
+            -i "$HOME/Pictures/Icons/disc.svg"

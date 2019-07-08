@@ -16,3 +16,4 @@ alias sudo='sudo '
 # ips
 alias ip_publ="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ip_priv="ip addr show wlp3s0 | grep 'inet ' | awk '{print $2}'"
+alias ggraph="git log --oneline --decorate --graph"

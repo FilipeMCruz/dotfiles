@@ -21,7 +21,10 @@ xsv join -d ";" -n --full 2 /tmp/tot_count.txt.r 2 /tmp/count.txt.r | xsv select
 xsv sort -d ";" -s "Band" /tmp/report.txt.r > ~/Desktop/final_report.txt
 
 # notify
-dunstify "Music Report exported" -i "$HOME/Pictures/Icons/bell.svg"
+dunstify    -a "Music Library:" \
+            "Music Report exported" \
+            "to ~/Desktop/final_report.txt" \
+            -i "$HOME/Pictures/Icons/bell.svg"
 
 rm /tmp/*.txt.r
 

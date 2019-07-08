@@ -1,7 +1,7 @@
 #!/usr/bin/sh
 
 cd "$MUSIC"
-fd -t d ".*$1.*" | fzf | parallel mpc add
+fd -i -p -t d "$1" | fzf | parallel mpc add
 
 mpc play > /dev/null
 

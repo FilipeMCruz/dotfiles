@@ -1,0 +1,16 @@
+#!/usr/bin/sh
+
+if [ -z $(echo $1 | rg "(\+|-)" ) ] && [ ! $# -eq 0 ]
+then
+    # argument given is a absolute value
+    amixer sset Master "$1"% > /dev/null
+elif [ ! $# -eq 0 ]
+then
+    # add or remove $1 volume to current
+    amixer sset Master "$(echo $1 | cut -c2- )"%"$(echo $1 | cut -c1)" > /dev/null
+fi
+
+dunstify    -a "Audio control:" \
+            "Current volume:" \
+            "$(amixer sget Master | awk -F"[][]" '{ print $2 }' | rg -vi "^$" | uniq)" \
+            -i "$HOME/Pictures/Icons/speaker.svg"

@@ -2,7 +2,7 @@
 
 INFO="$(mpc status | head -1)"
 
-dunstify    -a "Music player:" \
+dunstify    -a "Music player: $1" \
             "$(echo "$INFO" | cut -d - -f 1)" \
             "$(echo "$INFO" | cut -d - -f 2)" \
             -i "$(mpd_albumcover)"

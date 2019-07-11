@@ -70,6 +70,7 @@ song_window_title_format = "MPD: {%a > }{%t}{ [%b{ Disc %d}]}|{%f}"
 #song_list_format = "{%t $R %a   }{$R%6l}"
 #song_list_format = $4%n$9 - $2%t$9 $R  $6%a$9 $R $5%6l$9
 song_list_format = $7%a$9 $7|$9 $2%t$9 $R $3%40b$9
+#song_list_format = $7%a $9$7:$9$2: %t $R :$9$3: %40b$9
 song_columns_list_format = "(6f)[blue]{l} (25)[red]{a} (40)[green]{t|f} (30)[yellow]{b}"
 #song_status_format = " $3%t $0 "
 song_status_format = "$2%a $8• $5%t $8• $3%b $8• $4%y$8"

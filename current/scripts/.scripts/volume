@@ -1,6 +1,6 @@
 #!/usr/bin/sh
 
-if [ -z $(echo $1 | rg "(\+|-)" ) ] && [ ! $# -eq 0 ]
+if [ ! $# -eq 0 ] && [ -z $(echo $1 | rg "(\+|-)" ) ]
 then
     # argument given is a absolute value
     amixer sset Master "$1"% > /dev/null

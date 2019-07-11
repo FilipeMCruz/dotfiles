@@ -13,7 +13,7 @@ This will always be a WIP repo.
 
 ### `/glava`
 
-[ncmpcpp](https://github.com/wacossusca34/glava) configs
+[glava](https://github.com/wacossusca34/glava) configs
 
 ### `/mpd`
 

@@ -110,6 +110,6 @@ HISTSIZE=999999999
 SAVEHIST=$HISTSIZE
 
 PROMPT='$NEWLINE%F{yellow}%n%f%F{#828997}@%f%F{green}%m%f %F{#828997}in%f %$(spaceship_prompt)'
-RPROMPT='[%F{yellow}%T %D%f]'
+RPROMPT='[%F{yellow}%T $(date "+%H:%M %d/%m/%y")%f]'
 
 #vf() { fzf | xargs -r -I % $EDITOR % ;}

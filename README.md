@@ -5,6 +5,14 @@ This is a repository with my configuration files.
 To use this configurations you have to clone this repository and run the stow_all script.
 This will always be a WIP repo.
 
+My focus for now is music, most scripts are related to that.
+The music directory is organized as /_"artist"_ - _"genre"_/_"release year"_ - _"album"_ - Cd _"disc number"_/_"tracknumber"_. _"song title"_
+This helps alot with all the scripting and configs.
+
+## Screenshot
+
+![screenshot](current/screenshot.png)
+
 ## Contents
 
 ### `/curl`
@@ -29,7 +37,6 @@ Most of the syntax highlighters were "stollen" from <https://github.com/scopatz/
 
 ### `/scripts`
 
-All my custom scripts, most of them are used for music related stuff.
 I heavily rely on programs like:
 
 + fd <https://github.com/sharkdp/fd>
@@ -38,7 +45,7 @@ I heavily rely on programs like:
 + fzf <https://github.com/junegunn/fzf>
 + dunst <https://github.com/dunst-project/dunst>
 
-If you don't know them, check their repos. They are, in my opinion,a most for anyone that spends a lot of time on the cli.
+If you don't know them, check their repos. They are, in my opinion,a must for anyone that spends a lot of time on the cli.
 
 #### `/.toys`
 
@@ -47,11 +54,11 @@ Nice prints taken from [r/unixporn](https://www.reddit.com/r/unixporn/)!
 
 #### `/.cheatsheet`
 
-Some ideas trash and reminders, my current [hosts table](https://raw.githubusercontent.com/LukeSmithxyz/etc/master/ips) table, and a cheatsheet i found [here](https://gist.github.com/kdev33/d501d5726a6dcc0d1a51879941ec7cd4).
+Some ideas, trash, reminders, my current [hosts table](https://raw.githubusercontent.com/LukeSmithxyz/etc/master/ips) table, and a cheatsheet i found [here](https://gist.github.com/kdev33/d501d5726a6dcc0d1a51879941ec7cd4).
 
 #### `/.batman`
 
-The since script i had when i was using windows.
+The only script i had when i was using windows. Used to "hide" a folder.
 
 #### `/.test`
 

@@ -1,17 +1,7 @@
 #!/usr/bin/sh
 
-status="$(mpc status | rg -oP "(?<=\[).*(?=\])" )"
+status="$(mpc toggle | rg -oP "(?<=\[).*(?=\])" )"
 
-if [ "$status" = "playing" ]
-then
-    mpc pause
-    status="song paused"
-elif [ "$status" = "paused" ]
-then
-    mpc play
-    status="song playing"
-fi
-
-mpddunst "$status"
+mpddunst "song $status"
 
 exit

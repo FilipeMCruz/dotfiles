@@ -25,7 +25,6 @@ song_list_format = " $7%a $9$7:$9$2: %t $R :$9$3: %40b$9 "
 ## Columns ..
 song_columns_list_format = "(6f)[blue]{l} (25)[red]{a} (40)[green]{t|f} (30)[yellow]{b}"
 
-
 # Now Playing ..
 now_playing_prefix = "$r$(98)"
 now_playing_suffix = "$8$/r"
@@ -34,8 +33,8 @@ now_playing_suffix = "$8$/r"
 browser_playlist_prefix = "$2 ♥ $0 "
 
 # Delays .. 
-playlist_disable_highlight_delay = "1"
-message_delay_time= "1"
+playlist_disable_highlight_delay = "2"
+message_delay_time= "2"
 
 # Progress Bar ..
 progressbar_look = "─╼⦁"

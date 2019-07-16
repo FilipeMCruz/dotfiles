@@ -23,6 +23,10 @@ This helps alot with all the scripting and configs.
 
 [glava](https://github.com/wacossusca34/glava) configs
 
+### `/konsole`
+
+[konsole](https://github.com/KDE/konsole) configs, such as profile and colorscheme
+
 ### `/mpd`
 
 [mpd](https://github.com/MusicPlayerDaemon/MPD) configs and playlists

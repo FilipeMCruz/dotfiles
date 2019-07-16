@@ -37,13 +37,13 @@ if album_artist != artist:
 
 new_song_path = "{}{} - {}/{} - {} - Cd {}/{}. {}.mp3".format(
     dir,
-    album_artist,
+    album_artist.replace("/"," "),
     genre,
     str(song.tag.recording_date),
-    song.tag.album,
+    song.tag.album.replace("/"," "),
     str(song.tag.disc_num[0]),
     track_number,
-    song.tag.title,
+    song.tag.title.replace("/"," "),
 )
 
 os.renames(song_path, new_song_path)

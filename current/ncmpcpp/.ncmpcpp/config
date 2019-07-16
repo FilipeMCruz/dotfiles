@@ -10,7 +10,7 @@ mpd_port = "6000"
 
 # Display ..
 song_window_title_format = "MPD: {%a > }{%t}{ [%b{ Disc %d}]}|{%f}"
-song_status_format = "$2%a $8• $5%t $8• $3%b $8• $4%y$8"
+song_status_format = "$2%a $8⦁ $7%t $8⦁ $3%b $8⦁ $5%y$8"
 
 alternative_header_first_line_format = "{$2%a $0-$8 $9}{$2%t$9}|{$8%f$9}$9"
 alternative_header_second_line_format = "{ $0($8$2%y$9$0)$8} {{$2%b$9}}|{%D}"
@@ -20,7 +20,7 @@ playlist_display_mode = "classic" (classic/columns)
 media_library_primary_tag = album_artist
 
 ## List ..
-song_list_format = " $7%a $9$7:$9$2: %t $R :$9$3: %40b$9 "
+song_list_format = " $7%35a :$9$2: %t $R :$9$3: %40b$9 "
 
 ## Columns ..
 song_columns_list_format = "(6f)[blue]{l} (25)[red]{a} (40)[green]{t|f} (30)[yellow]{b}"

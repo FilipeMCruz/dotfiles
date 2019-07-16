@@ -14,6 +14,6 @@ alias :wq="echo You\'re not in vim dumbass!"
 alias sudo='sudo '
 
 # ips
-alias ip_publ="dig +short myip.opendns.com @resolver1.opendns.com"
-alias ip_priv="ip addr show wlp3s0 | grep 'inet ' | awk '{print $2}'"
+alias ip_publ="dig +time=1 +tries=1 +short myip.opendns.com @resolver1.opendns.com"
+alias ip_priv="ip route get 1 | awk -F'src' '{print $2; exit}' | awk -F' uid' '{print $1;exit}'"
 alias ggraph="git log --oneline --decorate --graph"

@@ -1,0 +1,25 @@
+syntax "Conf" "\.ios$"
+## Possible errors and parameters
+## Strings
+icolor white ""(\\.|[^"])*""
+
+## Terminal prompt
+color magenta "^(A|R|S).*(\#|\$)"
+
+## Trailing spaces
+color ,green "[[:space:]]+$"
+
+# To identify special words
+color blue   "\{.*\}"
+color cyan   "\[.*\]"
+color red    "<[^<>]*>"
+
+# To identify special characters
+color magenta "(\{|\}|\;|\]|\[|`|\\|<|>|!|=|&|\|)"
+
+## Comments
+icolor brightyellow "^[[:space:]]*#.*$"
+icolor brightgreen  "^[[:space:]]*##.*$"
+icolor yellow       "^[[:space:]]*###.*$"
+icolor green        "^[[:space:]]*####.*$"
+icolor green        "^[[:space:]]*#####.*$"

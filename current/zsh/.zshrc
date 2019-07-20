@@ -102,14 +102,18 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source ~/.aliases
 
-eval $(thefuck --alias)
+# Zsh to use the same colors as ls
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
+source ~/.aliases
 
 HISTSIZE=999999999
 SAVEHIST=$HISTSIZE
 
+#
+# Prompt
+#
+
 PROMPT='$NEWLINE%F{yellow}%n%f%F{#828997}@%f%F{green}%m%f %F{#828997}in%f %$(spaceship_prompt)'
 RPROMPT='[%F{yellow}$(date "+%H:%M %d/%m/%y")%f]'
-
-#vf() { fzf | xargs -r -I % $EDITOR % ;}

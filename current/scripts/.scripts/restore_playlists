@@ -1,12 +1,12 @@
 #!/usr/bin/sh
 
-cd "$back_up" || exit
-
 new_songs="$HOME/.mpd/playlists/new_loved_songs.m3u"
 
 old_songs="$HOME/.mpd/playlists/old_loved_songs.m3u"
 
 back_up="$HOME/.mpd/playlists/backup/"
+
+cd "$back_up" || exit
 
 last=$(ls -1 -t)
 

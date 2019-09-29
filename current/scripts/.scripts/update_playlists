@@ -15,3 +15,8 @@ mv /tmp/temp "$new_songs"
 # update old_loved_songs
 sort -u "$old_songs" > /tmp/temp
 mv /tmp/temp "$old_songs"
+
+cp $HOME/.mpd/playlists/old_loved_songs.m3u /mnt/sdb3/Documents/
+
+# leave only the 4 last playlist backups
+#ls -1 -t | tail -$(echo "$(ls -1 | wc -l) - 4" | bc) | parallel rm

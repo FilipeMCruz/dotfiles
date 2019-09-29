@@ -1,5 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/sh
 
-for a in "$1"*.flac; do
-  < /dev/null ffmpeg -i "$a" -qscale:a 0 "${a[@]/%flac/mp3}"
-done
+fd -t f -e flac -x ffmpeg -i "{}" -qscale:a 0 "{.}.mp3"
+
+##!/usr/bin/env bash
+#for a in "$1"*.flac; do
+#  < /dev/null ffmpeg -i "$a" -qscale:a 0 "${a[@]/%flac/mp3}"
+#done

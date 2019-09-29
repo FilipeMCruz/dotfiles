@@ -57,8 +57,15 @@ typeset -gU cdpath fpath mailpath path
 path=(
   /usr/local/{bin,sbin}
   "$HOME/.scripts"
+  "/home/fmcruz/.dotnet/tools"
   $path
 )
+
+#
+# Microsoft telemetry ouptout
+#
+
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 #
 # Less

@@ -71,6 +71,7 @@ plugins=(
     httpie
 )
 
+source ~/.aliases
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,7 +107,19 @@ source $ZSH/oh-my-zsh.sh
 # Zsh to use the same colors as ls
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
-source ~/.aliases
+#
+# Basic auto/tab complete
+#
+
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)  # include dot files
+
+#
+# History
+#
 
 HISTSIZE=999999999
 SAVEHIST=$HISTSIZE
@@ -117,3 +130,5 @@ SAVEHIST=$HISTSIZE
 
 PROMPT='$NEWLINE%F{yellow}%n%f%F{#828997}@%f%F{green}%m%f %F{#828997}in%f %$(spaceship_prompt)'
 RPROMPT='[%F{yellow}$(date "+%H:%M %d/%m/%y")%f]'
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -2,4 +2,4 @@
 
 songdir=$(mpc -f %file% | head -1)
 
-echo $(fd cover ""$MUSIC"/${songdir%/*}" | head -1)
+echo $(fd "cover.(png|jpg)" ""$MUSIC"/${songdir%/*}" | head -1)

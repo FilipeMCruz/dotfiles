@@ -69,6 +69,8 @@ plugins=(
     git
     gitignore
     httpie
+    colored-man-pages
+    zsh-autosuggestions
 )
 
 source ~/.aliases

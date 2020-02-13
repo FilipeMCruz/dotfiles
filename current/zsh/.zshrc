@@ -73,8 +73,6 @@ plugins=(
     zsh-autosuggestions
 )
 
-source ~/.aliases
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration

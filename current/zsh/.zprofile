@@ -58,6 +58,7 @@ path=(
   /usr/local/{bin,sbin}
   "$HOME/.scripts"
   "/home/fmcruz/.dotnet/tools"
+  "/home/fmcruz/.cargo/bin"
   $path
 )
 
@@ -66,6 +67,9 @@ path=(
 #
 
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+
+source ~/.aliases
 
 #
 # Less

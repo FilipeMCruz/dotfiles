@@ -132,6 +132,21 @@ docker rm -f <container id>
 # delete docker image
 docker rmi -f <image id>
 
+# map port of host to port of docker container
+docker run -p <host_port>:<container_port> <container>
+
+# remove all containers
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+
+# map dir of host to dir of docker container
+# to avoid the data in docker to be lost
+# ex: docker -v lapr5/db/:/var/lib/mysql <container>
+docker run -v /host/dir:/container/dir <container>
+
+# working with enviromental variables
+docker run -e <variable_name>=<variable_value> <container>
+
 # get number of commits
 git rev-list --count HEAD
 

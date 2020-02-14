@@ -15,7 +15,7 @@
 # Music Directory
 #
 
-export MUSIC='/mnt/sdb3/Music'
+export MUSIC='/run/media/fmcruz/MainArchive/Music'
 export MPD_PORT='6000'
 export MPD_HOST='127.0.0.1'
 

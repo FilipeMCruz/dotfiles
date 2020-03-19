@@ -1,5 +1,5 @@
 [Appearance]
-ColorScheme=one_dark
+ColorScheme=OneDark
 Font=Fira Code,9,-1,5,57,0,0,0,0,0,Medium
 UseFontLineChararacters=true
 
@@ -7,10 +7,13 @@ UseFontLineChararacters=true
 DefaultEncoding=UTF-8
 
 [General]
+CursorShape=50
 Environment=TERM=xterm-256color,COLORTERM=truecolor
 Name=Shell
 Parent=FALLBACK/
 TerminalMargin=4
-CursorShape=50
 TrimLeadingSpacesInSelectedText=true
 TrimTrailingSpacesInSelectedText=true
+
+[Keyboard]
+KeyBindings=default

@@ -8,13 +8,13 @@ Color=40,44,52
 Color=40,44,52
 
 [Color0]
-Color=40,44,52
+Color=208,135,112
 
 [Color0Faint]
-Color=40,44,52
+Color=208,135,112
 
 [Color0Intense]
-Color=40,44,52
+Color=208,135,112
 
 [Color1]
 Color=224,108,117
@@ -90,6 +90,7 @@ Color=130,137,151
 
 [General]
 Blur=false
-Description=one_dark
+ColorRandomization=false
+Description=OneDark
 Opacity=0.85
 Wallpaper=

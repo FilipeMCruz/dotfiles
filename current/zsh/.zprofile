@@ -15,7 +15,7 @@
 # Music Directory
 #
 
-export MUSIC='/run/media/fmcruz/MainArchive/Music'
+export MUSIC='/mnt/sdb3/Music'
 export MPD_PORT='6000'
 export MPD_HOST='127.0.0.1'
 
@@ -68,8 +68,11 @@ path=(
 
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
+#
+# Navi custom cheats
+#
 
-source ~/.aliases
+export NAVI_PATH="/home/fmcruz/.navi:/opt/navi/cheats"
 
 #
 # Less

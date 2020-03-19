@@ -1,0 +1,20 @@
+% docker
+
+# Stop and remove all containers
+
+docker stop $(docker ps -aq); docker rm -f $(docker ps -aq)
+
+
+# List all volumes
+
+docker volume ls
+
+
+# Remove all unused volumes
+
+docker volume prune
+
+
+# Display the running processes of a container
+
+docker top <container_id> ps -a

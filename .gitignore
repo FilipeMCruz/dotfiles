@@ -1,12 +1,15 @@
-##                         _  __   _                           
-#                  ___ _ (_)/ /_ (_)___ _ ___  ___   ____ ___ 
+##                         _  __   _
+#                  ___ _ (_)/ /_ (_)___ _ ___  ___   ____ ___
 #                 / _ `// // __// // _ `// _ \/ _ \ / __// -_)
-#                 \_, //_/ \__//_/ \_, //_//_/\___//_/   \__/ 
-#                 /___/            /___/                       
+#                 \_, //_/ \__//_/ \_, //_//_/\___//_/   \__/
+#                 /___/            /___/
 ##
 
-# useless playlists
+# useless playlists and music logs
 current/mpd/.mpd/playlists/backup
 current/mpd/.mpd/playlists/new_songs.m3u
 current/mpd/.mpd/playlists/new_loved_songs.m3u
-
+current/ncmpcpp/.ncmpcpp/error.log
+current/mpd/.mpd/mpd.db
+current/mpd/.mpd/mpd.pid
+current/mpd/.mpd/mpdstate

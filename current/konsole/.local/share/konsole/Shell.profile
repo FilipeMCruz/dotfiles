@@ -1,5 +1,5 @@
 [Appearance]
-ColorScheme=OneDark
+ColorScheme=Gruvbox
 Font=Fira Code,9,-1,5,57,0,0,0,0,0,Medium
 UseFontLineChararacters=true
 
@@ -7,6 +7,7 @@ UseFontLineChararacters=true
 DefaultEncoding=UTF-8
 
 [General]
+Command=/bin/zsh
 CursorShape=50
 Environment=TERM=xterm-256color,COLORTERM=truecolor
 Name=Shell

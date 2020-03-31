@@ -1,7 +1,5 @@
 #!/usr/bin/sh
 
-INFO="$(mpc status | head -1)"
-
-dunstify    -a "Music player: $1" \
-            "$(mpc status | head -1 | awk -F ' - ' '{print $1"\n"$2}')" \
-            -i "$(mpd_albumcover)"
+kdialog --title "Music player: $1" --passivepopup \
+"$(mpc status | head -1 | awk -F ' - ' '{print $1"\n"$2}')" \
+--icon "$(mpd_albumcover)"

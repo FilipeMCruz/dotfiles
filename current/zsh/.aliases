@@ -28,3 +28,9 @@ alias ls="exa "
 alias ll="exa -ll"
 alias la="exa -la"
 alias l="exa "
+
+alias bat="bat --theme zenburn "
+
+function take() {
+  mkdir -p $@ && cd ${@:$#}
+}

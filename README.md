@@ -7,17 +7,29 @@ This will always be a WIP repo.
 
 My focus for now is music, most scripts are related to that.
 The music directory is organized as /_"artist"_ - _"genre"_/_"release year"_ - _"album"_ - Cd _"disc number"_/_"tracknumber"_. _"song title"_
-This helps alot with all the scripting and configs.
+This helps a lot with all the scripting and configs.
 
-## Screenshot
+## Screenshots
 
-![screenshot](current/screenshot.png)
+![screenshot](current/Screenshot1.png)
+
+![screenshot](current/Screenshot2.png)
+
+![screenshot](current/Screenshot3.png)
+
+![screenshot](current/Screenshot4.png)
+
+![screenshot](current/Screenshot5.png)
 
 ## Contents
 
 ### `/curl`
 
 [curl](https://github.com/curl/curl) configs
+
+### `/git`
+
+Git config, with more colors and some aliases
 
 ### `/glava`
 
@@ -35,6 +47,11 @@ This helps alot with all the scripting and configs.
 
 Most of the syntax highlighters were "stollen" from <https://github.com/scopatz/nanorc>
 
+### `/navi`
+
+[navi](https://github.com/denisidoro/navi) cheatsheets i created for navi
+I'll add alot more once i have time
+
 ### `/ncmpcpp`
 
 [ncmpcpp](https://github.com/arybczak/ncmpcpp) configs
@@ -43,18 +60,17 @@ Most of the syntax highlighters were "stollen" from <https://github.com/scopatz/
 
 I heavily rely on programs like:
 
-+ fd <https://github.com/sharkdp/fd>
-+ rg <https://github.com/BurntSushi/ripgrep>
-+ xsv <https://github.com/BurntSushi/xsv>
-+ fzf <https://github.com/junegunn/fzf>
-+ dunst <https://github.com/dunst-project/dunst>
+- fd <https://github.com/sharkdp/fd>
+- rg <https://github.com/BurntSushi/ripgrep>
+- xsv <https://github.com/BurntSushi/xsv>
+- fzf <https://github.com/junegunn/fzf>
 
 If you don't know them, check their repos. They are, in my opinion,a must for anyone that spends a lot of time on the cli.
 
 #### `/.toys`
 
 Nice prints taken from [r/unixporn](https://www.reddit.com/r/unixporn/)!
-*Can't remember where i found them, tell me if you know*
+_Can't remember where i found them, tell me if you know_
 
 #### `/.cheatsheet`
 
@@ -70,8 +86,7 @@ Scripts used for tests or just not ready to be used.
 
 ### `/zsh`
 
-+ oh-my-zsh repo <https://github.com/robbyrussell/oh-my-zsh>
-+ prezto repo <https://github.com/sorin-ionescu/prezto>
+Configs related to zsh, plugins, keybindings, theme, variables, and aliases
 
 ### `/wallpaper`
 

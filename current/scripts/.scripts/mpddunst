@@ -1,5 +1,0 @@
-#!/usr/bin/sh
-
-kdialog --title "Music player: $1" --passivepopup \
-"$(mpc status | head -1 | awk -F ' - ' '{print $1"\n"$2}')" \
---icon "$(mpd_albumcover)"

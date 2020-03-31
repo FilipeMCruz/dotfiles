@@ -1,7 +1,7 @@
 #!/usr/bin/sh
 
-status="$(mpc toggle | rg -oP "(?<=\[).*(?=\])" )"
+status="$(mpc toggle | rg -oP "(?<=\[).*(?=\])")"
 
-mpddunst "song $status"
+mpd_notification "song $status"
 
 exit

@@ -1,5 +1,6 @@
 #!/usr/bin/sh
 
+#TODO: check for alternatives to amixer
 if [ ! $# -eq 0 ] && [ -z $(echo $1 | rg "(\+|-)" ) ]
 then
     # argument given is a absolute value
@@ -10,6 +11,7 @@ then
     amixer sset Master "$(echo $1 | cut -c2- )"%"$(echo $1 | cut -c1)" > /dev/null
 fi
 
+#TODO: Update to kdialog
 dunstify    -a "Audio control:" \
             "Current volume:" \
             "$(amixer sget Master | awk -F"[][]" '{ print $2 }' | rg -vi "^$" | uniq)" \

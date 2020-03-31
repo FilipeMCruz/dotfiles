@@ -5,4 +5,4 @@ songdir=$(mpc -f %file% | head -1)
 
 echo "$MUSIC"/"$songdir" >> "$new_songs"
 
-mpddunst "♥ song"
+mpd_notification "♥ song"

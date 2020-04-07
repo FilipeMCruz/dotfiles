@@ -28,7 +28,11 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 #
 
 zstyle ':completion:*' special-dirs true
-autoload -U compinit
+zstyle ':completion:*' file-sort name
+zstyle ':completion:*' list-suffixes true
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-]=** r:|=**'
+zstyle ':completion:*' squeeze-slashes true
+autoload -Uz compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
@@ -62,12 +66,17 @@ RPROMPT='%F{red}%B[%f%F{yellow}%B$(date "+%H:%M %d/%m/%y")%f%F{red}%B]%f'
 # Keybindings
 #
 
+autoload -Uz up-line-or-beginning-search
+autoload -Uz down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+
 bindkey '^[[1;5D' backward-word # [Ctrl-LeftArrow] - move backward one word
 bindkey '^[[1;5C' forward-word  # [Ctrl-RightArrow] - move forward one word
 bindkey "${terminfo[kdch1]}" delete-char            # [Delete] - delete forward
 
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
+bindkey "^[[A" up-line-or-beginning-search
+bindkey "^[[B" down-line-or-beginning-search
 
 bindkey "^[[F" end-of-line            # [End] - Go to end of line
 bindkey "^[[H" beginning-of-line      # [Home] - Go to beginning of line

@@ -15,8 +15,6 @@
 # Music Directory
 #
 
-unsetopt global_rcs
-
 export MUSIC='/home/fmcruz/Music'
 export MPD_PORT='6000'
 export MPD_HOST='127.0.0.1'
@@ -26,6 +24,12 @@ export MPD_HOST='127.0.0.1'
 #
 
 export BROWSER='firefox'
+
+#
+# Documents
+#
+
+export DOCS='/home/fmcruz/Documents'
 
 #
 # Editors
@@ -75,7 +79,7 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 # Navi custom cheats
 #
 
-export NAVI_PATH="/home/fmcruz/.navi:/opt/navi/cheats"
+export NAVI_PATH="/home/fmcruz/.navi:/home/fmcruz/.local/share/navi/cheats"
 
 #
 # Less

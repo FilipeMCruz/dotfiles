@@ -1,0 +1,6 @@
+#!/usr/bin/sh
+
+#TODO: add args to choose country and protocol
+curl -s "https://www.archlinux.org/mirrorlist/?country=PT&protocol=http&protocol=https&ip_version=4" | rg Server | tr -d "#" >/tmp/mirrors
+
+sudo mv /tmp/mirrors /etc/pacman.d/mirrorlist

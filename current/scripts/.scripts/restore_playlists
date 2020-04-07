@@ -19,4 +19,3 @@ mv $new_update $new_songs
 mv $old_update $old_songs
 
 rm -rf "$HOME/Desktop/to_phone/"
-

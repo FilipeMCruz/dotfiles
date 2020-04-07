@@ -3,7 +3,7 @@
 update_playlists
 copy_new_loved_songs
 
-[ "$1" =  "wifi" ] || exit
+[ "$1" = "wifi" ] || exit
 
 echo "What is the destination IP?"
 read -r IP
@@ -11,4 +11,4 @@ read -r IP
 echo "What is the destination Port"
 read -r PORT
 
-scp -P "$PORT" -r "$HOME/Desktop/to_phone/" admin@"$IP":/data/data/com.arachnoid.sshelper/files/home/SDCard/music/ 
+scp -P "$PORT" -r "$HOME/Desktop/to_phone/" admin@"$IP":/data/data/com.arachnoid.sshelper/files/home/SDCard/music/

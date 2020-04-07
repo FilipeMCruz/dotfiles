@@ -3,5 +3,3 @@
 status="$(mpc toggle | rg -oP "(?<=\[).*(?=\])")"
 
 mpd_notification "song $status"
-
-exit

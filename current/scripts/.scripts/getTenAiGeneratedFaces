@@ -3,9 +3,11 @@
 mkdir -p ../tests/faces
 cd ../tests/faces || exit
 i=1
-while [ "$i" -ne 5 ]
-do
-    md5sum face.jpg | { read -r sum filename; mv "$filename" "$sum".jpg; }
-	wget -nv thispersondoesnotexist.com -O ./face.jpg
+while [ "$i" -ne 5 ]; do
+    md5sum face.jpg | {
+        read -r sum filename
+        mv "$filename" "$sum".jpg
+    }
+    wget -nv thispersondoesnotexist.com -O ./face.jpg
     i=$((i + 1))
 done

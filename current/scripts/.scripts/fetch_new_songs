@@ -1,11 +1,9 @@
 #!/usr/bin/sh
 
-fd . "$MUSIC" -e mp3 -t f --changed-within 2weeks > "$HOME/.mpd/playlists/"new_songs.m3u
+fd . "$MUSIC" -e mp3 -t f --changed-within 2weeks >"$HOME/.mpd/playlists/"new_songs.m3u
 
-mpc update > /dev/null
+mpc update >/dev/null
 
-#TODO: Update to kdialog
-dunstify    -a "Music player:" \
-            "Songs found in the last update" \
-            "$(wc -l "$HOME/.mpd/playlists/"new_songs.m3u | cut -d ' ' -f1)" \
-            -i "$HOME/Pictures/Icons/disc.svg"
+kdialog --title "Music player:" --passivepopup \
+    "$(wc -l "$HOME/.mpd/playlists/"new_songs.m3u | cut -d ' ' -f1) Songs found in the last update" \
+    --icon "$HOME/Pictures/Icons/disc.svg"

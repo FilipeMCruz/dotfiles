@@ -4,13 +4,13 @@ URL=https://www.reddit.com/r/EarthPorn/top/.json
 QUERY="?after="
 ARGS2=""
 
-if  [ "$1" ]; then
+if [ "$1" ]; then
     T="$1"
 else
     T=10
 fi
 
-if  [ "$2" ]; then
+if [ "$2" ]; then
     ARGS="$2"
 else
     ARGS=""
@@ -18,14 +18,13 @@ fi
 
 i=1
 
-while [ "$i" -ne "$T" ]
-do
-    curl -s "$URL$QUERY$ARGS" | \
-    jq ".data.children[].data.url" | tr -d "\"" | \
-    rg ".*.(jpe|jp|pn)g$" | parallel curl {} -s -O
+while [ "$i" -ne "$T" ]; do
+    curl -s "$URL$QUERY$ARGS" |
+        jq ".data.children[].data.url" | tr -d "\"" |
+        rg ".*.(jpe|jp|pn)g$" | parallel curl {} -s -O
 
-    ARGS2="$(curl -s "$URL$QUERY$ARGS" | \
-    jq ".data.after" | tr -d "\"" )"
+    ARGS2="$(curl -s "$URL$QUERY$ARGS" |
+        jq ".data.after" | tr -d "\"")"
 
     if [ "$ARGS2" = "null" ]; then
         echo "API request full"

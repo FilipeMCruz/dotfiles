@@ -19,3 +19,12 @@ mvn test
 
 mvn clean package
 
+
+# Check for updates to dependencies in project
+
+mvn versions:display-plugin-updates
+
+
+# See the dependency table
+
+mvn dependency:tree 

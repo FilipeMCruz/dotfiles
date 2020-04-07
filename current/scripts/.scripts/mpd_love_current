@@ -3,6 +3,6 @@
 new_songs="$HOME/.mpd/playlists/new_loved_songs.m3u"
 songdir=$(mpc -f %file% | head -1)
 
-echo "$MUSIC"/"$songdir" >> "$new_songs"
+echo "$MUSIC"/"$songdir" >>"$new_songs"
 
 mpd_notification "♥ song"

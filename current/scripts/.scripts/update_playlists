@@ -9,11 +9,11 @@ cp "$new_songs" "$back_up"new_loved_songs$(date "+%y%m%d%H%M%S").m3u.bak
 cp "$old_songs" "$back_up"old_loved_songs$(date "+%y%m%d%H%M%S").m3u.bak
 
 # update new_loved_songs
-comm -23 <(sort -u "$new_songs") <(sort -u "$old_songs")  > /tmp/temp
+comm -23 <(sort -u "$new_songs") <(sort -u "$old_songs") >/tmp/temp
 mv /tmp/temp "$new_songs"
 
 # update old_loved_songs
-sort -u "$old_songs" > /tmp/temp
+sort -u "$old_songs" >/tmp/temp
 mv /tmp/temp "$old_songs"
 
 cp "$old_songs" "$DOCS"

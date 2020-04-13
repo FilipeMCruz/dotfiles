@@ -10,18 +10,18 @@ alias mpd='mpd ~/.mpd/mpd.conf'
 alias yolo='git commit -m "$(curl -s http://whatthecommit.com/index.txt)"'
 alias :wq="echo You're not in vim dumbass!"
 
+alias ...="../.. "
+alias ....="../../.. "
+alias .....="../../../.. "
+alias ......="../../../../.. "
+alias pesti="cd ~/Desktop/fac/3A2S/PESTI/project"
+
 # so that alias can be sudo'ed
 alias sudo='sudo '
 
-# ips
-alias ip_publ="dig +time=1 +tries=1 +short myip.opendns.com @resolver1.opendns.com"
-alias ip_priv="ip route get 1 | awk -F'src' '{print $2; exit}' | awk -F' uid' '{print $1;exit}' | rg -o 'c.*u' | cut -d ' ' -f 2"
-
 # bonus
 alias ggraph="git log --oneline --decorate --graph"
-alias swipl.="swipl"
 alias nps="npm "
-alias minecraft="java -jar /home/fmcruz/Applications/TLauncher-2.69.jar"
 
 # use exa instead of ls
 alias ls="exa "

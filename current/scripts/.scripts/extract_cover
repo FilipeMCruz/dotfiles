@@ -1,0 +1,4 @@
+#!/usr/bin/sh
+# run at the root of the folder to extract a cover per folder
+
+fd -e mp3 01 -x ffmpeg -i {} {//}/cover.jpg 1>&2 2> /dev/null

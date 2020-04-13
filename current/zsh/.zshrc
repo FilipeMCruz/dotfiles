@@ -71,15 +71,15 @@ autoload -Uz down-line-or-beginning-search
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 
-bindkey '^[[1;5D' backward-word # [Ctrl-LeftArrow] - move backward one word
-bindkey '^[[1;5C' forward-word  # [Ctrl-RightArrow] - move forward one word
-bindkey "${terminfo[kdch1]}" delete-char            # [Delete] - delete forward
+bindkey '^[[1;5D' backward-word              # [Ctrl-LeftArrow] - move backward one word
+bindkey '^[[1;5C' forward-word               # [Ctrl-RightArrow] - move forward one word
+bindkey '^H' backward-delete-word            # [Ctrl-Delete] - delete work
 
 bindkey "^[[A" up-line-or-beginning-search
 bindkey "^[[B" down-line-or-beginning-search
 
-bindkey "^[[F" end-of-line            # [End] - Go to end of line
-bindkey "^[[H" beginning-of-line      # [Home] - Go to beginning of line
+bindkey "^[[6~" end-of-line                  # [End] - Go to end of line
+bindkey "^[[5~" beginning-of-line            # [Home] - Go to beginning of line
 
 #
 # Plugins

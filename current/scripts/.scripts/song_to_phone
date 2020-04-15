@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from sys import argv
 from pathlib import Path
+from shutil import copy2
 import eyed3
 import logging
 import re
@@ -9,9 +10,10 @@ import os
 # disable eyeD3 warning logs
 logging.getLogger("eyed3.mp3.headers").setLevel(logging.CRITICAL)
 
-dir = str(Path.home()) + "/Desktop/to_phone/"
-
 song_path = argv[1]
+
+copy2(song_path, "/home/fmcruz/Desktop/.temp.mp3")
+
 song = eyed3.load(song_path)
 
 track_number = str(song.tag.track_num[0]).zfill(2)
@@ -36,7 +38,7 @@ if album_artist != artist:
     song.tag.save()
 
 new_song_path = "{}{} - {}/{} - {} - Cd {}/{}. {}.mp3".format(
-    dir,
+    str(Path.home()) + "/Desktop/to_phone/",
     album_artist.replace("/"," "),
     genre,
     str(song.tag.recording_date),
@@ -46,4 +48,4 @@ new_song_path = "{}{} - {}/{} - {} - Cd {}/{}. {}.mp3".format(
     song.tag.title.replace("/"," "),
 )
 
-os.renames(song_path, new_song_path)
+os.renames("/home/fmcruz/Desktop/.temp.mp3", new_song_path)

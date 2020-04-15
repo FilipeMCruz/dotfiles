@@ -67,22 +67,18 @@ I heavily rely on programs like:
 
 If you don't know them, check their repos. They are, in my opinion,a must for anyone that spends a lot of time on the cli.
 
-#### `/.toys`
+#### `/scripts/.toys`
 
 Nice prints taken from [r/unixporn](https://www.reddit.com/r/unixporn/)!
 _Can't remember where i found them, tell me if you know_
 
-#### `/.cheatsheet`
+#### `/scripts/.cheatsheet`
 
 Some ideas, trash, reminders, my current [hosts table](https://raw.githubusercontent.com/LukeSmithxyz/etc/master/ips) table, and a cheatsheet i found [here](https://gist.github.com/kdev33/d501d5726a6dcc0d1a51879941ec7cd4).
 
-#### `/.batman`
+#### `/scripts/.batman`
 
 The only script i had when i was using windows. Used to "hide" a folder.
-
-#### `/.test`
-
-Scripts used for tests or just not ready to be used.
 
 ### `/zsh`
 

@@ -38,6 +38,7 @@ export DOCS='/home/fmcruz/Documents'
 export EDITOR='nano'
 export VISUAL='nano'
 export PAGER='less'
+export BAT_THEME="gruvbox"
 
 #
 # Language

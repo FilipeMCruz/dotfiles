@@ -1,0 +1,50 @@
+{
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "editor.fontWeight": "bold",
+    "editor.fontFamily": "'fira code'",
+    "editor.fontSize": 13,
+    "editor.fontLigatures": true,
+    "gitlens.views.repositories.location": "gitlens",
+    "gitlens.views.fileHistory.location": "gitlens",
+    "gitlens.views.lineHistory.location": "gitlens",
+    "gitlens.views.compare.location": "gitlens",
+    "gitlens.views.search.location": "gitlens",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "todo-tree.tree.showScanModeButton": false,
+    "editor.wordWrap": "on",
+    "editor.acceptSuggestionOnEnter": "off",
+    "files.associations": {
+        "*.rmd": "markdown"
+    },
+    "bracketPairColorizer.consecutivePairColors": [
+        "()",
+        "[]",
+        "{}",
+        [
+            "#8ec07c",
+            "#fabd2f",
+            "#fe8019",
+            "#b8bb26",
+            "#458588",
+            "#b16286"
+        ],
+        "Red"
+    ],
+    "bracketPairColorizer.rulerPosition": "Right",
+    "bracketPairColorizer.showBracketsInGutter": true,
+    "bracketPairColorizer.showBracketsInRuler": true,
+    "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont,'Iosevka', 'fira code'",
+    "markdown-preview-enhanced.previewTheme": "monokai.css",
+    "markdown-preview-enhanced.revealjsTheme": "solarized.css",
+    "markdown-preview-enhanced.codeBlockTheme": "monokai.css",
+    "markdown-preview-enhanced.mermaidTheme": "forest",
+    "plantuml.exportConcurrency": 6,
+    "plantuml.exportFormat": "svg",
+    "rainbow_csv.comment_prefix": "#",
+    "rainbow_csv.csv_lint_detect_trailing_spaces": true,
+}

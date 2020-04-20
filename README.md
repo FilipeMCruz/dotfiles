@@ -80,9 +80,13 @@ Some ideas, trash, reminders, my current [hosts table](https://raw.githubusercon
 
 The only script i had when i was using windows. Used to "hide" a folder.
 
+### `/vscode`
+
+Configs related to Vscode extensions.
+
 ### `/zsh`
 
-Configs related to zsh, plugins, keybindings, theme, variables, and aliases
+Configs related to zsh, plugins, keybindings, theme, variables, and aliases.
 
 ### `/wallpaper`
 

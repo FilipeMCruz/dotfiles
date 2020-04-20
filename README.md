@@ -11,15 +11,15 @@ This helps a lot with all the scripting and configs.
 
 ## Screenshots
 
-![screenshot](current/Screenshot1.png)
+![screenshot](current/screenshots/Screenshot1.png)
 
-![screenshot](current/Screenshot2.png)
+![screenshot](current/screenshots/Screenshot2.png)
 
-![screenshot](current/Screenshot3.png)
+![screenshot](current/screenshots/Screenshot3.png)
 
-![screenshot](current/Screenshot4.png)
+![screenshot](current/screenshots/Screenshot4.png)
 
-![screenshot](current/Screenshot5.png)
+![screenshot](current/screenshots/Screenshot5.png)
 
 ## Contents
 

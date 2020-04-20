@@ -1,15 +1,3 @@
 #!/usr/bin/sh
 
-fd . "$MUSIC" -e png -x mogrify -format jpg {}
-fd . "$MUSIC" -e png -x rm -rf {}
-
-## old and retarded
-#
-#cd "$MUSIC" || exit
-#
-#for cover in $(fd "cover.png")
-#do
-#    echo Converting
-#	convert "$cover" cover.jpg
-#    rm cover.png
-#done
+fd . "$MUSIC" -e png -x convert {} {.}.jpg

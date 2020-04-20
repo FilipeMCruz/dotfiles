@@ -51,14 +51,14 @@ mpd_port = "6660"
 ## Available values:
 ##
 ## - 0 - default window color (discards all other colors)
-## - 1 - black    black
-## - 2 - red      red
-## - 3 - green    green
-## - 4 - yellow   orange
-## - 5 - blue     blue
-## - 6 - magenta  purple
-## - 7 - cyan     blue
-## - 8 - white    white
+## - 1 - black    
+## - 2 - red      
+## - 3 - green    
+## - 4 - yellow   
+## - 5 - blue     
+## - 6 - magenta  
+## - 7 - cyan     
+## - 8 - white    
 ## - 9 - end of current color
 ##
 ## Note: colors can be nested.

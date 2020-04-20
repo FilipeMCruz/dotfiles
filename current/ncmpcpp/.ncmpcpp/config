@@ -10,7 +10,7 @@ mpd_port = "6000"
 
 # Display ..
 song_window_title_format = "MPD: {%a > }{%t}{ [%b{ Disc %d}]}|{%f}"
-song_status_format = "$2%a $8⦁ $7%t $8⦁ $3%b $8⦁ $5%y$8"
+song_status_format = "$2%a $8⦁ $5%t $8⦁ $4%b $8⦁ $3%y$8"
 
 alternative_header_first_line_format = "{$2%a $0-$8 $9}{$2%t$9}|{$8%f$9}$9"
 alternative_header_second_line_format = "{ $0($8$2%y$9$0)$8} {{$2%b$9}}|{%D}"
@@ -20,21 +20,22 @@ playlist_display_mode = "classic" (classic/columns)
 media_library_primary_tag = album_artist
 
 ## List ..
-song_list_format = " $7%35a :$9$2: %t $R :$9$3: %40b$9 "
+song_list_format = " $2%25a :$9$5: %t $R :$9$4: %25b$9 "
 
 ## Columns ..
 song_columns_list_format = "(6f)[blue]{l} (25)[red]{a} (40)[green]{t|f} (30)[yellow]{b}"
 
 # Now Playing ..
-now_playing_prefix = "$r$(98)"
+now_playing_prefix = "$r$4"
 now_playing_suffix = "$8$/r"
 
 # Playlist ..
 browser_playlist_prefix = "$2 ♥ $0 "
+playlist_show_remaining_time = yes
 
 # Delays .. 
 playlist_disable_highlight_delay = "2"
-message_delay_time= "2"
+message_delay_time= "1"
 
 # Progress Bar ..
 progressbar_look = "─╼⦁"
@@ -44,7 +45,7 @@ progressbar_elapsed_color = "red"
 # Colors ..
 colors_enabled = "yes"
 empty_tag_color = "red"
-statusbar_color = "yellow"
+statusbar_color = "white"
 state_line_color = "yellow"
 state_flags_color = "yellow"
 main_window_color = "green" 
@@ -78,3 +79,5 @@ visualizer_look = "**"
 
 # Scripts ..
 execute_on_song_change = "mpd_notification"
+
+#startup_slave_screen=visualizer

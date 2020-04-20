@@ -47,4 +47,11 @@
     "plantuml.exportFormat": "svg",
     "rainbow_csv.comment_prefix": "#",
     "rainbow_csv.csv_lint_detect_trailing_spaces": true,
+    "editor.cursorBlinking": "expand",
+    "editor.cursorStyle": "underline",
+    "editor.minimap.maxColumn": 100,
+    "editor.minimap.scale": 2,
+    "files.defaultLanguage": "$(activeEditorLanguage)",
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
 }

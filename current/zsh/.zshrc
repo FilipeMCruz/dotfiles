@@ -18,7 +18,15 @@ SPACESHIP_JOBS_COLOR="red"
 # Aliases
 #
 
-source ~/.aliases
+test ~/.aliases && source ~/.aliases
+
+
+#
+# Secrets
+#
+
+test ~/.secrets && source ~/.secrets
+
 
 # Zsh to use the same colors as ls
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}

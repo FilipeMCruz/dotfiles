@@ -38,7 +38,7 @@ playlist_disable_highlight_delay = "2"
 message_delay_time= "1"
 
 # Progress Bar ..
-progressbar_look = "─╼⦁"
+progressbar_look = "⦁●⦁"
 progressbar_color = "yellow"
 progressbar_elapsed_color = "red"
 

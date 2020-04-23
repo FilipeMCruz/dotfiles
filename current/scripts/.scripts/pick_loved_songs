@@ -1,0 +1,3 @@
+#!/usr/bin/sh
+
+rg "$1" .mpd/playlists/old_loved_songs.m3u | sed 's|'"$MUSIC"/'||g' | parallel mpc add

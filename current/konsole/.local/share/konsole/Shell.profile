@@ -1,5 +1,5 @@
 [Appearance]
-ColorScheme=Gruvbox
+ColorScheme=Gruvbox Dark
 Font=Fira Code,9,-1,5,50,0,0,0,0,0
 UseFontLineChararacters=true
 

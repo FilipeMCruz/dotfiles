@@ -1,26 +1,8 @@
-127.0.0.1	localhost
-127.0.1.1	manjaro
-::1	localhost ip6-localhost ip6-loopback
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
-# Add this file to your /etc/hosts to block all
-# of the ad sites, porn and general junk on this
-# list, including Google.
-#
-# Fell free to add or subtract sites as necessary.
-#
-# For linux noobs, to add this to /etc/hosts,
-# run the following in the same directory of this
-# file:
-#
-# sudo su
-# cat ips >> /etc/hosts
-#
-# You can delete this file afterwards.
-#
-# To use this on Windows, add it to the end of:
-# C:\Windows\System32\drivers\etc\hosts
-
+127.0.0.1       localhost       skyline
+127.0.1.1       arch            arch.localdomain
+::1             localhost       ip6-localhost   ip6-loopback
+ff02::1         ip6-allnodes
+ff02::1         ip6-allrouters
 
 # Ads, tracking and general junk
 0.0.0.0 api.opencandy.com

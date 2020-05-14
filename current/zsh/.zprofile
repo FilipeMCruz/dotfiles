@@ -5,11 +5,7 @@
 #                      /_/
 #
 #
-# Executes commands at login pre-zshrc.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
+# Executes commands at login pre-zshrc
 
 #
 # Music Directory
@@ -45,10 +41,17 @@ export BAT_THEME="gruvbox"
 #
 
 if [[ -z "$LANG" ]]; then
-  export LANG='en_US.UTF-8'
+  export LANG='en_GB.UTF-8'
 fi
 
-export LANGUAGE='en_US.uTF-8'
+if [[ -z "$LANGUAGE" ]]; then
+  export LANGUAGE='en_GB.UTF-8'
+fi
+
+
+if [[ -z "$LC_ALL" ]]; then
+  export LC_ALL='en_GB.UTF-8'
+fi
 
 #
 # Paths

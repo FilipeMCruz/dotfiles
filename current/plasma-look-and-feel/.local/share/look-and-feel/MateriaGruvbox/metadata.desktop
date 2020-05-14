@@ -1,0 +1,20 @@
+[Desktop Entry]
+Comment=MateriaGruvbox
+Encoding=UTF-8
+Keywords=Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;
+Name=MateriaGruvbox
+Type=Service
+
+X-KDE-ServiceTypes=Plasma/LookAndFeel
+X-KDE-ParentApp=
+X-KDE-PluginInfo-Author=filipeMCruz
+X-KDE-PluginInfo-Category=
+X-KDE-PluginInfo-Email=filipeCruz@tuta.io
+X-KDE-PluginInfo-License=GPLv2+
+X-KDE-PluginInfo-Name=MateriaGruvbox
+X-KDE-PluginInfo-Version=2.0
+X-KDE-PluginInfo-Website=
+X-KDE-fallbackPackage=org.kde.breeze.desktop
+X-Plasma-MainScript=defaults
+
+X-KPackage-Dependencies=kns://colorschemes.knsrc/api.kde-look.org/1327717,kns://plasma-themes.knsrc/api.kde-look.org/1327719,kns://aurorae.knsrc/api.kde-look.org/1327718,kns://kwinswitcher.knsrc/api.kde-look.org/1327319,kns://icons.knsrc/api.kde-look.org/1327720,kns://plasmoids.knsrc/api.kde-look.org/1324206,kns://plasmoids.knsrc/api.kde-look.org/1324315,kns://wallpaper.knsrc/api.kde-look.org/1324997,kns://wallpaper.knsrc/api.kde-look.org/1327326,kns://xcursor.knsrc/api.kde-look.org/1312474,kns://servicemenu.knsrc/api.kde-look.org/1327071,kns://sddmtheme.knsrc/api.kde-look.org/1323348

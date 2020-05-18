@@ -32,3 +32,7 @@ alias l="exa "
 function take() {
   mkdir -p $@ && cd ${@:$#}
 }
+
+function uuid() {
+  cat /proc/sys/kernel/random/uuid
+}

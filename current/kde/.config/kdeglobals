@@ -1,0 +1,191 @@
+[$Version]
+update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd:Fonts_Global,fonts_global_toolbar.upd:Fonts_Global_Toolbar,icons_remove_effects.upd:IconsRemoveEffects,kwin.upd:animation-speed
+
+[ColorEffects:Disabled]
+ChangeSelectionColor=
+Color=56,56,56
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0.65
+ContrastEffect=1
+Enable=
+IntensityAmount=0.1
+IntensityEffect=2
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=112,111,110
+ColorAmount=0.025
+ColorEffect=2
+ContrastAmount=0.1
+ContrastEffect=2
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=60,56,54
+BackgroundNormal=40,40,40
+DecorationFocus=104,157,106
+DecorationHover=131,165,152
+ForegroundActive=142,192,124
+ForegroundInactive=55,115,117
+ForegroundLink=184,187,38
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=235,219,178
+ForegroundPositive=39,174,96
+ForegroundVisited=127,140,141
+
+[Colors:Compilmentary]
+BackgroundNormal=144,4,4
+ForegroundNormal=222,222,222
+
+[Colors:Complementary]
+BackgroundAlternate=189,174,147
+BackgroundNormal=213,196,161
+DecorationFocus=204,36,29
+DecorationHover=204,36,29
+ForegroundActive=131,165,152
+ForegroundInactive=235,219,178
+ForegroundLink=69,133,136
+ForegroundNegative=251,73,52
+ForegroundNeutral=250,189,47
+ForegroundNormal=38,38,38
+ForegroundPositive=204,36,29
+ForegroundVisited=211,134,155
+
+[Colors:Selection]
+BackgroundAlternate=142,192,124
+BackgroundNormal=104,157,106
+DecorationFocus=104,157,106
+DecorationHover=131,165,152
+ForegroundActive=252,252,252
+ForegroundInactive=235,219,178
+ForegroundLink=253,188,75
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=235,219,178
+ForegroundPositive=39,174,96
+ForegroundVisited=189,195,199
+
+[Colors:Tooltip]
+BackgroundAlternate=60,56,54
+BackgroundNormal=40,40,40
+DecorationFocus=104,157,106
+DecorationHover=131,165,152
+ForegroundActive=184,187,38
+ForegroundInactive=55,115,117
+ForegroundLink=142,192,124
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=235,219,178
+ForegroundPositive=39,174,96
+ForegroundVisited=127,140,141
+
+[Colors:View]
+BackgroundAlternate=60,56,54
+BackgroundNormal=40,40,40
+DecorationFocus=104,157,106
+DecorationHover=131,165,152
+ForegroundActive=184,187,38
+ForegroundInactive=55,115,117
+ForegroundLink=142,192,124
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=235,219,178
+ForegroundPositive=39,174,96
+ForegroundVisited=127,140,141
+
+[Colors:Window]
+BackgroundAlternate=60,56,54
+BackgroundNormal=40,40,40
+DecorationFocus=104,157,106
+DecorationHover=131,165,152
+ForegroundActive=184,187,38
+ForegroundInactive=55,115,117
+ForegroundLink=142,192,124
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=235,219,178
+ForegroundPositive=39,174,96
+ForegroundVisited=127,140,141
+
+[DirSelect Dialog]
+DirSelectDialog Size=878,594
+History Items[$e]=file:$HOME/Music
+
+[General]
+ColorScheme=MateriaGruvbox
+Name=MateriaGruvbox
+Name[en_GB]=Breeze
+UseSystemBell=true
+XftHintStyle=hintslight
+XftSubPixel=rgb
+dbfile=/home/fmcruz/.mozilla/firefox/r7nurffc.default/places.sqlite
+fixed=Iosevka,9,-1,5,57,0,0,0,0,0,Medium
+font=Fira Code,10,-1,5,57,0,0,0,0,0,Medium
+shadeSortColumn=true
+toolBarFont=Iosevka,10,-1,5,75,0,0,0,0,0,Bold
+widgetStyle=Breeze
+
+[Icons]
+Theme=Tela-black-dark
+
+[KDE]
+ColorScheme=Breeze
+LookAndFeelPackage=MateriaGruvbox
+ShowDeleteCommand=false
+SingleClick=false
+contrast=4
+widgetStyle=Breeze
+
+[KFileDialog Settings]
+Allow Expansion=false
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Decoration position=2
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Show Bookmarks=false
+Show Full Path=false
+Show Inline Previews=true
+Show Preview=false
+Show Speedbar=true
+Show hidden files=true
+Sort by=Name
+Sort directories first=true
+Sort reversed=false
+Speedbar Width=145
+View Style=Simple
+
+[KScreen]
+ScaleFactor=1
+ScreenScaleFactors=eDP-1=1;DP-1=1;DP-2=1;
+
+[KShortcutsDialog Settings]
+Dialog Size=637,480
+
+[MainToolbarIcons]
+Size=16
+
+[PanelIcons]
+Size=22
+
+[PreviewSettings]
+MaximumRemoteSize=0
+
+[Shortcuts]
+FullScreen=F11
+
+[ToolbarIcons]
+Size=16
+
+[WM]
+activeBackground=39,39,39
+activeBlend=235,219,178
+activeFont=Iosevka,11,-1,5,63,0,0,0,0,0,Semibold
+activeForeground=235,219,178
+inactiveBackground=40,40,40
+inactiveBlend=40,40,40
+inactiveForeground=204,190,155

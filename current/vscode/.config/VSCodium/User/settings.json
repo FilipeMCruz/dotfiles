@@ -58,4 +58,5 @@
     "files.defaultLanguage": "$(activeEditorLanguage)",
     "files.eol": "\n",
     "files.insertFinalNewline": true,
+    "workbench.iconTheme": "Monokai Pro Icons",
 }

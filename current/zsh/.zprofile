@@ -48,11 +48,6 @@ if [[ -z "$LANGUAGE" ]]; then
   export LANGUAGE='en_GB.UTF-8'
 fi
 
-
-if [[ -z "$LC_ALL" ]]; then
-  export LC_ALL='en_GB.UTF-8'
-fi
-
 #
 # Paths
 #

@@ -112,8 +112,8 @@ ForegroundPositive=39,174,96
 ForegroundVisited=127,140,141
 
 [DirSelect Dialog]
-DirSelectDialog Size=878,594
-History Items[$e]=file:$HOME/Music
+DirSelectDialog Size=813,594
+History Items[$e]=file:$HOME,file:$HOME/Music
 
 [General]
 ColorScheme=MateriaGruvbox

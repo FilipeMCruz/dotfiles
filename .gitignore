@@ -13,3 +13,4 @@ current/mpd/.mpd/mpd.db
 current/mpd/.mpd/mpd.pid
 current/mpd/.mpd/mpdstate
 current/ncmpcpp/.ncmpcpp/error.log
+**/.idea

@@ -23,6 +23,10 @@ This helps a lot with all the scripting and configs.
 
 ## Contents
 
+### `/bat`
+
+[bat](https://github.com/sharkdp/bat) gruvbox theme
+
 ### `/curl`
 
 [curl](https://github.com/curl/curl) configs
@@ -56,6 +60,22 @@ I'll add alot more once i have time
 
 [ncmpcpp](https://github.com/arybczak/ncmpcpp) configs
 
+### `/plasma-color-scheme`
+
+Plasma color scheme based on gruvbox dark
+
+### `/plasma-look-and-feel`
+
+[splash screen](https://store.kde.org/p/1304256)
+
+### `/plasma-theme`
+
+Basic theme with icons taken from [here](https://store.kde.org/p/1309269)
+
+### `/plasma-windows-decorations`
+
+Basic decorations for windows, based heavily on [adhe' gruvbox theme](https://store.kde.org/p/1327723)
+
 ### `/scripts`
 
 I heavily rely on programs like:
@@ -80,18 +100,26 @@ Some ideas, trash, reminders, my current [hosts table](https://raw.githubusercon
 
 The only script i had when i was using windows. Used to "hide" a folder.
 
+### `/startpage`
+
+Minimal start page i've made, inspired by [this project](https://github.com/TB-96/Evening-Startpage)
+
 ### `/vscode`
 
 Configs related to Vscode extensions.
-
-### `/zsh`
-
-Configs related to zsh, plugins, keybindings, theme, variables, and aliases.
 
 ### `/wallpaper`
 
 Currently using icons and wallpapers
 Icons taken from <https://www.flaticon.com/authors/smalllikeart>
+
+### `/zathura`
+
+Black and White theme
+
+### `/zsh`
+
+Configs related to zsh, plugins, keybindings, theme, variables, and aliases.
 
 ## Contributing
 

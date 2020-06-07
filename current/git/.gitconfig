@@ -101,7 +101,7 @@ untracked = red bold
 #
 #
 sum = log --pretty='  %C(ul "#fe8019")%h:%C(reset)%C(yellow):%><|(30)%an:%C(reset)%C(white):%s%C(reset)%C(bold red)%d%C(reset)'
-lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %C(italic brightwhite)at%C(reset) %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset) %C(italic brightwhite)by%C(reset) %C(ul bold "#fe8019")%an%C(reset)%n''            %C(italic brightwhite)details:%C(reset) %C(white)%s%C(reset) %C(reset)' --all
+lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %C(italic brightwhite)at%C(reset) %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset) %C(italic brightwhite)by%C(reset) %C(ul bold "#fe8019")%an%C(reset)%n''            %C(italic brightwhite)message:%C(reset) %C(white)%s%C(reset) %C(reset)' --all
 # #############
 # ls = ls-files
 # lsf = !git ls-files | grep -i

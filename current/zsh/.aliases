@@ -22,12 +22,19 @@ alias sudo='sudo '
 # bonus
 alias ggraph="git log --oneline --decorate --graph"
 alias nps="npm "
+alias yeet="yay -Rsn "
 
 # use exa instead of ls
 alias ls="exa "
 alias ll="exa -ll"
 alias la="exa -la"
 alias l="exa "
+
+alias -s md=code
+
+alias -s svg=firefox
+
+alias -s json=code
 
 function take() {
   mkdir -p $@ && cd ${@:$#}

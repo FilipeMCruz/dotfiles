@@ -16,5 +16,8 @@ TerminalMargin=4
 TrimLeadingSpacesInSelectedText=true
 TrimTrailingSpacesInSelectedText=true
 
+[Interaction Options]
+UnderlineFilesEnabled=true
+
 [Keyboard]
 KeyBindings=default

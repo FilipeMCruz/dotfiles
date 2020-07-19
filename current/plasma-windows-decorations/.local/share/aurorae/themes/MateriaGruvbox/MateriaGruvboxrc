@@ -29,8 +29,8 @@ TitleEdgeRightMaximized=10
 TitleEdgeBottomMaximized=1
 TitleEdgeLeftMaximized=10
 
-ButtonHeight=16
-ButtonWidth=16
+ButtonHeight=14
+ButtonWidth=14
 ButtonMarginTop=3
 ButtonSpacing=8
 ButtonWidthMenu=20

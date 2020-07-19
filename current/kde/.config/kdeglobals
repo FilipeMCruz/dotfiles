@@ -1,5 +1,5 @@
 [$Version]
-update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd:Fonts_Global,fonts_global_toolbar.upd:Fonts_Global_Toolbar,icons_remove_effects.upd:IconsRemoveEffects,kwin.upd:animation-speed
+update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd:Fonts_Global,fonts_global_toolbar.upd:Fonts_Global_Toolbar,icons_remove_effects.upd:IconsRemoveEffects,kwin.upd:animation-speed,style_widgetstyle_default_breeze.upd:StyleWidgetStyleDefaultBreeze
 
 [ColorEffects:Disabled]
 ChangeSelectionColor=
@@ -42,18 +42,18 @@ BackgroundNormal=144,4,4
 ForegroundNormal=222,222,222
 
 [Colors:Complementary]
-BackgroundAlternate=189,174,147
-BackgroundNormal=213,196,161
-DecorationFocus=204,36,29
-DecorationHover=204,36,29
-ForegroundActive=131,165,152
-ForegroundInactive=235,219,178
-ForegroundLink=69,133,136
-ForegroundNegative=251,73,52
-ForegroundNeutral=250,189,47
-ForegroundNormal=38,38,38
-ForegroundPositive=204,36,29
-ForegroundVisited=211,134,155
+BackgroundAlternate=59,64,69
+BackgroundNormal=49,54,59
+DecorationFocus=30,146,255
+DecorationHover=61,174,230
+ForegroundActive=246,116,0
+ForegroundInactive=175,176,179
+ForegroundLink=61,174,230
+ForegroundNegative=237,21,21
+ForegroundNeutral=201,206,59
+ForegroundNormal=239,240,241
+ForegroundPositive=17,209,22
+ForegroundVisited=61,174,230
 
 [Colors:Selection]
 BackgroundAlternate=142,192,124
@@ -134,7 +134,7 @@ Theme=Tela-black-dark
 
 [KDE]
 ColorScheme=Breeze
-LookAndFeelPackage=MateriaGruvbox
+LookAndFeelPackage=com.github.varlesh.rounded
 ShowDeleteCommand=false
 SingleClick=false
 contrast=4

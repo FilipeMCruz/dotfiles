@@ -18,14 +18,14 @@ SPACESHIP_JOBS_COLOR="red"
 # Aliases
 #
 
-test ~/.aliases && source ~/.aliases
+test -f ~/.aliases && source ~/.aliases
 
 
 #
 # Secrets
 #
 
-test ~/.secrets && source ~/.secrets
+test -f ~/.secrets && source ~/.secrets
 
 
 # Zsh to use the same colors as ls

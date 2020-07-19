@@ -59,4 +59,24 @@
     "files.eol": "\n",
     "files.insertFinalNewline": true,
     "workbench.iconTheme": "Monokai Pro Icons",
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "cSpell.language": "en,pt",
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "latex-workshop.view.pdf.viewer": "tab",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "cSpell.userWords": [
+        "confiabilidade",
+        "configurabilidade",
+        "configurador",
+        "manutenibilidade"
+    ]
 }

@@ -9,8 +9,8 @@ browser = firefox
 ui = auto
 
 [color "branch"]
-current = yellow bold
-local = green bold
+current = magenta bold
+local = yellow bold
 remote = cyan bold
 
 [color "diff"]
@@ -21,9 +21,14 @@ new = green bold
 whitespace = red reverse
 
 [color "status"]
+branch = magenta bold
 added = green bold
 changed = yellow bold
 untracked = red bold
+unmerged = "#fe8019"
+
+[pull]
+rebase = false
 
 [alias]
 # a = add --all

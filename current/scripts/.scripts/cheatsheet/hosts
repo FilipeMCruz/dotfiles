@@ -1,4 +1,4 @@
-127.0.0.1       localhost       skyline
+0.0.0.0       localhost       skyline
 127.0.1.1       arch            arch.localdomain
 ::1             localhost       ip6-localhost   ip6-loopback
 ff02::1         ip6-allnodes
@@ -31874,7 +31874,7 @@ ff02::1         ip6-allrouters
 0.0.0.0 pics.skenzo.com
 # [Disney Company][ABC News][INFOSEEK]
 
-# 127.0.0.1  hb.disney.go.com #[disabled affects links]
+# 0.0.0.0  hb.disney.go.com #[disabled affects links]
 
 0.0.0.0 seavideo-ak.espn.go.com
 0.0.0.0 adsatt.disney.starwave.com
@@ -49683,3 +49683,12 @@ ff02::1         ip6-allrouters
 0.0.0.0 blog.google
 0.0.0.0 localguidesconnect.com
 
+# Block missing spotify ads
+0.0.0.0 adclick.g.doublecklick.net
+0.0.0.0 open.spotify.com
+0.0.0.0 desktop.spotify.com
+0.0.0.0 audio2.spotify.com
+0.0.0.0 www.omaze.com
+0.0.0.0 omaze.com
+0.0.0.0 8.126.154.104.bc.googleusercontent.com
+0.0.0.0 104.154.126.8

@@ -1,6 +1,6 @@
 [Appearance]
 ColorScheme=Gruvbox Dark
-Font=Fira Code Medium,9,-1,5,57,0,0,0,0,0,Regular
+Font=Fira Code,9,-1,5,75,0,0,0,0,0,Bold
 UseFontLineChararacters=true
 
 [Encoding Options]

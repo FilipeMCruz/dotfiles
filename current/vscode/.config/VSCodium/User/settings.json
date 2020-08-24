@@ -2,7 +2,7 @@
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Gruvbox Dark Medium",
     "editor.fontWeight": "bold",
-    "editor.fontFamily": "'fira code'",
+    "editor.fontFamily": "'fira code medium'",
     "editor.fontSize": 13,
     "editor.fontLigatures": true,
     "gitlens.views.repositories.location": "gitlens",
@@ -72,11 +72,5 @@
     "latex-workshop.view.pdf.viewer": "tab",
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "cSpell.userWords": [
-        "confiabilidade",
-        "configurabilidade",
-        "configurador",
-        "manutenibilidade"
-    ]
+    }
 }

@@ -28,7 +28,7 @@ alias yeet="yay -Rsn "
 alias ls="exa "
 alias ll="exa -ll"
 alias la="exa -la"
-alias l="exa "
+alias ytop="ytop -c gruvbox "
 
 alias -s md=code
 

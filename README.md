@@ -21,6 +21,8 @@ This helps a lot with all the scripting and configs.
 
 ![screenshot](screenshots/Screenshot5.png)
 
+![screenshot](screenshots/Screenshot6.png)
+
 ## Contents
 
 ### `/bat`

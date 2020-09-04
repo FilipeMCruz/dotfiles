@@ -63,6 +63,31 @@ setopt hist_verify
 setopt inc_append_history
 setopt share_history
 
+# Alt+Backspace
+backward-kill-dir () {
+    local WORDCHARS=${WORDCHARS/\/}
+    zle backward-kill-word
+}
+zle -N backward-kill-dir
+bindkey '^H' backward-kill-dir
+
+
+# Alt+Left
+backward-word-dir () {
+    local WORDCHARS=${WORDCHARS/\/}
+    zle backward-word
+}
+zle -N backward-word-dir
+bindkey '^[[1;5D' backward-word-dir
+
+# Alt+Right
+forward-word-dir () {
+    local WORDCHARS=${WORDCHARS/\/}
+    zle forward-word
+}
+zle -N forward-word-dir
+bindkey "^[[1;5C" forward-word-dir
+
 #
 # Prompt
 #
@@ -79,9 +104,9 @@ autoload -Uz down-line-or-beginning-search
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 
-bindkey '^[[1;5D' backward-word              # [Ctrl-LeftArrow] - move backward one word
-bindkey '^[[1;5C' forward-word               # [Ctrl-RightArrow] - move forward one word
-bindkey '^H' backward-delete-word            # [Ctrl-Delete] - delete work
+bindkey "^[[1;3D" backward-word              # [Ctrl-LeftArrow] - move backward one word
+bindkey '^[[1;3C' forward-word               # [Ctrl-RightArrow] - move forward one word
+bindkey '^[^?'    backward-delete-word            # [Ctrl-Delete] - delete work
 
 bindkey "^[[A" up-line-or-beginning-search
 bindkey "^[[B" down-line-or-beginning-search

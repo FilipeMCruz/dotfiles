@@ -23,6 +23,7 @@ alias sudo='sudo '
 alias ggraph="git log --oneline --decorate --graph"
 alias nps="npm "
 alias yeet="yay -Rsn "
+alias yeet-orfans="yeet $(yay -Qdt | cut -f 1 -d ' ')"
 
 # use exa instead of ls
 alias ls="exa "
@@ -35,6 +36,10 @@ alias -s md=code
 alias -s svg=firefox
 
 alias -s json=code
+
+function show() {
+  bat $(which $1)
+}
 
 function take() {
   mkdir -p $@ && cd ${@:$#}

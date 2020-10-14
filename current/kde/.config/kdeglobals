@@ -6,18 +6,18 @@ ChangeSelectionColor=
 Color=56,56,56
 ColorAmount=0
 ColorEffect=0
-ContrastAmount=0.65
+ContrastAmount=0.65000000000000002
 ContrastEffect=1
 Enable=
-IntensityAmount=0.1
+IntensityAmount=0.10000000000000001
 IntensityEffect=2
 
 [ColorEffects:Inactive]
 ChangeSelectionColor=true
 Color=112,111,110
-ColorAmount=0.025
+ColorAmount=0.025000000000000001
 ColorEffect=2
-ContrastAmount=0.1
+ContrastAmount=0.10000000000000001
 ContrastEffect=2
 Enable=false
 IntensityAmount=0
@@ -42,18 +42,18 @@ BackgroundNormal=144,4,4
 ForegroundNormal=222,222,222
 
 [Colors:Complementary]
-BackgroundAlternate=59,64,69
-BackgroundNormal=49,54,59
-DecorationFocus=30,146,255
-DecorationHover=61,174,230
-ForegroundActive=147,206,233
+BackgroundAlternate=46,46,46
+BackgroundNormal=38,38,38
+DecorationFocus=21,209,193
+DecorationHover=22,222,205
+ForegroundActive=245,126,0
 ForegroundInactive=175,176,179
-ForegroundLink=61,174,230
-ForegroundNegative=231,76,60
-ForegroundNeutral=253,188,75
-ForegroundNormal=239,240,241
-ForegroundPositive=46,204,113
-ForegroundVisited=61,174,230
+ForegroundLink=22,222,205
+ForegroundNegative=230,72,67
+ForegroundNeutral=235,202,59
+ForegroundNormal=222,222,222
+ForegroundPositive=47,235,35
+ForegroundVisited=22,222,205
 
 [Colors:Selection]
 BackgroundAlternate=142,192,124
@@ -111,9 +111,12 @@ ForegroundNormal=235,219,178
 ForegroundPositive=39,174,96
 ForegroundVisited=127,140,141
 
+[DialogIcons]
+Size=32
+
 [DirSelect Dialog]
-DirSelectDialog Size=813,594
-History Items[$e]=file:$HOME,file:$HOME/Music
+DirSelectDialog Size=1920,1010
+History Items[$e]=file:$HOME/Documents/fac/mei,file:$HOME,file:$HOME/Music
 
 [General]
 ColorScheme=MateriaGruvbox
@@ -137,7 +140,7 @@ Theme=Tela-black-dark
 
 [KDE]
 ColorScheme=Breeze
-LookAndFeelPackage=Psion
+LookAndFeelPackage=MateriaGruvbox
 ShowDeleteCommand=false
 SingleClick=false
 contrast=4

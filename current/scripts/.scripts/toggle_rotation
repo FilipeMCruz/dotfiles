@@ -1,0 +1,11 @@
+#!/bin/sh
+
+TOGGLE=/tmp/.toggle
+
+if [ ! -e $TOGGLE ]; then
+    touch $TOGGLE
+    xrandr -o inverted
+else
+    rm $TOGGLE
+    xrandr -o normal
+fi

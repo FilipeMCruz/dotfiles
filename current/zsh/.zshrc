@@ -63,6 +63,17 @@ setopt hist_verify
 setopt inc_append_history
 setopt share_history
 
+#
+# Prompt
+#
+
+PROMPT='$NEWLINE%F{yellow}%B%n%f%F{blue}@%f%F{green}%B%m%f %F{blue}in%f %$(spaceship_prompt)'
+RPROMPT='%F{red}%B[%f%F{yellow}%B$(date "+%H:%M %d/%m/%y")%f%F{red}%B]%f'
+
+#
+# Keybindings
+#
+
 # Alt+Backspace
 backward-kill-dir () {
     local WORDCHARS=${WORDCHARS/\/}
@@ -70,7 +81,6 @@ backward-kill-dir () {
 }
 zle -N backward-kill-dir
 bindkey '^H' backward-kill-dir
-
 
 # Alt+Left
 backward-word-dir () {
@@ -87,17 +97,6 @@ forward-word-dir () {
 }
 zle -N forward-word-dir
 bindkey "^[[1;5C" forward-word-dir
-
-#
-# Prompt
-#
-
-PROMPT='$NEWLINE%F{yellow}%B%n%f%F{blue}@%f%F{green}%B%m%f %F{blue}in%f %$(spaceship_prompt)'
-RPROMPT='%F{red}%B[%f%F{yellow}%B$(date "+%H:%M %d/%m/%y")%f%F{red}%B]%f'
-
-#
-# Keybindings
-#
 
 autoload -Uz up-line-or-beginning-search
 autoload -Uz down-line-or-beginning-search

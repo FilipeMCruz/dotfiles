@@ -1,28 +1,32 @@
 [General]
 #https://techbase.kde.org/Development/Tutorials/Plasma5/ThemeDetails
 
-ActiveTextColor=251,241,199
-InactiveTextColor=115,110,91
+ActiveTextColor=251,241,199,255
+InactiveTextColor=115,110,91,255
 
 TitleAlignment=Center
 TitleVerticalAlignment=Center
 UseTextShadow=true
-Shadow=true
-Animation=0
+
 TextShadowOffsetX=1
 TextShadowOffsetY=1
+Shadow=true
+Animation=0
+
+LeftButtons=XIA
 
 [Layout]
 
-#BorderTop=0
 BorderRight=1
-BorderBottom=1
 BorderLeft=1
+BorderBottom=1
 
 TitleEdgeTop=1
 TitleEdgeBottom=1
 TitleEdgeRight=5
 TitleEdgeLeft=5
+
+TitleHeight=24
 
 TitleEdgeTopMaximized=1
 TitleEdgeRightMaximized=10
@@ -33,9 +37,10 @@ ButtonHeight=14
 ButtonWidth=14
 ButtonMarginTop=3
 ButtonSpacing=8
-ButtonWidthMenu=20
-ButtonWidthAppMenu=20
-TitleHeight=24
+#ButtonWidthMenu=16
+#ButtonWidthAppMenu=16
+#ButtonHeightMenu=16
+#ButtonHeightAppMenu=16
 
 PaddingTop=40
 PaddingRight=71

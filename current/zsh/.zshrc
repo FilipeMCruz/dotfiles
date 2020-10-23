@@ -53,7 +53,7 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z-_}={A-Za-z_-}' 'r:|=*' 'l:|=* r:|
 
 HISTSIZE=999999999
 SAVEHIST=$HISTSIZE
-HISTFILE='/home/fmcruz/.zsh_history'
+HISTFILE=$HOME'/.zsh_history'
 
 setopt extended_history
 setopt hist_expire_dups_first
@@ -117,7 +117,7 @@ bindkey "^[[5~" beginning-of-line            # [Home] - Go to beginning of line
 # Plugins
 #
 
-source /home/fmcruz/.zsh_plugins/colored-man-pages/colored-man-pages.plugin.zsh
-source /home/fmcruz/.zsh_plugins/gitignore/gitignore.plugin.zsh
-source /home/fmcruz/.zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
-source /home/fmcruz/.zsh_plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
+test -f ~/.zsh_plugins/colored-man-pages/colored-man-pages.plugin.zsh && source ~/.zsh_plugins/colored-man-pages/colored-man-pages.plugin.zsh
+test -f ~/.zsh_plugins/gitignore/gitignore.plugin.zsh && source ~/.zsh_plugins/gitignore/gitignore.plugin.zsh
+test -f ~/.zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh && source ~/.zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+test -f ~/.zsh_plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh && source ~/.zsh_plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh

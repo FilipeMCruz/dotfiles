@@ -11,7 +11,7 @@
 # Music Directory
 #
 
-export MUSIC='/home/fmcruz/Music'
+export MUSIC=$HOME'/Music'
 export MPD_PORT='6000'
 export MPD_HOST='127.0.0.1'
 
@@ -25,7 +25,7 @@ export BROWSER='firefox'
 # Documents
 #
 
-export DOCS='/home/fmcruz/Documents'
+export DOCS=$HOME'/Documents'
 
 #
 # Editors
@@ -64,7 +64,7 @@ typeset -gU cdpath fpath mailpath path
 path=(
   /usr/local/{bin,sbin}
   "$HOME/.scripts"
-  "/home/fmcruz/.cargo/bin"
+  "$HOME/.cargo/bin"
   $path
 )
 
@@ -78,7 +78,7 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 # Navi custom cheats
 #
 
-export NAVI_PATH="/home/fmcruz/.navi:/home/fmcruz/.local/share/navi/cheats"
+export NAVI_PATH="$HOME/.navi:$HOME/.local/share/navi/cheats"
 
 #
 # Less

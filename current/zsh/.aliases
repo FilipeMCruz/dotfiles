@@ -14,7 +14,6 @@ alias ...="../.. "
 alias ....="../../.. "
 alias .....="../../../.. "
 alias ......="../../../../.. "
-alias pesti="cd ~/Desktop/fac/3A2S/PESTI/project"
 
 # so that alias can be sudo'ed
 alias sudo='sudo '

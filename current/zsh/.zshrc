@@ -46,6 +46,7 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)  # include dot files
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z-_}={A-Za-z_-}' 'r:|=*' 'l:|=* r:|=*'
+eval $(thefuck --alias)
 
 #
 # History
@@ -55,6 +56,7 @@ HISTSIZE=999999999
 SAVEHIST=$HISTSIZE
 HISTFILE=$HOME'/.zsh_history'
 
+setopt correct
 setopt extended_history
 setopt hist_expire_dups_first
 setopt hist_ignore_dups

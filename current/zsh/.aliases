@@ -9,25 +9,20 @@ alias code='/usr/share/vscodium-bin/codium'
 alias mpd='mpd ~/.mpd/mpd.conf'
 alias yolo='git commit -m "$(curl -s http://whatthecommit.com/index.txt)"'
 alias :wq="echo You're not in vim dumbass!"
-
-alias ...="../.. "
-alias ....="../../.. "
-alias .....="../../../.. "
-alias ......="../../../../.. "
-
 # so that alias can be sudo'ed
 alias sudo='sudo '
 
 # bonus
-alias ggraph="git log --oneline --decorate --graph"
+alias yay="paru "
+alias yeet="paru -Rsn "
+alias yeeet="yeet $(paru -Qdtq)"
 alias nps="npm "
-alias yeet="yay -Rsn "
-alias yeet-orfans="yeet $(yay -Qdt | cut -f 1 -d ' ')"
+alias pins="paru -Slq | fzf -m --preview 'cat <(paru -Si {1}) <(paru -Fl {1} | awk \"{print \$2}\")' | xargs -ro paru -S"
 
 # use exa instead of ls
 alias ls="exa "
 alias ll="exa -ll"
-alias la="exa -la"
+alias la="exa -la --git --group-directories-first"
 alias ytop="ytop -c gruvbox "
 
 alias -s md=code

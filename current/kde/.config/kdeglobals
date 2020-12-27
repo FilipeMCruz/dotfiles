@@ -154,7 +154,7 @@ Theme=Tela-black-dark
 
 [KDE]
 ColorScheme=Breeze
-LookAndFeelPackage=org.numixproject.kde
+LookAndFeelPackage=MateriaGruvbox
 ShowDeleteCommand=false
 SingleClick=false
 contrast=4
@@ -163,7 +163,7 @@ widgetStyle=Breeze
 [KFileDialog Settings]
 Allow Expansion=false
 Automatically select filename extension=false
-Breadcrumb Navigation=true
+Breadcrumb Navigation=false
 Decoration position=2
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
@@ -206,6 +206,8 @@ activeBackground=39,39,39
 activeBlend=235,219,178
 activeFont=Iosevka,11,-1,5,63,0,0,0,0,0,Semibold
 activeForeground=235,219,178
+frame=0,0,0
 inactiveBackground=40,40,40
 inactiveBlend=40,40,40
 inactiveForeground=204,190,155
+inactiveFrame=0,0,0

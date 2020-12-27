@@ -44,9 +44,6 @@
     "bracketPairColorizer.showBracketsInRuler": true,
     "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont,'Iosevka', 'fira code'",
     "markdown-preview-enhanced.previewTheme": "monokai.css",
-    "markdown-preview-enhanced.revealjsTheme": "solarized.css",
-    "markdown-preview-enhanced.codeBlockTheme": "monokai.css",
-    "markdown-preview-enhanced.mermaidTheme": "forest",
     "plantuml.exportConcurrency": 6,
     "plantuml.exportFormat": "svg",
     "rainbow_csv.comment_prefix": "#",
@@ -75,5 +72,6 @@
     },
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "markdown-preview-enhanced.codeBlockTheme": "monokai.css"
 }

@@ -248,3 +248,5 @@ snap = !git stash save 'snapshot: $(date)' && git stash apply 'stash@{0}'
 # human = name-rev --name-only --refs=refs/heads/*
 ncommits = "rev-list --all --count"
 ucommits = "shortlog --summary --numbered --email"
+[core]
+	autocrlf = input

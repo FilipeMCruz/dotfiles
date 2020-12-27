@@ -1,4 +1,5 @@
 [Appearance]
+BoldIntense=true
 ColorScheme=Gruvbox Dark
 Font=Fira Code,9,-1,5,75,0,0,0,0,0,Bold
 UseFontLineChararacters=true

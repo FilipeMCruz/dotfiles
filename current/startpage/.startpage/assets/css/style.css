@@ -1,15 +1,11 @@
 :root {
     --color-theme: #2978ad;
     --bg-primary: #212121;
-    --bg-secondary: rgba(21, 21, 21, .5);
+    --bg-secondary: #282828;
     --bg-hover: rgba(41, 120, 173, .5);
     --color-primary: #ebdbb2;
-    --color-secondary: #74a7ca;
-    --color-success: #66BB6A;
-    --color-warning: #F57C00;
-    --color-danger: #DC3545;
     --padding: 1rem;
-    --rounded: 0.25rem;
+    --rounded: 0.45rem;
     --shadow: 0 1px 3px rgba(0, 0, 0, .06), 0 1px 2px rgba(0, 0, 0, .12)
 }
 
@@ -25,34 +21,12 @@
 html {
     color: var(--color-primary);
     background: var(--bg-primary);
+    background-image: url("./background.png");
 }
 
 body {
     margin: 0 auto;
     padding: 0;
-}
-
-::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-}
-
-::-webkit-scrollbar-track {
-    background: #4e4e4e;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--bg-secondary);
-}
-
-a, a:visited {
-    color: var(--color-secondary);
-    text-decoration: none;
-}
-
-a:hover, a:focus {
-    text-decoration: underline;
-    cursor: pointer;
 }
 
 #container {

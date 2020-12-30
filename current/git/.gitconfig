@@ -5,6 +5,13 @@ email = 1170911@isep.ipp.pt
 [web]
 browser = firefox
 
+[core]
+	autocrlf = input
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[url "ssh://git@bitbucket.org/"]
+	insteadOf = https://bitbucket.org/
+
 [color]
 ui = auto
 
@@ -248,5 +255,3 @@ snap = !git stash save 'snapshot: $(date)' && git stash apply 'stash@{0}'
 # human = name-rev --name-only --refs=refs/heads/*
 ncommits = "rev-list --all --count"
 ucommits = "shortlog --summary --numbered --email"
-[core]
-	autocrlf = input

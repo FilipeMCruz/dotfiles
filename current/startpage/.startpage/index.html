@@ -13,14 +13,24 @@
   </head>
   <body>
     <main id="container" class="fade">
-      <br />
-      <br />
       <section id="header">
         <h1 id="header-time">00:00</h1>
         <h2 id="header-date">Date</h2>
         <div>Hello, world...</div>
       </section>
       <br />
+      <br />
+      <div id="searchBox">
+        <input
+          id="searchbar"
+          autocomplete="off"
+          type="text"
+          title="Search"
+          autofocus
+          onkeydown="search(event)"
+          placeholder="search..."
+        />
+      </div>
       <br />
       <section id="apps">
         <h3>> Bookmarks</h3>

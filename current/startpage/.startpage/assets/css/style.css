@@ -125,3 +125,35 @@ h3 {
     font-size: 0.8em;
     text-transform: lowercase;
 }
+
+#searchBox{
+    margin:0 auto;
+    width:400px;
+    height: 32px;
+    border-radius: var(--rounded);
+    background-color: var(--bg-primary);
+    transition: box-shadow .5s;
+}
+
+#searchBox:hover{
+    box-shadow: 0px 0px 8px 1px var(--color-primary);
+}
+
+#searchBox:focus-within{
+    box-shadow: 0px 0px 8px 1px var(--color-primary);
+    outline:none;
+}
+
+#searchbar{
+    height:32px;
+    border: none;
+    width:95%;
+    margin-left: 10px;
+    font-size:16px;
+    outline: none;
+    background: none;
+
+    font-size: 10pt;
+    font-style: italic;
+    color: var(--color-primary);
+}

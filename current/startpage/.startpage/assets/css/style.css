@@ -57,47 +57,8 @@ h3 {
     padding: var(--padding);
 }
 
-/* ANIMATION */
-
-@keyframes fadeseq {
-    100% {
-        opacity: 1;
-    }
-}
-
-.fade {
-    opacity: 0;
-}
-
-.fade {
-    animation: fadeseq .5s forwards;
-}
-
-.fade:nth-child(2) {
-    animation-delay: .5s;
-}
-
-/* HEADERS */
-
 #header {
     text-align: center;
-}
-
-#header-time, #header-date {
-    cursor: default;
-}
-
-#header-time {
-    font-size: 5em;
-}
-
-#header-date {
-    margin-top: -1rem;
-    margin-bottom: .5rem;
-}
-
-#header-quote {
-    margin-top: 1rem;
 }
 
 #apps-container {
@@ -121,14 +82,19 @@ h3 {
     box-shadow: var(--shadow);
     background: var(--bg-secondary);
     border-radius: var(--rounded);
-    -o-transition: background-color .5s;
-    -moz-transition: background-color .5s;
-    -webkit-transition: background-color .5s;
     transition: background-color .5s;
 }
 
 .apps-item:hover {
     background-color: var(--bg-hover) !important;
+}
+
+.apps-item > .apps-text {
+    transition: padding-top .5s;
+}
+
+.apps-item:hover > .apps-text {
+    padding-top: 15px;
 }
 
 .apps-icon {
@@ -152,11 +118,6 @@ h3 {
     font-size: 1em;
     font-weight: 500;
     text-decoration: none !important;
-}
-
-.apps-item:hover > .apps-text {
-    padding-top: 15px;
-    transition: padding-top .5s;
 }
 
 .apps-text span:nth-child(2n) {

@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" id="svg169" width="257" height="161" version="1">
  <rect id="hint-tile-center" style="opacity:0.875;fill:#008000" width="40" height="40" x="216" y="1"/>
- <path id="selected-center" style="opacity:0.45;fill:#00a698;fill-opacity:1" d="m 30,15.01572 v 48 h 48 v -48 z"/>
+ <path id="selected-center" style="opacity:0.45;fill:#458588;fill-opacity:1" d="m 30,15.01572 v 48 h 48 v -48 z"/>
  <g id="selected-left" transform="matrix(1,0,0,3.0009825,-160.14285,-2475.3868)">
-  <path id="path4" style="opacity:0.45;fill:#00a698;fill-opacity:1" d="m 186.14285,829.85712 v 16 h 4 v -16 z"/>
+  <path id="path4" style="opacity:0.45;fill:#458588;fill-opacity:1" d="m 186.14285,829.85712 v 16 h 4 v -16 z"/>
  </g>
  <g id="selected-topleft" transform="translate(-160.14285,-814.85718)">
-  <path id="path7" style="opacity:0.45;fill:#00a698;fill-opacity:1" d="m 186.14285,829.8571 h 4 v -4 h -1.46875 c -1.40502,0 -2.53125,1.11588 -2.53125,2.53125 z"/>
+  <path id="path7" style="opacity:0.45;fill:#458588;fill-opacity:1" d="m 186.14285,829.8571 h 4 v -4 h -1.46875 c -1.40502,0 -2.53125,1.11588 -2.53125,2.53125 z"/>
  </g>
  <g id="selected-top" transform="matrix(0.36657704,0,0,1,-39.71201,-814.8414)">
-  <path id="path10" style="opacity:0.45;fill:#00a698;fill-opacity:1" d="m 190.14286,825.85714 v 4 h 131 v -4 z"/>
+  <path id="path10" style="opacity:0.45;fill:#458588;fill-opacity:1" d="m 190.14286,825.85714 v 4 h 131 v -4 z"/>
  </g>
  <g id="selected-topright" transform="translate(-243.14285,-814.8414)">
-  <path id="path13" style="opacity:0.45;fill:#00a698;fill-opacity:1" d="m 321.14285,825.85714 v 4 h 4 v -1.46875 c 0,-1.40502 -1.11588,-2.53125 -2.53125,-2.53125 z"/>
+  <path id="path13" style="opacity:0.45;fill:#458588;fill-opacity:1" d="m 321.14285,825.85714 v 4 h 4 v -1.46875 c 0,-1.40502 -1.11588,-2.53125 -2.53125,-2.53125 z"/>
  </g>
  <g id="selected-right" transform="matrix(1,0,0,3.0000017,-243.14285,-2474.557)">
-  <path id="path16" style="opacity:0.45;fill:#00a698;fill-opacity:1" d="m 325.14286,829.85712 v 16 h -4 v -16 z"/>
+  <path id="path16" style="opacity:0.45;fill:#458588;fill-opacity:1" d="m 325.14286,829.85712 v 16 h -4 v -16 z"/>
  </g>
  <path id="normal-center" style="opacity:0.00499998;fill:#ffffff;fill-opacity:0.07843137" d="m 129.99999,17.01572 v 48 h 48 v -48 z"/>
  <g id="normal-bottom" style="opacity:0.00499998" transform="matrix(0.36657704,0,0,0.49999749,60.28798,-353.92645)">
@@ -83,63 +83,63 @@
   </g>
   <rect id="rect107" style="opacity:0.52100004;fill:#ffffff;fill-opacity:0" width="2" height="2" x="326.14" y="851.86"/>
  </g>
- <path id="hover-center" style="opacity:0.32;fill:#00a698" d="m 45,93.46828 v 48 h 48 v -48 z"/>
+ <path id="hover-center" style="opacity:0.32;fill:#458588" d="m 45,93.46828 v 48 h 48 v -48 z"/>
  <g id="hover-left" transform="matrix(1,0,0,3.0009825,-145.14285,-2396.9342)">
-  <path id="path111" style="opacity:0.32;fill:#00a698" d="m 186.14285,829.85712 v 16 h 4 v -16 z"/>
+  <path id="path111" style="opacity:0.32;fill:#458588" d="m 186.14285,829.85712 v 16 h 4 v -16 z"/>
  </g>
  <g id="hover-topleft" transform="translate(-145.14285,-736.3891)">
-  <path id="path114" style="opacity:0.32;fill:#00a698" d="m 186.14285,829.8571 h 4 v -4 h -1.46875 c -1.40502,0 -2.53125,1.11588 -2.53125,2.53125 z"/>
+  <path id="path114" style="opacity:0.32;fill:#458588" d="m 186.14285,829.8571 h 4 v -4 h -1.46875 c -1.40502,0 -2.53125,1.11588 -2.53125,2.53125 z"/>
  </g>
  <g id="hover-top" transform="matrix(0.36657704,0,0,1,-24.71201,-736.38884)">
-  <path id="path117" style="opacity:0.32;fill:#00a698" d="m 190.14286,825.85714 v 4 h 131 v -4 z"/>
+  <path id="path117" style="opacity:0.32;fill:#458588" d="m 190.14286,825.85714 v 4 h 131 v -4 z"/>
  </g>
  <g id="hover-topright" transform="translate(-228.14285,-736.38884)">
-  <path id="path120" style="opacity:0.32;fill:#00a698" d="m 321.14285,825.85714 v 4 h 4 v -1.46875 c 0,-1.40502 -1.11588,-2.53125 -2.53125,-2.53125 z"/>
+  <path id="path120" style="opacity:0.32;fill:#458588" d="m 321.14285,825.85714 v 4 h 4 v -1.46875 c 0,-1.40502 -1.11588,-2.53125 -2.53125,-2.53125 z"/>
  </g>
  <g id="hover-right" transform="matrix(1,0,0,3.0000017,-228.14285,-2396.1044)">
-  <path id="path123" style="opacity:0.32;fill:#00a698" d="m 325.14286,829.85712 v 16 h -4 v -16 z"/>
+  <path id="path123" style="opacity:0.32;fill:#458588" d="m 325.14286,829.85712 v 16 h -4 v -16 z"/>
  </g>
- <path id="selected+hover-center" style="fill:#00a698;opacity:0.45" d="m 150,93.26324 v 48 h 48 v -48 z"/>
+ <path id="selected+hover-center" style="fill:#458588;opacity:0.45" d="m 150,93.26324 v 48 h 48 v -48 z"/>
  <g id="selected+hover-left" transform="matrix(1,0,0,3.0009825,-40.14285,-2397.1393)">
-  <path id="path127" style="fill:#00a698;opacity:0.45" d="m 186.14285,829.85712 v 16 h 4 v -16 z"/>
+  <path id="path127" style="fill:#458588;opacity:0.45" d="m 186.14285,829.85712 v 16 h 4 v -16 z"/>
  </g>
  <g id="selected+hover-topleft" transform="translate(-40.14285,-736.60966)">
-  <path id="path130" style="fill:#00a698;opacity:0.45" d="m 186.14285,829.8571 h 4 v -4 h -1.46875 c -1.40502,0 -2.53125,1.11588 -2.53125,2.53125 z"/>
+  <path id="path130" style="fill:#458588;opacity:0.45" d="m 186.14285,829.8571 h 4 v -4 h -1.46875 c -1.40502,0 -2.53125,1.11588 -2.53125,2.53125 z"/>
  </g>
  <g id="selected+hover-top" transform="matrix(0.36657704,0,0,1,80.28799,-736.59388)">
-  <path id="path133" style="fill:#00a698;opacity:0.45" d="m 190.14286,825.85714 v 4 h 131 v -4 z"/>
+  <path id="path133" style="fill:#458588;opacity:0.45" d="m 190.14286,825.85714 v 4 h 131 v -4 z"/>
  </g>
  <g id="selected+hover-topright" transform="translate(-123.14285,-736.59388)">
-  <path id="path136" style="fill:#00a698;opacity:0.45" d="m 321.14285,825.85714 v 4 h 4 v -1.46875 c 0,-1.40502 -1.11588,-2.53125 -2.53125,-2.53125 z"/>
+  <path id="path136" style="fill:#458588;opacity:0.45" d="m 321.14285,825.85714 v 4 h 4 v -1.46875 c 0,-1.40502 -1.11588,-2.53125 -2.53125,-2.53125 z"/>
  </g>
  <g id="selected+hover-right" transform="matrix(1,0,0,3.0000017,-123.14285,-2396.3095)">
-  <path id="path139" style="fill:#00a698;opacity:0.45" d="m 325.14286,829.85712 v 16 h -4 v -16 z"/>
+  <path id="path139" style="fill:#458588;opacity:0.45" d="m 325.14286,829.85712 v 16 h -4 v -16 z"/>
  </g>
  <g id="selected-bottomright" transform="rotate(180,134.07142,446.4364)">
-  <path id="path142" style="opacity:0.45;fill:#00a698;fill-opacity:1" d="m 186.14285,829.8571 h 4 v -4 h -1.46875 c -1.40502,0 -2.53125,1.11588 -2.53125,2.53125 z"/>
+  <path id="path142" style="opacity:0.45;fill:#458588;fill-opacity:1" d="m 186.14285,829.8571 h 4 v -4 h -1.46875 c -1.40502,0 -2.53125,1.11588 -2.53125,2.53125 z"/>
  </g>
  <g id="selected-bottom" transform="matrix(-0.36657704,0,0,-1,147.7236,892.8729)">
-  <path id="path145" style="opacity:0.45;fill:#00a698;fill-opacity:1" d="m 190.14286,825.85714 v 4 h 131 v -4 z"/>
+  <path id="path145" style="opacity:0.45;fill:#458588;fill-opacity:1" d="m 190.14286,825.85714 v 4 h 131 v -4 z"/>
  </g>
  <g id="selected-bottomleft" transform="rotate(180,175.57142,446.43645)">
-  <path id="path148" style="opacity:0.45;fill:#00a698;fill-opacity:1" d="m 321.14285,825.85714 v 4 h 4 v -1.46875 c 0,-1.40502 -1.11588,-2.53125 -2.53125,-2.53125 z"/>
+  <path id="path148" style="opacity:0.45;fill:#458588;fill-opacity:1" d="m 321.14285,825.85714 v 4 h 4 v -1.46875 c 0,-1.40502 -1.11588,-2.53125 -2.53125,-2.53125 z"/>
  </g>
  <g id="hover-bottomright" transform="rotate(180,141.57143,485.66275)">
-  <path id="path151" style="opacity:0.32;fill:#00a698" d="m 186.14285,829.8571 h 4 v -4 h -1.46875 c -1.40502,0 -2.53125,1.11588 -2.53125,2.53125 z"/>
+  <path id="path151" style="opacity:0.32;fill:#458588" d="m 186.14285,829.8571 h 4 v -4 h -1.46875 c -1.40502,0 -2.53125,1.11588 -2.53125,2.53125 z"/>
  </g>
  <g id="hover-bottom" transform="matrix(-0.36657704,0,0,-1,162.7236,971.3257)">
-  <path id="path154" style="opacity:0.32;fill:#00a698" d="m 190.14286,825.85714 v 4 h 131 v -4 z"/>
+  <path id="path154" style="opacity:0.32;fill:#458588" d="m 190.14286,825.85714 v 4 h 131 v -4 z"/>
  </g>
  <g id="hover-bottomleft" transform="rotate(180,183.07142,485.6627)">
-  <path id="path157" style="opacity:0.32;fill:#00a698" d="m 321.14285,825.85714 v 4 h 4 v -1.46875 c 0,-1.40502 -1.11588,-2.53125 -2.53125,-2.53125 z"/>
+  <path id="path157" style="opacity:0.32;fill:#458588" d="m 321.14285,825.85714 v 4 h 4 v -1.46875 c 0,-1.40502 -1.11588,-2.53125 -2.53125,-2.53125 z"/>
  </g>
  <g id="selected_hover-bottomright" transform="rotate(180,194.07143,485.5602)">
-  <path id="path160" style="fill:#00a698;opacity:0.45" d="m 186.14285,829.8571 h 4 v -4 h -1.46875 c -1.40502,0 -2.53125,1.11588 -2.53125,2.53125 z"/>
+  <path id="path160" style="fill:#458588;opacity:0.45" d="m 186.14285,829.8571 h 4 v -4 h -1.46875 c -1.40502,0 -2.53125,1.11588 -2.53125,2.53125 z"/>
  </g>
  <g id="selected_hover-bottom" transform="matrix(-0.36657704,0,0,-1,267.7236,971.1203)">
-  <path id="path163" style="fill:#00a698;opacity:0.45" d="m 190.14286,825.85714 v 4 h 131 v -4 z"/>
+  <path id="path163" style="fill:#458588;opacity:0.45" d="m 190.14286,825.85714 v 4 h 131 v -4 z"/>
  </g>
  <g id="selected_hover-bottomleft" transform="rotate(180,235.57142,485.5602)">
-  <path id="path166" style="fill:#00a698;opacity:0.45" d="m 321.14285,825.85714 v 4 h 4 v -1.46875 c 0,-1.40502 -1.11588,-2.53125 -2.53125,-2.53125 z"/>
+  <path id="path166" style="fill:#458588;opacity:0.45" d="m 321.14285,825.85714 v 4 h 4 v -1.46875 c 0,-1.40502 -1.11588,-2.53125 -2.53125,-2.53125 z"/>
  </g>
 </svg>

@@ -29,11 +29,11 @@
  </g>
  <g id="pressed" transform="matrix(1.6,0,0,1.6,156.344,16.056)">
   <rect style="opacity:0.001" width="20" height="20" x="-42.09" y="-1.91"/>
-  <circle style="fill:#00a698" cx="-32" cy="8" r="8" transform="matrix(1.015625,0,0,1.015625,0.4098513,-0.0349999)"/>
+  <circle style="fill:#458588" cx="-32" cy="8" r="8" transform="matrix(1.015625,0,0,1.015625,0.4098513,-0.0349999)"/>
  </g>
  <g id="22-22-pressed" transform="matrix(1.1,0,0,1.1,141.299,56.101)">
   <rect style="opacity:0.001" width="20" height="20" x="-42.09" y="-1.91"/>
-  <path style="fill:#00a698" transform="matrix(1.0227273,0,0,1.0227273,0.63711821,-0.0918182)" d="m -24,8 a 8,8 0 0 1 -8,8 8,8 0 0 1 -8,-8 8,8 0 0 1 8,-8 8,8 0 0 1 8,8 z"/>
+  <path style="fill:#458588" transform="matrix(1.0227273,0,0,1.0227273,0.63711821,-0.0918182)" d="m -24,8 a 8,8 0 0 1 -8,8 8,8 0 0 1 -8,-8 8,8 0 0 1 8,-8 8,8 0 0 1 8,8 z"/>
  </g>
  <g id="hover">
   <rect style="opacity:0.001" width="32" height="32" x="11" y="34"/>

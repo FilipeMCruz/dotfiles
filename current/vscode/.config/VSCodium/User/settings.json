@@ -73,5 +73,6 @@
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "markdown-preview-enhanced.codeBlockTheme": "monokai.css"
+    "markdown-preview-enhanced.codeBlockTheme": "monokai.css",
+    "gitlens.gitCommands.closeOnFocusOut": true
 }

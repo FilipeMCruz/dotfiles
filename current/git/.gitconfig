@@ -6,14 +6,18 @@ email = 1170911@isep.ipp.pt
 browser = firefox
 
 [core]
-	autocrlf = input
-[url "ssh://git@github.com/"]
-	insteadOf = https://github.com/
+autocrlf = input
+
+#[url "ssh://git@github.com/"]
+#	insteadOf = https://github.com/
 [url "ssh://git@bitbucket.org/"]
-	insteadOf = https://bitbucket.org/
+insteadOf = https://bitbucket.org/
 
 [color]
 ui = auto
+
+[help]
+autocorrect = 10
 
 [color "branch"]
 current = magenta bold
@@ -38,6 +42,13 @@ unmerged = "#fe8019"
 rebase = false
 
 [alias]
+ncommits = "rev-list --all --count"
+ucommits = "shortlog --summary --numbered --email"
+sum = log --pretty='  %C(ul "#fe8019")%h:%C(reset)%C(yellow):%><|(30)%an:%C(reset)%C(white):%s%C(reset)%C(bold red)%d%C(reset)'
+lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %C(italic brightwhite)at%C(reset) %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset) %C(italic brightwhite)by%C(reset) %C(ul bold "#fe8019")%an%C(reset)%n''            %C(italic brightwhite)message:%C(reset) %C(white)%s%C(reset) %C(reset)' --all
+aliases = !git config -l | grep alias | cut -c 7-
+snap = !git stash save 'snapshot: $(date)' && git stash apply 'stash@{0}'
+send = "!f() { git add -A && git commit \"$@\" && git push; }; f"
 # a = add --all
 # ai = add -i
 # #############
@@ -111,9 +122,6 @@ rebase = false
 # The accepted attributes are `bold`, `dim`, `ul`, `blink`, `reverse`,
 # `italic`, and `strike`
 #
-#
-sum = log --pretty='  %C(ul "#fe8019")%h:%C(reset)%C(yellow):%><|(30)%an:%C(reset)%C(white):%s%C(reset)%C(bold red)%d%C(reset)'
-lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %C(italic brightwhite)at%C(reset) %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset) %C(italic brightwhite)by%C(reset) %C(ul bold "#fe8019")%an%C(reset)%n''            %C(italic brightwhite)message:%C(reset) %C(white)%s%C(reset) %C(reset)' --all
 # #############
 # ls = ls-files
 # lsf = !git ls-files | grep -i
@@ -240,8 +248,6 @@ lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(r
 # release = !sh -c 'git tag v$1 && git pst' -
 # unrelease = !sh -c 'git tag -d v$1 && git pso :v$1' -
 # merged = !sh -c 'git o master && git plom && git bd $1 && git rpo' -
-aliases = !git config -l | grep alias | cut -c 7-
-snap = !git stash save 'snapshot: $(date)' && git stash apply 'stash@{0}'
 # bare = !sh -c 'git symbolic-ref HEAD refs/heads/$1 && git rm --cached -r . && git clean -xfd' -
 # whois = !sh -c 'git log -i -1 --author=\"$1\" --pretty=\"format:%an <%ae>\"' -
 # serve = daemon --reuseaddr --verbose --base-path=. --export-all ./.git
@@ -253,5 +259,3 @@ snap = !git stash save 'snapshot: $(date)' && git stash apply 'stash@{0}'
 # theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
 # subrepo = !sh -c 'git filter-branch --prune-empty --subdirectory-filter $1 master' -
 # human = name-rev --name-only --refs=refs/heads/*
-ncommits = "rev-list --all --count"
-ucommits = "shortlog --summary --numbered --email"

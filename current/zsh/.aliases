@@ -8,7 +8,6 @@
 alias code='/usr/share/vscodium-bin/codium'
 alias mpd='mpd ~/.mpd/mpd.conf'
 alias yolo='git commit -m "$(curl -s http://whatthecommit.com/index.txt)"'
-alias :wq="echo You're not in vim dumbass!"
 # so that alias can be sudo'ed
 alias sudo='sudo '
 

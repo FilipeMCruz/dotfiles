@@ -1,0 +1,7 @@
+#!/usr/bin/zsh
+
+MONEY_TR=~/Documents/self/money_tr.md
+
+CURRENT=$(awk '{s+=$1}END{print s}' <(tail -n +5 $MONEY_TR | cut -d "|" -f 4))
+
+echo "Current savings: $CURRENT€"

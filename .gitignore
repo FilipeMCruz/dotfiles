@@ -9,6 +9,7 @@
 current/mpd/.mpd/playlists/backup
 current/mpd/.mpd/playlists/new_songs.m3u
 current/mpd/.mpd/playlists/new_loved_songs.m3u
+current/mpd/.mpd/playlists/spotify.favs
 current/mpd/.mpd/mpd.db
 current/mpd/.mpd/mpd.pid
 current/mpd/.mpd/mpdstate

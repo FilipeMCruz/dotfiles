@@ -1,0 +1,7 @@
+#!/usr/bin/sh
+
+new_songs="$HOME/.mpd/playlists/spotify.favs"
+
+spotify=$(qdbus org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Metadata | rg "title|artist" | paste -s | sed "s/xesam\:artist\:\ //g;s/xesam\:title\:/ - /g" | awk '{$2=$2};1')
+
+echo "$spotify" >> $new_songs

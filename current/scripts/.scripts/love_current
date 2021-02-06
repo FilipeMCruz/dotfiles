@@ -1,8 +1,6 @@
 #!/usr/bin/sh
 
-playing=$(test 1 -eq "$(mpc -f %file% | grep -c playing)")
-
-if [ $playing ]; then
+if [ 1 -eq "$(mpc -f %file% | grep -c playing)" ]; then
     mpd_love_current
 else
     spotify_love_current

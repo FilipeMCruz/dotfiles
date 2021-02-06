@@ -1,0 +1,3 @@
+#!/usr/bin/sh
+
+test 0 -ne $(pgrep spotify | wc -l) &&  spotify_play_or_pause ||  mpd_play_or_pause

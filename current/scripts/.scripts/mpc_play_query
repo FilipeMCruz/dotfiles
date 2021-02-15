@@ -1,0 +1,7 @@
+#!/usr/bin/sh
+
+mpc clear
+
+pl-mker --query "${@}" -i ~/Music -p ~/.mpd/playlists/old_loved_songs.m3u | tee | cut -d '/' -f 5- | mpc add
+
+mpc play

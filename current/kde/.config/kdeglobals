@@ -39,7 +39,7 @@ ForegroundVisited=127,140,141
 
 [Colors:Compilmentary]
 BackgroundNormal=144,4,4
-ForegroundNormal=235,219,178
+ForegroundNormal=222,222,222
 
 [Colors:Complementary]
 BackgroundAlternate=59,64,69
@@ -129,8 +129,8 @@ ForegroundVisited=127,140,141
 Size=32
 
 [DirSelect Dialog]
-DirSelectDialog Size=813,594
-History Items[$e]=file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/mei,file:$HOME,file:$HOME/Music
+DirSelectDialog Size=876,588
+History Items[$e]=file:$HOME/.themes/Sweet-Mars-transparent-toolbar,file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/mei,file:$HOME,file:$HOME/Music
 
 [General]
 ColorScheme=MateriaGruvbox
@@ -155,6 +155,7 @@ Theme=Tela-black-dark
 [KDE]
 ColorScheme=Breeze
 LookAndFeelPackage=MateriaGruvbox
+ScrollbarLeftClickNavigatesByPage=false
 ShowDeleteCommand=false
 SingleClick=false
 contrast=4

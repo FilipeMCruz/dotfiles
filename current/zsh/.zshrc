@@ -34,7 +34,7 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 #
 # Basic auto/tab complete
 #
-
+ fpath=(/home/fmcruz/.projects/playlist-maker/autocompletions $fpath)
 zstyle ':completion:*' special-dirs true
 zstyle ':completion:*' file-sort name
 zstyle ':completion:*' list-suffixes true

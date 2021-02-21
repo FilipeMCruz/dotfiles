@@ -1,0 +1,3 @@
+#!/usr/bin/sh
+
+go-chromecast volume "$(echo "$(go-chromecast volume -n "Marshall Acton") - 0.05" | bc)" -n "Marshall Acton"

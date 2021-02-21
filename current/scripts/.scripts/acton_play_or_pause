@@ -1,0 +1,3 @@
+#!/usr/bin/sh
+
+go-chromecast status -n "Marshall Acton" | grep -q 'PAUSED' && go-chromecast unpause -n "Marshall Acton" || go-chromecast pause -n "Marshall Acton"

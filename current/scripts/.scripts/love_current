@@ -1,7 +1,3 @@
 #!/usr/bin/sh
 
-if [ 1 -eq "$(mpc -f %file% | grep -c playing)" ]; then
-    mpd_love_current
-else
-    spotify_love_current
-fi
+pgrep spotify > /dev/null && spotify_love_current || mpd_love_current

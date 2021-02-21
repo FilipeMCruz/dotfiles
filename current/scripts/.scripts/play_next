@@ -1,0 +1,3 @@
+#!/usr/bin/sh
+
+pgrep spotify > /dev/null && (qdbus org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next && true) || mpc next

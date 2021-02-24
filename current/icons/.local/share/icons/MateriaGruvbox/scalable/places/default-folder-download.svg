@@ -56,7 +56,7 @@
   </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#ebdbb2"
      bordercolor="#666666"
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
@@ -108,7 +108,7 @@
        id="path828"
        inkscape:connector-curvature="0" />
     <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.19607843;paint-order:markers stroke fill"
+       style="opacity:1;fill:#ebdbb2;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.19607843;paint-order:markers stroke fill"
        id="rect827"
        width="12.170834"
        height="5.0270834"
@@ -148,7 +148,7 @@
        transform="rotate(-45)"
        clip-path="url(#clipPath827)" />
     <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.38945496;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.03921569;paint-order:stroke markers fill"
+       style="opacity:1;fill:#ebdbb2;fill-opacity:1;stroke:none;stroke-width:0.38945496;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.03921569;paint-order:stroke markers fill"
        id="rect824-3"
        width="1.0583333"
        height="3.439563"
@@ -156,7 +156,7 @@
        y="288.00415"
        ry="0.26456293" />
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.74835473;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.03921569;paint-order:stroke markers fill"
+       style="opacity:1;fill:#ebdbb2;fill-opacity:1;stroke:none;stroke-width:0.74835473;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.03921569;paint-order:stroke markers fill"
        d="m 6.35,290.38538 h 4.233333 l -2.1166661,2.11665 z"
        id="rect826"
        inkscape:connector-curvature="0"

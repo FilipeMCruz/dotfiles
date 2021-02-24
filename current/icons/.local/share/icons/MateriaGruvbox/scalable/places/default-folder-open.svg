@@ -56,7 +56,7 @@
   </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#ebdbb2"
      bordercolor="#666666"
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
@@ -105,7 +105,7 @@
        id="path824"
        inkscape:connector-curvature="0" />
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.00000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.03921569;paint-order:stroke markers fill"
+       style="opacity:1;fill:#ebdbb2;fill-opacity:1;stroke:#000000;stroke-width:1.00000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.03921569;paint-order:stroke markers fill"
        d="M 32 13 L 23 22 L 28 22 L 28 31 C 28 31.55399 28.44601 32 29 32 L 35 32 C 35.55399 32 36 31.55399 36 31 L 36 22 L 41 22 L 32 13 z "
        transform="matrix(0.26458333,0,0,0.26458333,0,280.06663)"
        id="rect824-3" />

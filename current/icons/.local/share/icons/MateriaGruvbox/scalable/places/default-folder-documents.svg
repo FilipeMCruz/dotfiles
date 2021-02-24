@@ -56,7 +56,7 @@
   </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#ebdbb2"
      bordercolor="#666666"
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
@@ -108,7 +108,7 @@
        id="path828"
        inkscape:connector-curvature="0" />
     <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.19607843;paint-order:markers stroke fill"
+       style="opacity:1;fill:#ebdbb2;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.19607843;paint-order:markers stroke fill"
        id="rect827"
        width="12.170834"
        height="5.0270834"
@@ -148,7 +148,7 @@
        transform="rotate(-45)"
        clip-path="url(#clipPath827)" />
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.69918144;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       style="opacity:1;fill:#ebdbb2;fill-opacity:1;stroke:none;stroke-width:1.69918144;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
        d="M 25 29 C 24.44597 29 24 29.44597 24 30 L 24 46 C 24 46.55403 24.44597 47 25 47 L 34 47 L 40 41 L 40 30 C 40 29.44597 39.55403 29 39 29 L 25 29 z M 26 31 L 29.212891 31 L 29.212891 34.738281 L 28.410156 34.738281 C 28.502486 35.221947 28.769702 35.584395 29.212891 35.826172 L 29.212891 37.193359 C 28.123397 36.970329 27.315345 36.481851 26.789062 35.728516 C 26.262784 34.975142 26 33.966066 26 32.701172 L 26 31 z M 30.292969 31 L 33.505859 31 L 33.505859 34.738281 L 32.703125 34.738281 C 32.740055 35.01721 32.813031 35.232022 32.923828 35.380859 C 33.034621 35.529773 33.228871 35.677599 33.505859 35.826172 L 33.505859 37.193359 C 32.416366 36.970367 31.608312 36.481851 31.082031 35.728516 C 30.555749 34.975142 30.292967 33.966066 30.292969 32.701172 L 30.292969 31 z "
        transform="matrix(0.26458333,0,0,0.26458333,0,280.06663)"
        id="rect951" />

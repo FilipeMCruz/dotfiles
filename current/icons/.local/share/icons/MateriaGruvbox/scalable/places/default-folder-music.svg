@@ -56,7 +56,7 @@
   </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#ebdbb2"
      bordercolor="#666666"
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
@@ -108,7 +108,7 @@
        id="path828"
        inkscape:connector-curvature="0" />
     <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.19607843;paint-order:markers stroke fill"
+       style="opacity:1;fill:#ebdbb2;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.19607843;paint-order:markers stroke fill"
        id="rect827"
        width="12.170834"
        height="5.0270834"
@@ -156,20 +156,20 @@
          cy="296.83463"
          cx="8.6651039"
          id="circle4525"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.09606814;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.03821656;paint-order:stroke markers fill" />
+         style="opacity:1;fill:#ebdbb2;fill-opacity:1;stroke:none;stroke-width:0.09606814;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.03821656;paint-order:stroke markers fill" />
       <rect
          y="293.36194"
          x="10.054167"
          height="3.4726744"
          width="0.34726563"
          id="rect4527"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.36605105;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.03821656;paint-order:stroke markers fill" />
+         style="opacity:1;fill:#ebdbb2;fill-opacity:1;stroke:none;stroke-width:0.36605105;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.03821656;paint-order:stroke markers fill" />
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
          id="rect4529"
          d="m 10.054167,292.50206 1.736328,-0.52917 v 1.20716 l -1.736328,0.52917 z"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.39132267;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.03821656;paint-order:stroke markers fill" />
+         style="opacity:1;fill:#ebdbb2;fill-opacity:1;stroke:none;stroke-width:0.39132267;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.03821656;paint-order:stroke markers fill" />
     </g>
   </g>
 </svg>

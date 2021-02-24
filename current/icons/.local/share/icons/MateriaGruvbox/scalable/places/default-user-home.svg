@@ -56,7 +56,7 @@
   </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#ebdbb2"
      bordercolor="#666666"
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
@@ -114,7 +114,7 @@
        id="path828"
        inkscape:connector-curvature="0" />
     <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.19607843;paint-order:markers stroke fill"
+       style="opacity:1;fill:#ebdbb2;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.19607843;paint-order:markers stroke fill"
        id="rect827"
        width="12.170834"
        height="5.0270834"
@@ -154,7 +154,7 @@
        transform="rotate(-45)"
        clip-path="url(#clipPath827)" />
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.52640277;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.03921569;paint-order:stroke markers fill"
+       style="opacity:1;fill:#ebdbb2;fill-opacity:1;stroke:none;stroke-width:0.52640277;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.03921569;paint-order:stroke markers fill"
        d="m 8.4666666,288.00413 -2.1166667,2.11667 h 0.79375 v 1.5875 c 0,0.14657 0.1180076,0.26458 0.2645833,0.26458 h 0.5291667 v -1.05833 h 1.0583333 v 1.05833 h 0.5291667 c 0.1465757,0 0.2645833,-0.11801 0.2645833,-0.26458 v -1.5875 h 0.7937498 z m 0,1.32292 c 0.2922516,-10e-6 0.529169,0.23691 0.5291666,0.52916 2.4e-6,0.29225 -0.236915,0.52917 -0.5291666,0.52917 -0.2922516,0 -0.5291691,-0.23692 -0.5291667,-0.52917 -2.4e-6,-0.29225 0.2369151,-0.52917 0.5291667,-0.52916 z"
        id="rect824-3"
        inkscape:connector-curvature="0"

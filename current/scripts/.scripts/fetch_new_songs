@@ -6,4 +6,4 @@ mpc update >/dev/null
 
 kdialog --title "Music player:" --passivepopup \
     "$(wc -l "$HOME/.mpd/playlists/"new_songs.m3u | cut -d ' ' -f1) Songs found in the last update" \
-    --icon "$HOME/Pictures/Icons/disc.svg"
+    --icon "disc"

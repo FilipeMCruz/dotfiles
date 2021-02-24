@@ -22,4 +22,4 @@ truncate -s 0 "$new_songs"
 
 kdialog --title "Music Library:" --passivepopup \
      "$n_songs new songs exported" \
-     --icon "$HOME/Pictures/Icons/speakers.svg"
+     --icon "speakers"

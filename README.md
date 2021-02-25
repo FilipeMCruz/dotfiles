@@ -23,6 +23,8 @@ This helps a lot with all the scripting and configs.
 
 ![screenshot](screenshots/Screenshot6.png)
 
+![screenshot](screenshots/Screenshot7.png)
+
 ## Contents
 
 ### `/bat`
@@ -40,6 +42,19 @@ Git config, with more colors and some aliases
 ### `/glava`
 
 [glava](https://github.com/wacossusca34/glava) configs
+
+### `/icons`
+
+Icon theme, fork of [tela-icon-theme](https://github.com/vinceliuice/Tela-icon-theme).
+Changed the colors of some icons to match my gruvbox theme, added some missing icons
+
+### `/kde`
+
+KDE global configs
+
+### `/kde-shortcuts`
+
+Current shortcuts i use
 
 ### `/konsole`
 
@@ -87,7 +102,7 @@ I heavily rely on programs like:
 - xsv <https://github.com/BurntSushi/xsv>
 - fzf <https://github.com/junegunn/fzf>
 
-If you don't know them, check their repos. They are, in my opinion,a must for anyone that spends a lot of time on the cli.
+If you don't know them, check their repos. They are, in my opinion, a must for anyone that spends a lot of time on the cli.
 
 #### `/scripts/.toys`
 

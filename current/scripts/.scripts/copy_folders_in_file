@@ -1,0 +1,6 @@
+#!/usr/bin/sh
+
+while read -r line
+do
+    rsync -R  "$line"/* "$2"
+done < "$1"

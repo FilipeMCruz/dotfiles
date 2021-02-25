@@ -3,5 +3,5 @@
 
 while read -r line
 do
-    test ! -f "$line" && "$line"
+    test ! -f "$line" && echo "$line"
 done < "$1"

@@ -2,6 +2,6 @@
 
 mpc clear
 
-pl-mker --query $1 -i $MUSIC -p ~/.mpd/playlists/old_loved_songs.m3u | tee | cut -d '/' -f 5- | mpc add
+pl-mker --query "$1" -i $MUSIC -p ~/.mpd/playlists/old_loved_songs.m3u | tee | cut -d '/' -f 5- | mpc add
 
 mpc play

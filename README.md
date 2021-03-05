@@ -127,8 +127,7 @@ Configs related to Vscode extensions.
 
 ### `/wallpaper`
 
-Currently using icons and wallpapers
-Icons taken from <https://www.flaticon.com/authors/smalllikeart>
+Wallpapers i'm currently using
 
 ### `/zathura`
 

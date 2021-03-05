@@ -15,7 +15,8 @@ purple="\033[0;35m"
 light_purple="\033[1;35m"
 yellow="\033[0;33m"
 light_yellow="\033[1;33m"
-orange="\x1b[38;5;208m"
+orange="\x1b[38;5;166m"
+light_orange="\x1b[38;5;208m"
 reset="\033[0m"
 
 # colored text
@@ -37,4 +38,5 @@ echo "${yellow}YELLOW\t\t#d79921${reset}"
 echo "${light_yellow}LIGHT YELLOW\t#fabd2f${reset}"
 
 #not the exact color, where just to have a reference to it
-bash -c "printf '${orange}ORANGE\t\t#fe8019${reset}\n'"
+bash -c "printf '${orange}ORANGE\t\t#d65d06${reset}\n'"
+bash -c "printf '${light_orange}LIGHT ORANGE\t#fe8019${reset}\n'"

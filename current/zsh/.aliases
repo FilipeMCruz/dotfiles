@@ -5,23 +5,26 @@
 #                                                       
 #
 
-alias code='/usr/share/vscodium-bin/codium'
-alias mpd='mpd ~/.mpd/mpd.conf'
-alias yolo='git commit -m "$(curl -s http://whatthecommit.com/index.txt)"'
+alias code='/usr/share/vscodium-bin/codium '
+alias mpd='mpd ~/.mpd/mpd.conf '
+alias yolo='git commit -m "$(curl -s http://whatthecommit.com/index.txt)" '
+
 # so that alias can be sudo'ed
 alias sudo='sudo '
 
 # bonus
 alias yay="paru "
 alias yeet="paru -Rsn "
+alias yeeet="paru -Rsn $(paru -Qdtq) "
 alias nps="npm "
-alias pins="paru -Slq | fzf -m --preview 'cat <(paru -Si {1}) <(paru -Fl {1} | awk \"{print \$2}\")' | xargs -ro paru -S"
+alias pins="paru -Slq | fzf -m --preview 'cat <(paru -Si {1}) <(paru -Fl {1} | awk \"{print \$2}\")' | xargs -ro paru -S "
 alias curl="curl -K ~/.curlrc "
 
 # use exa instead of ls
 alias ls="exa "
-alias ll="exa -ll"
-alias la="exa -la --git --group-directories-first"
+alias l="exa -lGa "
+alias ll="exa -l "
+alias la="exa -la --git --group-directories-first "
 alias ytop="ytop -c gruvbox "
 
 alias -s md=code

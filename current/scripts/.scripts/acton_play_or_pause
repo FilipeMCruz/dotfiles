@@ -1,3 +1,7 @@
 #!/usr/bin/sh
 
-go-chromecast status -n "Marshall Acton" | grep -q 'PAUSED' && go-chromecast unpause -n "Marshall Acton" || go-chromecast pause -n "Marshall Acton"
+dbus-send --session \
+        --print-reply \
+        --dest=org.mpris.MediaPlayer2.Marshall_Acton \
+        /org/mpris/MediaPlayer2 \
+        org.mpris.MediaPlayer2.Player.PlayPause

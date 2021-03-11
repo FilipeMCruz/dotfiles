@@ -1,3 +1,19 @@
 #!/usr/bin/sh
 
-go-chromecast volume "$(echo "$(go-chromecast volume -n "Marshall Acton") + 0.05" | bc)" -n "Marshall Acton"
+volume=$(dbus-send --print-reply \
+                --dest=org.mpris.MediaPlayer2.Marshall_Acton \
+                /org/mpris/MediaPlayer2 \
+                org.freedesktop.DBus.Properties.Get \
+                string:'org.mpris.MediaPlayer2.Player' \
+                string:'Volume' | grep -Po 'double \K.*')
+
+down_volume=$(echo "$volume + 0.05" | bc)
+
+dbus-send --print-reply \
+        --type=method_call \
+        --dest=org.mpris.MediaPlayer2.Marshall_Acton \
+        /org/mpris/MediaPlayer2 \
+        org.freedesktop.DBus.Properties.Set \
+        string:'org.mpris.MediaPlayer2.Player' \
+        string:'Volume' \
+        variant:double:$down_volume > /dev/null

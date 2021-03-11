@@ -1,0 +1,7 @@
+#!/usr/bin/sh
+
+dbus-send --session \
+        --print-reply \
+        --dest=org.mpris.MediaPlayer2.Marshall_Acton \
+        /org/mpris/MediaPlayer2 \
+        org.mpris.MediaPlayer2.Player.Previous

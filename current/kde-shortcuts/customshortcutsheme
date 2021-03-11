@@ -932,7 +932,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_1_4_10Triggers0]
-Key=Shift+F2
+Key=
 Type=SHORTCUT
 Uuid={da082b49-5b81-4bb1-87cb-6f08c25858c8}
 
@@ -1096,7 +1096,7 @@ Type=SIMPLE_ACTION_DATA
 ActionsCount=1
 
 [Data_1_4_6Actions0]
-CommandURL=go-chromecast next -n "Marshall Acton"
+CommandURL=acton_play_next
 Type=COMMAND_URL
 
 [Data_1_4_6Conditions]
@@ -1148,7 +1148,7 @@ Type=SIMPLE_ACTION_DATA
 ActionsCount=1
 
 [Data_1_4_8Actions0]
-CommandURL=go-chromecast previous -n "Marshall Acton"
+CommandURL=acton_play_previous
 Type=COMMAND_URL
 
 [Data_1_4_8Conditions]
@@ -1174,7 +1174,7 @@ Type=SIMPLE_ACTION_DATA
 ActionsCount=1
 
 [Data_1_4_9Actions0]
-CommandURL=go-chromecast stop -n "Marshall Acton"
+CommandURL=acton_play_stop
 Type=COMMAND_URL
 
 [Data_1_4_9Conditions]
@@ -1217,6 +1217,6 @@ Type=SHORTCUT
 Uuid={3a364f37-1f5d-454b-b0d6-6d95865eca2a}
 
 [Main]
-AllowMerge=true
-ImportId=Music
+AllowMerge=false
+ImportId=custom
 Version=2

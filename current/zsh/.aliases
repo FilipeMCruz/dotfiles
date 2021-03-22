@@ -15,7 +15,7 @@ alias sudo='sudo '
 # bonus
 alias yay="paru "
 alias yeet="paru -Rsn "
-alias yeeet="paru -Rsn $(paru -Qdtq) "
+alias yeeet="paru -Qdtq | paru -Rsn - "
 alias nps="npm "
 alias pins="paru -Slq | fzf -m --preview 'cat <(paru -Si {1}) <(paru -Fl {1} | awk \"{print \$2}\")' | xargs -ro paru -S "
 alias curl="curl -K ~/.curlrc "
@@ -32,6 +32,8 @@ alias -s md=code
 alias -s svg=firefox
 
 alias -s json=code
+
+alias -s pdf=okular
 
 function show() {
   bat $(which $1)

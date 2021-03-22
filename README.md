@@ -1,9 +1,10 @@
 # My Dotfiles
 
 This is a repository with my configuration files.
-
-To use this configurations you have to clone this repository and run the stow_all script.
 This will always be a WIP repo.
+
+To use this configurations you have to clone this repository and run the `stow_all` script. This script assumes you have [stow](https://www.gnu.org/software/stow/) installed in your system.
+If there's any module that you don't want simply delete it before running the `stow_all` script.
 
 My focus for now is music, most scripts are related to that.
 The music directory is organized as /_"artist"_ - _"genre"_/_"release year"_ - _"album"_ - Cd _"disc number"_/_"tracknumber"_. _"song title"_
@@ -25,7 +26,7 @@ This helps a lot with all the scripting and configs.
 
 ![screenshot](screenshots/Screenshot7.png)
 
-## Contents
+## Modules
 
 ### `/bat`
 
@@ -33,7 +34,7 @@ This helps a lot with all the scripting and configs.
 
 ### `/curl`
 
-[curl](https://github.com/curl/curl) configs
+[curl](https://github.com/curl/curl) config
 
 ### `/git`
 
@@ -141,3 +142,5 @@ Configs related to zsh, plugins, keybindings, theme, variables, and aliases.
 
 Feel free to clone and check my dotfiles!
 I'm here to help with problems related to this configs.
+
+This dotfiles were only tested on Archlinux and i'm unaware if they work as expected on other distributions like debian, gentoo or void.

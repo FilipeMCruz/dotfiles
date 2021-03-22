@@ -130,7 +130,7 @@ Size=32
 
 [DirSelect Dialog]
 DirSelectDialog Size=1920,1010
-History Items[$e]=file:$HOME/Documents/fac/mei/1A2S,file:$HOME/.themes/Sweet-Mars-transparent-toolbar,file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/mei,file:$HOME,file:$HOME/Music
+History Items[$e]=file:$HOME/Documents/work,file:$HOME/Documents/fac/mei/1A2S,file:$HOME/.themes/Sweet-Mars-transparent-toolbar,file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/mei,file:$HOME,file:$HOME/Music
 
 [General]
 ColorScheme=MateriaGruvbox

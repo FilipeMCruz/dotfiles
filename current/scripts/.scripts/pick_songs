@@ -4,12 +4,3 @@ cd "$MUSIC"
 fd -i -p -t d "$1" | fzf | parallel mpc add
 
 mpc play >/dev/null
-
-ncmpcpp
-
-## get how deep the music dir is
-#CUT_NUMBER=$(($(echo "$MUSIC" | tr -cd '/' | wc -c) + 1))
-## check if $MUSIC ends in / or not, tail -c 2 since echo prints a new line
-#[ "$(echo "$MUSIC" | tail -c 2)" != "/" ] && CUT_NUMBER=$((CUT_NUMBER+1))
-
-#fd -t d . "$MUSIC" | cut -d '/' -f "$CUT_NUMBER"- | rg -i ".*$1.*" | fzf | parallel  mpc -h 127.0.0.1 -p 6660 add

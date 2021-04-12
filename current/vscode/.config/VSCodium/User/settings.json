@@ -1,5 +1,4 @@
 {
-    "window.zoomLevel": 0,
     "workbench.colorTheme": "Gruvbox Dark Medium",
     "editor.fontWeight": "bold",
     "editor.fontFamily": "'fira code medium'",
@@ -74,5 +73,8 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "markdown-preview-enhanced.codeBlockTheme": "monokai.css",
-    "gitlens.gitCommands.closeOnFocusOut": true
+    "gitlens.gitCommands.closeOnFocusOut": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

@@ -28,6 +28,12 @@ export BROWSER='firefox'
 export DOCS=$HOME'/Documents'
 
 #
+# Documents
+#
+
+export WORK=$HOME'/Documents/work'
+
+#
 # Editors
 #
 
@@ -65,6 +71,7 @@ path=(
   /usr/local/{bin,sbin}
   "$HOME/.scripts"
   "$HOME/.cargo/bin"
+  "$HOME/go/bin"
   $path
 )
 

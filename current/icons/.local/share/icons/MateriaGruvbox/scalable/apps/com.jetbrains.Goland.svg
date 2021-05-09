@@ -1,13 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 16.933 16.933">
-    <g transform="translate(1.012 -3.957) scale(1.1739)" stroke-width=".225">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="64" height="64" version="1.1"
+    viewBox="0 0 16.933 16.933" id="svg1008" sodipodi:docname="com.jetbrains.Goland2.svg"
+    inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
+    <metadata id="metadata1014">
+        <rdf:RDF>
+            <cc:Work rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <defs id="defs1012" />
+    <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
+        gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
+        inkscape:window-width="1920" inkscape:window-height="1010" id="namedview1010" showgrid="false"
+        inkscape:zoom="22.34375" inkscape:cx="29.629251" inkscape:cy="27.844271" inkscape:window-x="0"
+        inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="g1006" />
+    <g transform="matrix(1.1739 0 0 1.1739 1.0123 -3.9572)" stroke-width=".22538" id="g1006">
         <path
-            d="M12.435 10.583a6.085 6.085 0 01-6.085 6.085 6.085 6.085 0 01-6.086-6.085A6.085 6.085 0 016.35 4.498a6.085 6.085 0 016.085 6.085z"
-            fill="#b16286" />
-        <path d="M2.97 7.202h6.76v6.762H2.97z" fill="#303030" />
+            d="m12.435 10.583a6.0853 6.0853 0 0 1-6.0853 6.0853 6.0853 6.0853 0 0 1-6.0853-6.0853 6.0853 6.0853 0 0 1 6.0853-6.0853 6.0853 6.0853 0 0 1 6.0853 6.0853z"
+            fill="#b16286" id="path996" style="fill:#b16286;fill-opacity:1" />
+        <path d="m2.9692 7.2024h6.7614v6.7614h-6.7614z" fill="#303030" id="path998" />
         <path
-            d="M3.44 12.7h2.645v.53H3.44zm1.43-4.758c-.42 0-.793.138-1.055.4-.261.261-.4.635-.4 1.055 0 .42.139.794.4 1.055.262.262.635.4 1.055.4.385 0 .673-.12.86-.246.186-.126.287-.274.287-.274l.044-.066V9.265H4.738v.529h.794v.286c-.017.02-.022.036-.098.088a.97.97 0 01-.564.155c-.307 0-.529-.093-.68-.245-.153-.152-.246-.373-.246-.681 0-.308.093-.53.245-.681.152-.152.374-.245.681-.245.308 0 .53.093.681.245l.374-.374c-.26-.262-.635-.4-1.055-.4z"
-            fill="#ebdbb2" />
-        <circle cx="7.834" cy="9.407" fill="#ebdbb2" r="1.465" />
-        <circle cx="7.834" cy="9.407" r=".93" fill="#303030" />
+            d="m 4.8751943,7.9373 c -0.41991,0 -0.79363,0.13839 -1.0552,0.39996 -0.26167,0.2614 -0.40004,0.63525 -0.40004,1.0551 0,0.41991 0.13839,0.79363 0.39996,1.0552 0.2614,0.26167 0.63525,0.40004 1.0551,0.40004 0.38425,0 0.67237,-0.12024 0.85885,-0.24598 0.18649,-0.12573 0.28783,-0.27439 0.28783,-0.27439 l 0.04392,-0.06615 v -1.0009 h -1.3229 v 0.52916 h 0.79373 v 0.28577 c -0.016428,0.02028 -0.021373,0.03606 -0.098182,0.08785 -0.11112,0.07488 -0.28601,0.15557 -0.56329,0.15557 -0.3077,0 -0.52916,-0.09313 -0.68102,-0.245 -0.15187,-0.15187 -0.245,-0.37332 -0.245,-0.68103 0,-0.3077 0.093132,-0.52916 0.245,-0.68102 0.15187,-0.15187 0.37332,-0.245 0.68102,-0.245 0.30768,0 0.52929,0.093116 0.68108,0.24494 l 0.37414,-0.37414 c -0.2614,-0.26167 -0.63525,-0.40004 -1.0551,-0.40004 z"
+            fill="#ebdbb2" id="path1002" />
+        <path d="m 3.4199543,12.7 h 2.6458 v 0.52916 h -2.6458 z" fill="#ebdbb2" id="path1004" />
+        <ellipse style="fill:#ebdbb2;fill-opacity:1;stroke-width:0.0503675" id="path1016" cx="7.9963403" cy="9.3924541"
+            ry="1.4327652" rx="1.3985069" />
+        <circle style="fill:#303030;fill-opacity:1;stroke-width:0.0794475" id="path1022" cx="8.0028658" cy="9.3887348"
+            r="0.90153545" />
     </g>
 </svg>

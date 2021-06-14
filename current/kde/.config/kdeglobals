@@ -42,32 +42,46 @@ BackgroundNormal=144,4,4
 ForegroundNormal=222,222,222
 
 [Colors:Complementary]
-BackgroundAlternate=59,64,69
-BackgroundNormal=49,54,59
-DecorationFocus=30,146,255
-DecorationHover=61,174,230
-ForegroundActive=246,116,0
-ForegroundInactive=175,176,179
-ForegroundLink=61,174,230
-ForegroundNegative=237,21,21
-ForegroundNeutral=201,206,59
-ForegroundNormal=239,240,241
-ForegroundPositive=17,209,22
-ForegroundVisited=61,174,230
+BackgroundAlternate[$d]
+BackgroundNormal[$d]
+DecorationFocus[$d]
+DecorationHover[$d]
+ForegroundActive[$d]
+ForegroundInactive[$d]
+ForegroundLink[$d]
+ForegroundNegative[$d]
+ForegroundNeutral[$d]
+ForegroundNormal[$d]
+ForegroundPositive[$d]
+ForegroundVisited[$d]
 
 [Colors:Header]
-BackgroundAlternate=60,56,54
-BackgroundNormal=40,40,40
-DecorationFocus=104,157,106
-DecorationHover=131,165,152
-ForegroundActive=184,187,38
-ForegroundInactive=55,115,117
-ForegroundLink=142,192,124
-ForegroundNegative=218,68,83
-ForegroundNeutral=246,116,0
-ForegroundNormal=235,219,178
-ForegroundPositive=39,174,96
-ForegroundVisited=127,140,141
+BackgroundAlternate[$d]
+BackgroundNormal[$d]
+DecorationFocus[$d]
+DecorationHover[$d]
+ForegroundActive[$d]
+ForegroundInactive[$d]
+ForegroundLink[$d]
+ForegroundNegative[$d]
+ForegroundNeutral[$d]
+ForegroundNormal[$d]
+ForegroundPositive[$d]
+ForegroundVisited[$d]
+
+[Colors:Header][Inactive]
+BackgroundAlternate[$d]
+BackgroundNormal[$d]
+DecorationFocus[$d]
+DecorationHover[$d]
+ForegroundActive[$d]
+ForegroundInactive[$d]
+ForegroundLink[$d]
+ForegroundNegative[$d]
+ForegroundNeutral[$d]
+ForegroundNormal[$d]
+ForegroundPositive[$d]
+ForegroundVisited[$d]
 
 [Colors:Selection]
 BackgroundAlternate=142,192,124
@@ -129,8 +143,8 @@ ForegroundVisited=127,140,141
 Size=32
 
 [DirSelect Dialog]
-DirSelectDialog Size=1023,614
-History Items[$e]=file:$HOME/Documents/work,file:$HOME/Documents/fac/mei/1A2S,file:$HOME/.themes/Sweet-Mars-transparent-toolbar,file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/mei,file:$HOME,file:$HOME/Music
+DirSelectDialog Size=1920,1014
+History Items[$e]=file:$HOME/Documents/work,file:$HOME/Documents/work,file:$HOME/Documents/fac/mei/1A2S,file:$HOME/.themes/Sweet-Mars-transparent-toolbar,file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/mei,file:$HOME,file:$HOME/Music
 
 [General]
 ColorScheme=MateriaGruvbox
@@ -150,7 +164,7 @@ toolBarFont=Iosevka,10,-1,5,75,0,0,0,0,0,Bold
 widgetStyle=Breeze
 
 [Icons]
-Theme=Tela-black-dark
+Theme=MateriaGruvbox
 
 [KDE]
 ColorScheme=Breeze
@@ -159,7 +173,6 @@ ScrollbarLeftClickNavigatesByPage=false
 ShowDeleteCommand=false
 SingleClick=false
 contrast=4
-widgetStyle=Breeze
 
 [KFileDialog Settings]
 Allow Expansion=false

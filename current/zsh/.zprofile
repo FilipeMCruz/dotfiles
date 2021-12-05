@@ -78,6 +78,7 @@ path=(
   "$HOME/.scripts"
   "$HOME/.cargo/bin"
   "$HOME/go/bin"
+  "$HOME/.dotnet/tools"
   $path
 )
 

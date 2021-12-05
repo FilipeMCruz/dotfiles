@@ -20,27 +20,6 @@
     "files.associations": {
         "*.rmd": "markdown"
     },
-    "bracketPairColorizer.consecutivePairColors": [
-        "()",
-        "[]",
-        "{}",
-        [
-        "#7c6f64",
-        "#a89984",
-        "#d5c4a1",
-        "#8ec07c",
-        "#83a598",
-        "#d3869b",
-        "#fb4934",
-        "#fe8019",
-        "#fabd2f",
-        "#b8bb26"
-        ],
-        "#cc241d",
-    ],
-    "bracketPairColorizer.rulerPosition": "Right",
-    "bracketPairColorizer.showBracketsInGutter": true,
-    "bracketPairColorizer.showBracketsInRuler": true,
     "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont,'Iosevka', 'fira code'",
     "markdown-preview-enhanced.previewTheme": "monokai.css",
     "plantuml.exportConcurrency": 6,
@@ -80,5 +59,16 @@
     "redhat.telemetry.enabled": false,
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "editor.codeActionsOnSave": null,
+    "editor.bracketPairColorization.enabled": true,
+    "cSpell.userWords": [
+        "Flink"
+    ],
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[dockercompose]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
 }

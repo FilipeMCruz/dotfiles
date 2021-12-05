@@ -143,8 +143,8 @@ ForegroundVisited=127,140,141
 Size=32
 
 [DirSelect Dialog]
-DirSelectDialog Size=1920,1014
-History Items[$e]=file:$HOME/Documents/work,file:$HOME/Documents/work,file:$HOME/Documents/fac/mei/1A2S,file:$HOME/.themes/Sweet-Mars-transparent-toolbar,file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/mei,file:$HOME,file:$HOME/Music
+DirSelectDialog Size=892,594
+History Items[$e]=file:$HOME/Documents/work/IotServiceBuilder/project/backend/infrastructure/boot/src/main/resources/templates,file:$HOME/Desktop/fac,file:$HOME/Documents/fac/mei/1A1S/simov,file:$HOME/Documents/fac/mei/1A1S/simov,file:$HOME/Documents/fac/mei/2A1S,file:$HOME/Downloads/%23Finnished/The Handmaids Tale Season 3 Mp4 1080p Stereo,file:$HOME/Downloads/%23Finnished/The Handmaids Tale Season 3 Mp4 1080p Stereo,file:$HOME/Documents/work,file:$HOME/Documents/work,file:$HOME/Documents/fac/mei/1A2S,file:$HOME/.themes/Sweet-Mars-transparent-toolbar,file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/mei,file:$HOME,file:$HOME/Music
 
 [General]
 ColorScheme=MateriaGruvbox

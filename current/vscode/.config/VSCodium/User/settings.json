@@ -63,7 +63,8 @@
     "editor.codeActionsOnSave": null,
     "editor.bracketPairColorization.enabled": true,
     "cSpell.userWords": [
-        "Flink"
+        "Flink",
+        "proxying"
     ],
     "[typescriptreact]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"

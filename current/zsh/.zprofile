@@ -49,6 +49,12 @@ export BAT_THEME="gruvbox"
 export GOPRIVATE=github.com/ShareSpotPT
 
 #
+# Java
+#
+
+export JAVA_HOME=/usr/lib/jvm/default
+
+#
 # Language
 #
 

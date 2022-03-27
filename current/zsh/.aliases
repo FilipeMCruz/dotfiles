@@ -25,7 +25,6 @@ alias ls="exa "
 alias l="exa -lGa "
 alias ll="exa -l "
 alias la="exa -la --git --group-directories-first "
-alias ytop="ytop -c gruvbox "
 
 alias -s md=code
 

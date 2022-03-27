@@ -41,48 +41,6 @@ ForegroundVisited=127,140,141
 BackgroundNormal=144,4,4
 ForegroundNormal=222,222,222
 
-[Colors:Complementary]
-BackgroundAlternate[$d]
-BackgroundNormal[$d]
-DecorationFocus[$d]
-DecorationHover[$d]
-ForegroundActive[$d]
-ForegroundInactive[$d]
-ForegroundLink[$d]
-ForegroundNegative[$d]
-ForegroundNeutral[$d]
-ForegroundNormal[$d]
-ForegroundPositive[$d]
-ForegroundVisited[$d]
-
-[Colors:Header]
-BackgroundAlternate[$d]
-BackgroundNormal[$d]
-DecorationFocus[$d]
-DecorationHover[$d]
-ForegroundActive[$d]
-ForegroundInactive[$d]
-ForegroundLink[$d]
-ForegroundNegative[$d]
-ForegroundNeutral[$d]
-ForegroundNormal[$d]
-ForegroundPositive[$d]
-ForegroundVisited[$d]
-
-[Colors:Header][Inactive]
-BackgroundAlternate[$d]
-BackgroundNormal[$d]
-DecorationFocus[$d]
-DecorationHover[$d]
-ForegroundActive[$d]
-ForegroundInactive[$d]
-ForegroundLink[$d]
-ForegroundNegative[$d]
-ForegroundNeutral[$d]
-ForegroundNormal[$d]
-ForegroundPositive[$d]
-ForegroundVisited[$d]
-
 [Colors:Selection]
 BackgroundAlternate=142,192,124
 BackgroundNormal=104,157,106
@@ -143,11 +101,11 @@ ForegroundVisited=127,140,141
 Size=32
 
 [DirSelect Dialog]
-DirSelectDialog Size=892,594
-History Items[$e]=file:$HOME/Documents/work/IotServiceBuilder/project/backend/infrastructure/boot/src/main/resources/templates,file:$HOME/Desktop/fac,file:$HOME/Documents/fac/mei/1A1S/simov,file:$HOME/Documents/fac/mei/1A1S/simov,file:$HOME/Documents/fac/mei/2A1S,file:$HOME/Downloads/%23Finnished/The Handmaids Tale Season 3 Mp4 1080p Stereo,file:$HOME/Downloads/%23Finnished/The Handmaids Tale Season 3 Mp4 1080p Stereo,file:$HOME/Documents/work,file:$HOME/Documents/work,file:$HOME/Documents/fac/mei/1A2S,file:$HOME/.themes/Sweet-Mars-transparent-toolbar,file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/mei,file:$HOME,file:$HOME/Music
+DirSelectDialog Size=1131,578
+History Items[$e]=file:$HOME/Documents/fac/mei/1A2S/INSIS/project,file:$HOME/Documents/fac/mei/1A2S/INSIS/project,file:$HOME/Documents/fac/mei/1A2S/INSIS/project,file:$HOME/Documents/fac/mei/1A2S/INSIS/project,file:$HOME/Documents/work/IotServiceBuilder/project/backend/infrastructure/boot/src/main/resources/templates,file:$HOME/Desktop/fac,file:$HOME/Documents/fac/mei/1A1S/simov,file:$HOME/Documents/fac/mei/1A1S/simov,file:$HOME/Documents/fac/mei/2A1S,file:$HOME/Downloads/%23Finnished/The Handmaids Tale Season 3 Mp4 1080p Stereo,file:$HOME/Downloads/%23Finnished/The Handmaids Tale Season 3 Mp4 1080p Stereo,file:$HOME/Documents/work,file:$HOME/Documents/work,file:$HOME/Documents/fac/mei/1A2S,file:$HOME/.themes/Sweet-Mars-transparent-toolbar,file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/lei,file:$HOME/Documents/fac/mei,file:$HOME,file:$HOME/Music
 
 [General]
-ColorScheme=MateriaGruvbox
+ColorSchemeHash=b7457f1992cd2d0c51830267069a47a903a8d7b6
 Name=MateriaGruvbox
 Name[en_GB]=Breeze
 UseSystemBell=true
@@ -173,6 +131,7 @@ ScrollbarLeftClickNavigatesByPage=false
 ShowDeleteCommand=false
 SingleClick=false
 contrast=4
+widgetStyle=Breeze
 
 [KFileDialog Settings]
 Allow Expansion=false

@@ -22,3 +22,6 @@ UnderlineFilesEnabled=true
 
 [Keyboard]
 KeyBindings=default
+
+[Scrolling]
+HistorySize=10000

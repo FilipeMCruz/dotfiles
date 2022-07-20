@@ -91,6 +91,7 @@ ForegroundVisited=127,140,141
 [General]
 ColorScheme=GruvboxColors
 Name=MateriaGruvbox
+TintFactor=0.15
 shadeSortColumn=true
 
 [KDE]

@@ -5,7 +5,6 @@
 #                                                       
 #
 
-alias code='/usr/share/vscodium-bin/codium '
 alias mpd='mpd ~/.mpd/mpd.conf '
 alias yolo='git commit -m "$(curl -s http://whatthecommit.com/index.txt)" '
 
@@ -44,4 +43,8 @@ function take() {
 
 function uuid() {
   cat /proc/sys/kernel/random/uuid
+}
+
+function millis() {
+  echo $(($(date +%s%N)/1000000))
 }

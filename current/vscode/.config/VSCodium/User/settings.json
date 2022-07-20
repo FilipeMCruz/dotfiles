@@ -23,7 +23,7 @@
     "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont,'Iosevka', 'fira code'",
     "markdown-preview-enhanced.previewTheme": "monokai.css",
     "plantuml.exportConcurrency": 6,
-    "plantuml.exportFormat": "svg",
+    "plantuml.exportFormat": "latex",
     "rainbow_csv.comment_prefix": "#",
     "rainbow_csv.csv_lint_detect_trailing_spaces": true,
     "editor.cursorBlinking": "expand",
@@ -63,8 +63,11 @@
     "editor.codeActionsOnSave": null,
     "editor.bracketPairColorization.enabled": true,
     "cSpell.userWords": [
+        "configurability",
         "Flink",
-        "proxying"
+        "Kubernetes",
+        "proxying",
+        "Sensae"
     ],
     "[typescriptreact]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -74,4 +77,56 @@
     },
     "security.workspace.trust.untrustedFiles": "open",
     "terminal.integrated.enableMultiLinePasteWarning": false,
+    "latex-workshop.bibtex-fields.sort.enabled": true,
+    "plantuml.jar": "/usr/share/java/plantuml/plantuml.jar",
+    "plantuml.diagramsRoot": "assets/diagrams",
+    "plantuml.exportOutDir": "assets/diagrams",
+    "plantuml.exportSubFolder": false,
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "--shell-escape",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "--shell-escape",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.magic.args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%",
+        "--shell-escape"
+    ],
+    "latex-workshop.latexindent.args": [
+        "-c",
+        "%DIR%/",
+        "%TMPFILE%",
+        "-y=defaultIndent: '%INDENT%'",
+        "--shell-escape"
+    ],
 }

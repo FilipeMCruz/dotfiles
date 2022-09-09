@@ -59,6 +59,7 @@ h3 {
 
 #header {
     text-align: center;
+    color: var(--color-primary);
 }
 
 #apps-container {

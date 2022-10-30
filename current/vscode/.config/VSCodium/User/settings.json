@@ -44,7 +44,6 @@
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
-    "latex-workshop.view.pdf.viewer": "tab",
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -89,11 +88,11 @@
             "name": "latexmk",
             "command": "latexmk",
             "args": [
+                "-lualatex",
                 "--shell-escape",
                 "-synctex=1",
                 "-interaction=nonstopmode",
                 "-file-line-error",
-                "-pdf",
                 "-outdir=%OUTDIR%",
                 "%DOC%"
             ]
@@ -122,6 +121,7 @@
         "-interaction=nonstopmode",
         "-file-line-error",
         "%DOC%",
+        "-shell-escape",
         "--shell-escape"
     ],
     "latex-workshop.latexindent.args": [
@@ -129,7 +129,8 @@
         "%DIR%/",
         "%TMPFILE%",
         "-y=defaultIndent: '%INDENT%'",
-        "--shell-escape"
+        "--shell-escape",
+        "-shell-escape"
     ],
     "cSpell.minWordLength": 3,
     "cSpell.showAutocompleteSuggestions": true,
@@ -179,4 +180,8 @@
     "cSpell.enableFiletypes": [
         "latex"
     ],
+    "latex-workshop.view.pdf.viewer": "browser",
+    "latex-workshop.intellisense.biblatexJSON.replace": {
+    
+    },
 }

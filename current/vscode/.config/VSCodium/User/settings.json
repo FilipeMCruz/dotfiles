@@ -184,4 +184,5 @@
     "latex-workshop.intellisense.biblatexJSON.replace": {
     
     },
+    "editor.unicodeHighlight.nonBasicASCII": false,
 }

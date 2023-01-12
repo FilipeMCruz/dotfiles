@@ -3,16 +3,7 @@
 #                           /_ / (_-< / _ \
 #                           /__//___//_//_/
 #
-autoload -U promptinit
-promptinit
-prompt spaceship
-
-SPACESHIP_CHAR_SYMBOL="→ "
-SPACESHIP_CHAR_SYMBOL_ROOT="▶ "
-SPACESHIP_CHAR_SYMBOL_SECONDARY="→ "
-
-SPACESHIP_JOBS_SYMBOL="λ"
-SPACESHIP_JOBS_COLOR="red"
+source /usr/lib/spaceship-prompt/spaceship.zsh
 
 #
 # Aliases
@@ -20,13 +11,11 @@ SPACESHIP_JOBS_COLOR="red"
 
 test -f ~/.aliases && source ~/.aliases
 
-
 #
 # Secrets
 #
 
 test -f ~/.secrets && source ~/.secrets
-
 
 # Zsh to use the same colors as ls
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
@@ -62,13 +51,6 @@ setopt hist_ignore_space
 setopt hist_verify
 setopt inc_append_history
 setopt share_history
-
-#
-# Prompt
-#
-
-PROMPT='$NEWLINE%F{yellow}%B%n%f%F{blue}@%f%F{green}%B%m%f %F{blue}in%f %$(spaceship_prompt)'
-RPROMPT='%F{red}%B[%f%F{yellow}%B$(date "+%H:%M %d/%m/%y")%f%F{red}%B]%f'
 
 #
 # Keybindings

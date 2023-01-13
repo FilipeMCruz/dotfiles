@@ -16,7 +16,7 @@ SPACESHIP_HOST_PREFIX=""
 SPACESHIP_DIR_PREFIX="%F{blue}in%f "
 
 SPACESHIP_TIME_SHOW=true
-SPACESHIP_TIME_FORMAT='%F{red}%B::%f %F{yellow}%D{%H:%M}%f %F{red}%B::%f'
+SPACESHIP_TIME_FORMAT="%F{red}%B::%f %F{yellow}%D{%H:%M}%f %F{red}%B::%f"
 
 SPACESHIP_EXEC_TIME_ELAPSED=1
 

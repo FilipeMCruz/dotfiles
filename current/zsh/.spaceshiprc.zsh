@@ -29,6 +29,7 @@ SPACESHIP_SUDO_COLOR="#fe8019"
 SPACESHIP_GIT_PREFIX="%F{blue}on%f "
 
 SPACESHIP_PROMPT_ORDER=(
+    jobs           # Background jobs indicator
     sudo           # Sudo indicator
     user           # Username section
     host           # Hostname section
@@ -81,7 +82,6 @@ SPACESHIP_PROMPT_ORDER=(
     #async          # Async jobs indicator
     line_sep       # Line break
     battery        # Battery level and status
-    jobs           # Background jobs indicator
     exit_code      # Exit code section
     char           # Prompt character
 )

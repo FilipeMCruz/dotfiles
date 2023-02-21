@@ -31,7 +31,8 @@ body {
 
 #container {
     margin: 1em auto 0;
-    width: 70%;
+    min-width: 65%;
+    max-width: 900px;
 }
 
 h1, h2 {

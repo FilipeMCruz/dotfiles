@@ -214,6 +214,7 @@ MaximumRemoteSize=0
 
 [Shortcuts]
 FullScreen=F11
+WhatsThis=
 
 [ToolbarIcons]
 Size=16

@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Gruvbox Dark Medium",
     "editor.fontWeight": "bold",
     "editor.fontFamily": "'fira code medium'",
     "editor.fontSize": 13,
@@ -186,4 +185,5 @@
     },
     "editor.unicodeHighlight.nonBasicASCII": false,
     "javascript.updateImportsOnFileMove.enabled": "never",
+    "workbench.colorTheme": "Gruvbox Material Dark",
 }

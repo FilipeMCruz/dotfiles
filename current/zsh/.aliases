@@ -18,6 +18,7 @@ alias yeeet="paru -Qdtq | paru -Rsn - "
 alias nps="npm "
 alias pins="paru -Slq | fzf -m --preview 'cat <(paru -Si {1}) <(paru -Fl {1} | awk \"{print \$2}\")' | xargs -ro paru -S "
 alias curl="curl -K ~/.curlrc "
+alias http="xh "
 
 # use exa instead of ls
 alias ls="exa "

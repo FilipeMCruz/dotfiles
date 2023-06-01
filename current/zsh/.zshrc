@@ -103,7 +103,3 @@ test -f ~/.zsh_plugins/colored-man-pages/colored-man-pages.plugin.zsh && source 
 test -f ~/.zsh_plugins/gitignore/gitignore.plugin.zsh && source ~/.zsh_plugins/gitignore/gitignore.plugin.zsh
 test -f ~/.zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh && source ~/.zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 test -f ~/.zsh_plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh && source ~/.zsh_plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
-
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)

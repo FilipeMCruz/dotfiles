@@ -66,6 +66,7 @@
         "Flink",
         "Kubernetes",
         "microservices",
+        "nums",
         "proxying",
         "roadmap",
         "Sensae"
@@ -190,4 +191,5 @@
     "window.zoomLevel": 1,
     "plantuml.exportIncludeFolderHeirarchy": false,
     "plantuml.lintDiagramNoName": false,
+    "update.showReleaseNotes": false,
 }
